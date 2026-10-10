@@ -1,0 +1,36 @@
+# GPU stack for vLLM projects, pinned to builds that RUN on this server.
+# Copy into a project as requirements-cuda.txt and add `-r requirements-cuda.txt`
+# at the top of its requirements file. Install with uv after sourcing
+# shared_env.csh (which sets UV_TORCH_BACKEND=cu129):
+#
+#   uv pip install -r requirements.txt
+#
+# Server (6 Oct 2026): 4x H100 NVL, driver 570.211.01 => CUDA 12.8 max.
+#
+# Why each pin:
+#   - Default PyPI torch 2.13 / vllm 0.31 are CUDA 13 builds: they die at vLLM
+#     worker start with "The NVIDIA driver on your system is too old".
+#   - vllm 0.31.0 requires torch==2.13.0 exactly; the cu128 torch index stops at
+#     2.11, so "install cu128 torch first" cannot work. cu129 builds run on a
+#     12.8 driver (CUDA minor-version compatibility within 12.x).
+#   - vLLM's +cu129 wheel is only on GitHub releases, hence the direct URL.
+#   - flashinfer-jit-cache: prebuilt FlashInfer kernels. Without it FlashInfer
+#     compiles kernels at first request with /usr/local/cuda (= CUDA 13.0 here)
+#     and the worker dies with "cudaErrorInsufficientDriver". Its version must
+#     equal the flashinfer-python version that vllm pulls in.
+#
+# Driver upgraded to >= 580? Delete these pins, set UV_TORCH_BACKEND=auto in
+# shared_env.csh, and plain `vllm` works.
+#
+# Check after any change:  python3 -c "import torch; print(torch.cuda.is_available())"
+
+# FlashInfer's own index: hosts ONLY flashinfer-jit-cache* packages (checked),
+# so it cannot shadow any other package. The kernels are split per GPU arch
+# (sm90a = H100) into sub-packages that exist only there.
+--extra-index-url https://flashinfer.ai/whl/cu129
+
+torch==2.13.0
+torchvision==0.28.0
+torchaudio==2.11.0
+vllm @ https://github.com/vllm-project/vllm/releases/download/v0.31.0/vllm-0.31.0+cu129-cp38-abi3-manylinux_2_28_x86_64.whl
+flashinfer-jit-cache==0.7.0.post1+cu129

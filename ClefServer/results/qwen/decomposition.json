@@ -1,0 +1,68 @@
+[
+  {
+    "dataset": "scifact",
+    "baseline": "feature",
+    "n_agree": 549,
+    "delta_acc_agree_pts": 0.0,
+    "n_differ": 351,
+    "delta_acc_differ_pts": 3.4188034188034186,
+    "share_of_total_delta_from_differ": 1.0,
+    "mean_retrievals_baseline": 1.1533333333333333,
+    "mean_retrievals_case": 1.7433333333333334
+  },
+  {
+    "dataset": "scifact",
+    "baseline": "selfrag",
+    "n_agree": 645,
+    "delta_acc_agree_pts": 0.0,
+    "n_differ": 255,
+    "delta_acc_differ_pts": 2.3529411764705883,
+    "share_of_total_delta_from_differ": 1.0,
+    "mean_retrievals_baseline": 1.8266666666666667,
+    "mean_retrievals_case": 1.7433333333333334
+  },
+  {
+    "dataset": "fever",
+    "baseline": "feature",
+    "n_agree": 431,
+    "delta_acc_agree_pts": 0.0,
+    "n_differ": 469,
+    "delta_acc_differ_pts": 0.6396588486140725,
+    "share_of_total_delta_from_differ": 1.0,
+    "mean_retrievals_baseline": 1.728888888888889,
+    "mean_retrievals_case": 1.5877777777777777
+  },
+  {
+    "dataset": "fever",
+    "baseline": "selfrag",
+    "n_agree": 788,
+    "delta_acc_agree_pts": 0.0,
+    "n_differ": 112,
+    "delta_acc_differ_pts": -0.8928571428571429,
+    "share_of_total_delta_from_differ": 1.0,
+    "mean_retrievals_baseline": 1.5811111111111111,
+    "mean_retrievals_case": 1.5877777777777777
+  },
+  {
+    "dataset": "hotpotqa",
+    "baseline": "feature",
+    "n_agree": 478,
+    "delta_acc_agree_pts": 0.0,
+    "n_differ": 422,
+    "delta_acc_differ_pts": 11.137440758293838,
+    "share_of_total_delta_from_differ": 1.0,
+    "mean_retrievals_baseline": 1.5955555555555556,
+    "mean_retrievals_case": 1.81
+  },
+  {
+    "dataset": "hotpotqa",
+    "baseline": "selfrag",
+    "n_agree": 828,
+    "delta_acc_agree_pts": 0.0,
+    "n_differ": 72,
+    "delta_acc_differ_pts": -4.166666666666667,
+    "share_of_total_delta_from_differ": 1.0,
+    "mean_retrievals_baseline": 1.8033333333333332,
+    "mean_retrievals_case": 1.81
+  }
+]

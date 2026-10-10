@@ -1,0 +1,4802 @@
+[
+  {
+    "id": "fever-5745",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5235368041479943,
+      "RETRIEVE_MORE": 9.481572382231323e-06,
+      "ABSTAIN": 0.26760818452142116,
+      "ESCALATE": 0.2088455297582024
+    },
+    "evidence_sufficiency": 0.47089165449142456,
+    "estimated_factual_risk": 0.5291083455085754,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-78689",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8797992741171564,
+      "RETRIEVE_MORE": 0.04667499835878147,
+      "ABSTAIN": 0.03316720020866659,
+      "ESCALATE": 0.04035852731539555
+    },
+    "evidence_sufficiency": 0.9515313506126404,
+    "estimated_factual_risk": 0.04846864938735962,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-103646",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5665945522050388,
+      "RETRIEVE_MORE": 0.2502631593200533,
+      "ABSTAIN": 0.09044257423904532,
+      "ESCALATE": 0.09269971423586258
+    },
+    "evidence_sufficiency": 0.6689507961273193,
+    "estimated_factual_risk": 0.33104920387268066,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-105038",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6164684926232481,
+      "RETRIEVE_MORE": 0.21386761022540465,
+      "ABSTAIN": 0.08241043914194714,
+      "ESCALATE": 0.08725345800940017
+    },
+    "evidence_sufficiency": 0.7011533379554749,
+    "estimated_factual_risk": 0.29884666204452515,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-29289",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5386916951809967,
+      "RETRIEVE_MORE": 0.27118868552742803,
+      "ABSTAIN": 0.09478945629077168,
+      "ESCALATE": 0.0953301630008035
+    },
+    "evidence_sufficiency": 0.65151047706604,
+    "estimated_factual_risk": 0.34848952293395996,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-192832",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5931635171170122,
+      "RETRIEVE_MORE": 8.481965845941693e-06,
+      "ABSTAIN": 0.22000027033878825,
+      "ESCALATE": 0.18682773057835364
+    },
+    "evidence_sufficiency": 0.5233962535858154,
+    "estimated_factual_risk": 0.47660374641418457,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-79091",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8596654272136238,
+      "RETRIEVE_MORE": 0.057520590903545964,
+      "ABSTAIN": 0.037486971885149094,
+      "ESCALATE": 0.045327009997681036
+    },
+    "evidence_sufficiency": 0.9205867052078247,
+    "estimated_factual_risk": 0.07941329479217529,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-161719",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8262576062286598,
+      "RETRIEVE_MORE": 0.07644641389794629,
+      "ABSTAIN": 0.04437940296850403,
+      "ESCALATE": 0.05291657690488988
+    },
+    "evidence_sufficiency": 0.8773755431175232,
+    "estimated_factual_risk": 0.1226244568824768,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-122111",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8227469924203709,
+      "RETRIEVE_MORE": 0.07849531816400111,
+      "ABSTAIN": 0.04508614928984772,
+      "ESCALATE": 0.05367154012578039
+    },
+    "evidence_sufficiency": 0.8732813000679016,
+    "estimated_factual_risk": 0.1267186999320984,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-37715",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.033521870583556324,
+      "RETRIEVE_MORE": 5.968575479982364e-06,
+      "ABSTAIN": 0.6091088267146446,
+      "ESCALATE": 0.3573633341263191
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.041638731956482,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-185230",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.18115139441278333,
+      "RETRIEVE_MORE": 8.02930076909696e-06,
+      "ABSTAIN": 0.33809308416358935,
+      "ESCALATE": 0.4807474921228583
+    },
+    "evidence_sufficiency": 0.27199798822402954,
+    "estimated_factual_risk": 0.7280020117759705,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-140233",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.18200924244984693,
+      "RETRIEVE_MORE": 8.029037313591675e-06,
+      "ABSTAIN": 0.3372510105622403,
+      "ESCALATE": 0.48073171795059916
+    },
+    "evidence_sufficiency": 0.27305513620376587,
+    "estimated_factual_risk": 0.7269448637962341,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-183452",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.059853371423910985,
+      "RETRIEVE_MORE": 6.980178470559882e-06,
+      "ABSTAIN": 0.5222074534539436,
+      "ESCALATE": 0.41793219494367495
+    },
+    "evidence_sufficiency": 0.057017456740140915,
+    "estimated_factual_risk": 0.9429825432598591,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-128734",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8288977026378547,
+      "RETRIEVE_MORE": 0.07491269461870487,
+      "ABSTAIN": 0.04384584351089072,
+      "ESCALATE": 0.05234375923254974
+    },
+    "evidence_sufficiency": 0.8805031180381775,
+    "estimated_factual_risk": 0.11949688196182251,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-91304",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.1527859623508486,
+      "RETRIEVE_MORE": 8.001502731957016e-06,
+      "ABSTAIN": 0.3681229276386825,
+      "ESCALATE": 0.47908310850773694
+    },
+    "evidence_sufficiency": 0.23492531478405,
+    "estimated_factual_risk": 0.76507468521595,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-114062",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6987405874622549,
+      "RETRIEVE_MORE": 0.15674101692305487,
+      "ABSTAIN": 0.06838639047958134,
+      "ESCALATE": 0.07613200513510898
+    },
+    "evidence_sufficiency": 0.7592912912368774,
+    "estimated_factual_risk": 0.24070870876312256,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-70600",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4219797889233871,
+      "RETRIEVE_MORE": 1.0648373574020998e-05,
+      "ABSTAIN": 0.3434635264045415,
+      "ESCALATE": 0.23454603629849743
+    },
+    "evidence_sufficiency": 0.3971790075302124,
+    "estimated_factual_risk": 0.6028209924697876,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-146332",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5104060770067909,
+      "RETRIEVE_MORE": 0.2928134198911562,
+      "ABSTAIN": 0.09909003183823982,
+      "ESCALATE": 0.0976904712638131
+    },
+    "evidence_sufficiency": 0.634089469909668,
+    "estimated_factual_risk": 0.36591053009033203,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-155228",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.798916641653852,
+      "RETRIEVE_MORE": 0.09267622334820735,
+      "ABSTAIN": 0.04980507705717687,
+      "ESCALATE": 0.05860205794076389
+    },
+    "evidence_sufficiency": 0.8472192883491516,
+    "estimated_factual_risk": 0.1527807116508484,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-57351",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.23318766314071446,
+      "RETRIEVE_MORE": 7.923615780827828e-06,
+      "ABSTAIN": 0.2923847190854415,
+      "ESCALATE": 0.47441969415806323
+    },
+    "evidence_sufficiency": 0.33105581998825073,
+    "estimated_factual_risk": 0.6689441800117493,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-58513",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.18315561031455435,
+      "RETRIEVE_MORE": 8.028594799430463e-06,
+      "ABSTAIN": 0.33613113829564656,
+      "ESCALATE": 0.4807052227949998
+    },
+    "evidence_sufficiency": 0.27446264028549194,
+    "estimated_factual_risk": 0.7255373597145081,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-129701",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5333850701647881,
+      "RETRIEVE_MORE": 0.2752139783098204,
+      "ABSTAIN": 0.09560439045216784,
+      "ESCALATE": 0.09579656107322365
+    },
+    "evidence_sufficiency": 0.6482259631156921,
+    "estimated_factual_risk": 0.35177403688430786,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-148465",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8569662974099188,
+      "RETRIEVE_MORE": 0.059008678596087404,
+      "ABSTAIN": 0.03805589081559122,
+      "ESCALATE": 0.04596913317840265
+    },
+    "evidence_sufficiency": 0.9167618751525879,
+    "estimated_factual_risk": 0.08323812484741211,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-126912",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7897929668435336,
+      "RETRIEVE_MORE": 0.09822487142710216,
+      "ABSTAIN": 0.051577637208571184,
+      "ESCALATE": 0.06040452452079316
+    },
+    "evidence_sufficiency": 0.8379348516464233,
+    "estimated_factual_risk": 0.16206514835357666,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-202038",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.660062762117267,
+      "RETRIEVE_MORE": 0.18313233732681766,
+      "ABSTAIN": 0.07510445972195104,
+      "ESCALATE": 0.08170044083396426
+    },
+    "evidence_sufficiency": 0.730950117111206,
+    "estimated_factual_risk": 0.26904988288879395,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-164048",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7247357435215668,
+      "RETRIEVE_MORE": 0.13949292389995147,
+      "ABSTAIN": 0.06373784156486675,
+      "ESCALATE": 0.07203349101361495
+    },
+    "evidence_sufficiency": 0.7797057628631592,
+    "estimated_factual_risk": 0.22029423713684082,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-32679",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.47146880260520874,
+      "RETRIEVE_MORE": 0.32326830615866337,
+      "ABSTAIN": 0.10483592471665962,
+      "ESCALATE": 0.10042696651946827
+    },
+    "evidence_sufficiency": 0.6103160381317139,
+    "estimated_factual_risk": 0.38968396186828613,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-202056",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5983201095840937,
+      "RETRIEVE_MORE": 0.22696111072590763,
+      "ABSTAIN": 0.08537268121024363,
+      "ESCALATE": 0.0893460984797551
+    },
+    "evidence_sufficiency": 0.6892462968826294,
+    "estimated_factual_risk": 0.3107537031173706,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-81029",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.39589564328563,
+      "RETRIEVE_MORE": 0.3847423654771681,
+      "ABSTAIN": 0.1154021567581477,
+      "ESCALATE": 0.10395983447905423
+    },
+    "evidence_sufficiency": 0.5638102293014526,
+    "estimated_factual_risk": 0.43618977069854736,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-46970",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4087613412982867,
+      "RETRIEVE_MORE": 1.0771063312772586e-05,
+      "ABSTAIN": 0.35397943000591753,
+      "ESCALATE": 0.23724845763248303
+    },
+    "evidence_sufficiency": 0.38756078481674194,
+    "estimated_factual_risk": 0.6124392151832581,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-43435",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6121055384806806,
+      "RETRIEVE_MORE": 0.21699953069528138,
+      "ABSTAIN": 0.08312675252772848,
+      "ESCALATE": 0.08776817829630952
+    },
+    "evidence_sufficiency": 0.698267936706543,
+    "estimated_factual_risk": 0.30173206329345703,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-181638",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.02785455779873754,
+      "RETRIEVE_MORE": 5.626766308182724e-06,
+      "ABSTAIN": 0.6352420121005216,
+      "ESCALATE": 0.33689780333443264
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.07319575548172,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-125480",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5795776405201691,
+      "RETRIEVE_MORE": 0.2406640212312699,
+      "ABSTAIN": 0.08838433882963904,
+      "ESCALATE": 0.09137399941892185
+    },
+    "evidence_sufficiency": 0.6771863698959351,
+    "estimated_factual_risk": 0.32281363010406494,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-51290",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8558010248762711,
+      "RETRIEVE_MORE": 0.05965347932447028,
+      "ABSTAIN": 0.03830080581940269,
+      "ESCALATE": 0.04624468997985596
+    },
+    "evidence_sufficiency": 0.9151313900947571,
+    "estimated_factual_risk": 0.08486860990524292,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-163963",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4885381317666013,
+      "RETRIEVE_MORE": 0.3098185837223056,
+      "ABSTAIN": 0.10234193528264682,
+      "ESCALATE": 0.09930134922844625
+    },
+    "evidence_sufficiency": 0.620724081993103,
+    "estimated_factual_risk": 0.379275918006897,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-120925",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.46108581032094115,
+      "RETRIEVE_MORE": 1.0243950335131247e-05,
+      "ABSTAIN": 0.31326592406825643,
+      "ESCALATE": 0.22563802166046734
+    },
+    "evidence_sufficiency": 0.4254782497882843,
+    "estimated_factual_risk": 0.5745217502117157,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-115028",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5811025701009505,
+      "RETRIEVE_MORE": 8.66563317984931e-06,
+      "ABSTAIN": 0.22801549143957658,
+      "ESCALATE": 0.19087327282629313
+    },
+    "evidence_sufficiency": 0.5140705704689026,
+    "estimated_factual_risk": 0.4859294295310974,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-55860",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5412279148078618,
+      "RETRIEVE_MORE": 0.26927001438849535,
+      "ABSTAIN": 0.0943986463340922,
+      "ESCALATE": 0.09510342446955057
+    },
+    "evidence_sufficiency": 0.6530834436416626,
+    "estimated_factual_risk": 0.3469165563583374,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-64829",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.15211155073307278,
+      "RETRIEVE_MORE": 7.999876391791651e-06,
+      "ABSTAIN": 0.3688947166043368,
+      "ESCALATE": 0.47898573278619866
+    },
+    "evidence_sufficiency": 0.23398740589618683,
+    "estimated_factual_risk": 0.7660125941038132,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-147304",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6915572450866597,
+      "RETRIEVE_MORE": 0.16157791335743057,
+      "ABSTAIN": 0.06965160889788694,
+      "ESCALATE": 0.0772132326580228
+    },
+    "evidence_sufficiency": 0.753861129283905,
+    "estimated_factual_risk": 0.24613887071609497,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-33447",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.025548428270277833,
+      "RETRIEVE_MORE": 5.4699140380884855e-06,
+      "ABSTAIN": 0.6469396935292243,
+      "ESCALATE": 0.32750640828645977
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.087732955813408,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-137210",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8876307240124138,
+      "RETRIEVE_MORE": 0.042587115884023634,
+      "ABSTAIN": 0.03144754103078628,
+      "ESCALATE": 0.03833461907277633
+    },
+    "evidence_sufficiency": 0.9649338722229004,
+    "estimated_factual_risk": 0.03506612777709961,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-25837",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.021006520516834628,
+      "RETRIEVE_MORE": 5.122383333553993e-06,
+      "ABSTAIN": 0.6722900514670527,
+      "ESCALATE": 0.3066983056327791
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.1202579140663147,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-134848",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7874847631141626,
+      "RETRIEVE_MORE": 0.09963860943491812,
+      "ABSTAIN": 0.052023242268604525,
+      "ESCALATE": 0.06085338518231482
+    },
+    "evidence_sufficiency": 0.835639238357544,
+    "estimated_factual_risk": 0.16436076164245605,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-203998",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6703569508061022,
+      "RETRIEVE_MORE": 0.176025756205979,
+      "ABSTAIN": 0.07333875366247833,
+      "ESCALATE": 0.08027853932544052
+    },
+    "evidence_sufficiency": 0.7382906675338745,
+    "estimated_factual_risk": 0.2617093324661255,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-165252",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.48969719214202717,
+      "RETRIEVE_MORE": 0.3089109317610079,
+      "ABSTAIN": 0.10217117398976983,
+      "ESCALATE": 0.09922070210719501
+    },
+    "evidence_sufficiency": 0.6214312314987183,
+    "estimated_factual_risk": 0.37856876850128174,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-24247",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.483865132569046,
+      "RETRIEVE_MORE": 9.981662350147865e-06,
+      "ABSTAIN": 0.29626414143776186,
+      "ESCALATE": 0.21986074433084213
+    },
+    "evidence_sufficiency": 0.4419581890106201,
+    "estimated_factual_risk": 0.5580418109893799,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-163820",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.022715756464428603,
+      "RETRIEVE_MORE": 5.25988724448832e-06,
+      "ABSTAIN": 0.6623477493658723,
+      "ESCALATE": 0.3149312342824547
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.1073238775134087,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-218111",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6811201345212202,
+      "RETRIEVE_MORE": 0.16865880540844133,
+      "ABSTAIN": 0.07147548058571329,
+      "ESCALATE": 0.07874557948462511
+    },
+    "evidence_sufficiency": 0.7461147904396057,
+    "estimated_factual_risk": 0.2538852095603943,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-203040",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.679183762608695,
+      "RETRIEVE_MORE": 0.1699793458020723,
+      "ABSTAIN": 0.07181200271740165,
+      "ESCALATE": 0.07902488887183115
+    },
+    "evidence_sufficiency": 0.7446953058242798,
+    "estimated_factual_risk": 0.2553046941757202,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-141600",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.02486524926909073,
+      "RETRIEVE_MORE": 5.421123952227671e-06,
+      "ABSTAIN": 0.6505441858356243,
+      "ESCALATE": 0.32458514377133274
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.092269167304039,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-106044",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.11890946024636258,
+      "RETRIEVE_MORE": 7.847828921499676e-06,
+      "ABSTAIN": 0.4112006709222162,
+      "ESCALATE": 0.46988202100249965
+    },
+    "evidence_sufficiency": 0.1835290491580963,
+    "estimated_factual_risk": 0.8164709508419037,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-154067",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.087886672003465,
+      "RETRIEVE_MORE": 7.527990015639099e-06,
+      "ABSTAIN": 0.4613738589795501,
+      "ESCALATE": 0.4507319410269692
+    },
+    "evidence_sufficiency": 0.12559452652931213,
+    "estimated_factual_risk": 0.8744054734706879,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-151440",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03585705750612364,
+      "RETRIEVE_MORE": 6.094367726745912e-06,
+      "ABSTAIN": 0.5992418111904372,
+      "ESCALATE": 0.36489503693571235
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0300173331052065,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-128837",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5098225404177511,
+      "RETRIEVE_MORE": 0.2932639321370411,
+      "ABSTAIN": 0.09917763363795987,
+      "ESCALATE": 0.09773589380724797
+    },
+    "evidence_sufficiency": 0.6337319612503052,
+    "estimated_factual_risk": 0.3662680387496948,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-35627",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03872297560611657,
+      "RETRIEVE_MORE": 6.238677271206579e-06,
+      "ABSTAIN": 0.5877353386650057,
+      "ESCALATE": 0.3735354470516066
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.016644949093461,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-100757",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6533862112502101,
+      "RETRIEVE_MORE": 0.18777278712275164,
+      "ABSTAIN": 0.07624122716723841,
+      "ESCALATE": 0.08259977445979991
+    },
+    "evidence_sufficiency": 0.7262580990791321,
+    "estimated_factual_risk": 0.2737419009208679,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-18951",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03667125611543597,
+      "RETRIEVE_MORE": 6.1364417442851325e-06,
+      "ABSTAIN": 0.5959084248184363,
+      "ESCALATE": 0.3674141826243834
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0261241346597672,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-228692",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.427208541631129,
+      "RETRIEVE_MORE": 0.35888034344204905,
+      "ABSTAIN": 0.11111964939944025,
+      "ESCALATE": 0.10279146552738162
+    },
+    "evidence_sufficiency": 0.5832377672195435,
+    "estimated_factual_risk": 0.41676223278045654,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-144386",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.19617853376523064,
+      "RETRIEVE_MORE": 8.01666112709762e-06,
+      "ABSTAIN": 0.3238227451670818,
+      "ESCALATE": 0.4799907044065604
+    },
+    "evidence_sufficiency": 0.2900574207305908,
+    "estimated_factual_risk": 0.7099425792694092,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-111976",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.49122608069989243,
+      "RETRIEVE_MORE": 0.3077147587204971,
+      "ABSTAIN": 0.10194565285627702,
+      "ESCALATE": 0.09911350772333352
+    },
+    "evidence_sufficiency": 0.6223641633987427,
+    "estimated_factual_risk": 0.3776358366012573,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-61926",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.119030619722848,
+      "RETRIEVE_MORE": 7.848683331872647e-06,
+      "ABSTAIN": 0.41102835350356637,
+      "ESCALATE": 0.4699331780902538
+    },
+    "evidence_sufficiency": 0.18373116850852966,
+    "estimated_factual_risk": 0.8162688314914703,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-225283",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.42183133773742576,
+      "RETRIEVE_MORE": 1.0649792230945819e-05,
+      "ABSTAIN": 0.3435807281736168,
+      "ESCALATE": 0.23457728429672653
+    },
+    "evidence_sufficiency": 0.3970712125301361,
+    "estimated_factual_risk": 0.6029287874698639,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-114778",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.04545503063243198,
+      "RETRIEVE_MORE": 6.528977177747607e-06,
+      "ABSTAIN": 0.5636215355946376,
+      "ESCALATE": 0.3909169047957526
+    },
+    "evidence_sufficiency": 0.010717440396547318,
+    "estimated_factual_risk": 0.9892825596034527,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-87187",
+    "label": "supported",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7487798373385398,
+      "RETRIEVE_MORE": 0.12391103357830134,
+      "ABSTAIN": 0.059335739329072,
+      "ESCALATE": 0.06797338975408697
+    },
+    "evidence_sufficiency": 0.7998508214950562,
+    "estimated_factual_risk": 0.20014917850494385,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-141587",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8840478749911113,
+      "RETRIEVE_MORE": 0.04444763363740963,
+      "ABSTAIN": 0.032237214526132076,
+      "ESCALATE": 0.03926727684534709
+    },
+    "evidence_sufficiency": 0.958693265914917,
+    "estimated_factual_risk": 0.04130673408508301,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-168626",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8547745406480932,
+      "RETRIEVE_MORE": 0.060222649302699924,
+      "ABSTAIN": 0.038516205118027884,
+      "ESCALATE": 0.046486604931178906
+    },
+    "evidence_sufficiency": 0.9137052297592163,
+    "estimated_factual_risk": 0.08629477024078369,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-89315",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03159594690870989,
+      "RETRIEVE_MORE": 5.858639661819477e-06,
+      "ABSTAIN": 0.6176171730815705,
+      "ESCALATE": 0.3507810213700578
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0517833270132542,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-121879",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5553246055106087,
+      "RETRIEVE_MORE": 0.2586664567222748,
+      "ABSTAIN": 0.09221082097649945,
+      "ESCALATE": 0.09379811679061707
+    },
+    "evidence_sufficiency": 0.6618684530258179,
+    "estimated_factual_risk": 0.33813154697418213,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-168619",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6321367257840216,
+      "RETRIEVE_MORE": 0.2027034382619817,
+      "ABSTAIN": 0.07981596013062078,
+      "ESCALATE": 0.08534387582337592
+    },
+    "evidence_sufficiency": 0.7116482257843018,
+    "estimated_factual_risk": 0.28835177421569824,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-84967",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7750123979348253,
+      "RETRIEVE_MORE": 0.10734544291187786,
+      "ABSTAIN": 0.0544119073609853,
+      "ESCALATE": 0.06323025179231148
+    },
+    "evidence_sufficiency": 0.8235769271850586,
+    "estimated_factual_risk": 0.1764230728149414,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-201606",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6232918045218452,
+      "RETRIEVE_MORE": 0.20898971909562314,
+      "ABSTAIN": 0.0812848362018381,
+      "ESCALATE": 0.08643364018069356
+    },
+    "evidence_sufficiency": 0.7056972980499268,
+    "estimated_factual_risk": 0.29430270195007324,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-170424",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5573626782437008,
+      "RETRIEVE_MORE": 0.257141924051683,
+      "ABSTAIN": 0.09189231085921233,
+      "ESCALATE": 0.09360308684540397
+    },
+    "evidence_sufficiency": 0.6631450653076172,
+    "estimated_factual_risk": 0.3368549346923828,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-160064",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.22489570508356338,
+      "RETRIEVE_MORE": 7.951150403203396e-06,
+      "ABSTAIN": 0.29902803772578096,
+      "ESCALATE": 0.47606830604025235
+    },
+    "evidence_sufficiency": 0.3222389817237854,
+    "estimated_factual_risk": 0.6777610182762146,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-81778",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.05133529424050572,
+      "RETRIEVE_MORE": 6.732665866816004e-06,
+      "ABSTAIN": 0.5455453828628107,
+      "ESCALATE": 0.40311259023081675
+    },
+    "evidence_sufficiency": 0.030925024300813675,
+    "estimated_factual_risk": 0.9690749756991863,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-16084",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.40955569692964106,
+      "RETRIEVE_MORE": 0.37339014904360956,
+      "ABSTAIN": 0.11355085655573956,
+      "ESCALATE": 0.10350329747100971
+    },
+    "evidence_sufficiency": 0.5723265409469604,
+    "estimated_factual_risk": 0.42767345905303955,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-174587",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.748445310044165,
+      "RETRIEVE_MORE": 0.1241252766724653,
+      "ABSTAIN": 0.059397693429413284,
+      "ESCALATE": 0.0680317198539563
+    },
+    "evidence_sufficiency": 0.7995609045028687,
+    "estimated_factual_risk": 0.20043909549713135,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-224557",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5996924803074971,
+      "RETRIEVE_MORE": 0.22596494758636013,
+      "ABSTAIN": 0.08515027065651175,
+      "ESCALATE": 0.08919230144963099
+    },
+    "evidence_sufficiency": 0.6901382803916931,
+    "estimated_factual_risk": 0.3098617196083069,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-14066",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8780744399836413,
+      "RETRIEVE_MORE": 0.04758563422377886,
+      "ABSTAIN": 0.033542821827312636,
+      "ESCALATE": 0.04079710396526713
+    },
+    "evidence_sufficiency": 0.9486933946609497,
+    "estimated_factual_risk": 0.05130660533905029,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-81806",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7045379359328676,
+      "RETRIEVE_MORE": 0.15285939770774246,
+      "ABSTAIN": 0.06735928164775916,
+      "ESCALATE": 0.0752433847116308
+    },
+    "evidence_sufficiency": 0.7637364864349365,
+    "estimated_factual_risk": 0.23626351356506348,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-87942",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.788847071820812,
+      "RETRIEVE_MORE": 0.09880373578872567,
+      "ABSTAIN": 0.05176038132804091,
+      "ESCALATE": 0.06058881106242144
+    },
+    "evidence_sufficiency": 0.8369916081428528,
+    "estimated_factual_risk": 0.16300839185714722,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-54511",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.1434118795696546,
+      "RETRIEVE_MORE": 7.974237094928434e-06,
+      "ABSTAIN": 0.379129544300918,
+      "ESCALATE": 0.4774506018923324
+    },
+    "evidence_sufficiency": 0.221613347530365,
+    "estimated_factual_risk": 0.778386652469635,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-71947",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6570026031020997,
+      "RETRIEVE_MORE": 0.18525622112244028,
+      "ABSTAIN": 0.0756263074882696,
+      "ESCALATE": 0.0821148682871905
+    },
+    "evidence_sufficiency": 0.7287930846214294,
+    "estimated_factual_risk": 0.27120691537857056,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-128745",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8536039955357171,
+      "RETRIEVE_MORE": 0.060873023909465425,
+      "ABSTAIN": 0.03876144271625525,
+      "ESCALATE": 0.04676153783856217
+    },
+    "evidence_sufficiency": 0.9120903015136719,
+    "estimated_factual_risk": 0.08790969848632812,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-217221",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8417141104664952,
+      "RETRIEVE_MORE": 0.0675570000375563,
+      "ABSTAIN": 0.04122955722285297,
+      "ESCALATE": 0.04949933227309549
+    },
+    "evidence_sufficiency": 0.8963291645050049,
+    "estimated_factual_risk": 0.10367083549499512,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-64155",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5852796979665311,
+      "RETRIEVE_MORE": 8.602506003070468e-06,
+      "ABSTAIN": 0.22522889530121462,
+      "ESCALATE": 0.18948280422625124
+    },
+    "evidence_sufficiency": 0.517287015914917,
+    "estimated_factual_risk": 0.482712984085083,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-155725",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.0953837407550864,
+      "RETRIEVE_MORE": 7.626434585739146e-06,
+      "ABSTAIN": 0.4479824076420961,
+      "ESCALATE": 0.4566262251682316
+    },
+    "evidence_sufficiency": 0.1408984363079071,
+    "estimated_factual_risk": 0.8591015636920929,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-119575",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8983756630680155,
+      "RETRIEVE_MORE": 0.03711053590321379,
+      "ABSTAIN": 0.029047751943125418,
+      "ESCALATE": 0.03546604908564518
+    },
+    "evidence_sufficiency": 0.9848916530609131,
+    "estimated_factual_risk": 0.015108346939086914,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-136530",
+    "label": "supported",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.07079259449525475,
+      "RETRIEVE_MORE": 7.234470134938374e-06,
+      "ABSTAIN": 0.49604248094094355,
+      "ESCALATE": 0.43315769009366684
+    },
+    "evidence_sufficiency": 0.08636723458766937,
+    "estimated_factual_risk": 0.9136327654123306,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-71473",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.029391024741757494,
+      "RETRIEVE_MORE": 5.725131600625358e-06,
+      "ABSTAIN": 0.627815909332642,
+      "ESCALATE": 0.34278734079399986
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0641052275896072,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-222768",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.43018993246738885,
+      "RETRIEVE_MORE": 0.3564473383373004,
+      "ABSTAIN": 0.11070477468206716,
+      "ESCALATE": 0.10265795451324349
+    },
+    "evidence_sufficiency": 0.5850720405578613,
+    "estimated_factual_risk": 0.41492795944213867,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-42041",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.04082356824885724,
+      "RETRIEVE_MORE": 6.338110874894489e-06,
+      "ABSTAIN": 0.5796811449101986,
+      "ESCALATE": 0.3794889487300693
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0073914770036936,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-172750",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.41678355284266594,
+      "RETRIEVE_MORE": 1.0697483943139793e-05,
+      "ABSTAIN": 0.347577985509328,
+      "ESCALATE": 0.23562776416406286
+    },
+    "evidence_sufficiency": 0.3934030532836914,
+    "estimated_factual_risk": 0.6065969467163086,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-182450",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5958687935114573,
+      "RETRIEVE_MORE": 8.440185788074616e-06,
+      "ABSTAIN": 0.2182153027399153,
+      "ESCALATE": 0.1859074635628394
+    },
+    "evidence_sufficiency": 0.5255047678947449,
+    "estimated_factual_risk": 0.4744952321052551,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-170015",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8885567018042217,
+      "RETRIEVE_MORE": 0.04210898663830436,
+      "ABSTAIN": 0.031242623711666865,
+      "ESCALATE": 0.03809168784580705
+    },
+    "evidence_sufficiency": 0.9665783047676086,
+    "estimated_factual_risk": 0.03342169523239136,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-94741",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.042395127016215145,
+      "RETRIEVE_MORE": 6.409297835852846e-06,
+      "ABSTAIN": 0.5738472567671852,
+      "ESCALATE": 0.38375120691876385
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0007402542978525,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-75032",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8160039416266365,
+      "RETRIEVE_MORE": 0.08246047811373226,
+      "ABSTAIN": 0.04643506048638844,
+      "ESCALATE": 0.055100519773242894
+    },
+    "evidence_sufficiency": 0.8656133413314819,
+    "estimated_factual_risk": 0.13438665866851807,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-199421",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6005978868317237,
+      "RETRIEVE_MORE": 0.22530827933827904,
+      "ABSTAIN": 0.08500339577268208,
+      "ESCALATE": 0.08909043805731515
+    },
+    "evidence_sufficiency": 0.6907274723052979,
+    "estimated_factual_risk": 0.30927252769470215,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-147821",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.44143290943258917,
+      "RETRIEVE_MORE": 0.34731730277569556,
+      "ABSTAIN": 0.10912926754767754,
+      "ESCALATE": 0.10212052024403777
+    },
+    "evidence_sufficiency": 0.5919716358184814,
+    "estimated_factual_risk": 0.40802836418151855,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-74127",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.366243213928048,
+      "RETRIEVE_MORE": 1.1112904512069686e-05,
+      "ABSTAIN": 0.3889676620513839,
+      "ESCALATE": 0.244778011116056
+    },
+    "evidence_sufficiency": 0.35621020197868347,
+    "estimated_factual_risk": 0.6437897980213165,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-19177",
+    "label": "refuted",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7552627501545239,
+      "RETRIEVE_MORE": 0.11977374117885871,
+      "ABSTAIN": 0.05813104372769693,
+      "ESCALATE": 0.06683246493892041
+    },
+    "evidence_sufficiency": 0.8055281639099121,
+    "estimated_factual_risk": 0.1944718360900879,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-52188",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6221015630144854,
+      "RETRIEVE_MORE": 0.20983882909284174,
+      "ABSTAIN": 0.08148165488706112,
+      "ESCALATE": 0.08657795300561175
+    },
+    "evidence_sufficiency": 0.7049018144607544,
+    "estimated_factual_risk": 0.2950981855392456,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-42612",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.42347063037656685,
+      "RETRIEVE_MORE": 1.0634075893128799e-05,
+      "ABSTAIN": 0.3422876266281597,
+      "ESCALATE": 0.2342311089193804
+    },
+    "evidence_sufficiency": 0.39826130867004395,
+    "estimated_factual_risk": 0.601738691329956,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-15614",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.038705600033077374,
+      "RETRIEVE_MORE": 6.237833312366824e-06,
+      "ABSTAIN": 0.5878032463931772,
+      "ESCALATE": 0.3734849157404331
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0167233310639858,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-12943",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03700308820032393,
+      "RETRIEVE_MORE": 6.15333816923855e-06,
+      "ABSTAIN": 0.594564916894982,
+      "ESCALATE": 0.3684258415665248
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0245595183223486,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-13212",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.213641703131613,
+      "RETRIEVE_MORE": 7.982660738057511e-06,
+      "ABSTAIN": 0.3083953539128479,
+      "ESCALATE": 0.477954960294801
+    },
+    "evidence_sufficiency": 0.3099519610404968,
+    "estimated_factual_risk": 0.6900480389595032,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-85191",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7105895055535437,
+      "RETRIEVE_MORE": 0.14882879849730102,
+      "ABSTAIN": 0.06628132448745022,
+      "ESCALATE": 0.074300371461705
+    },
+    "evidence_sufficiency": 0.768439769744873,
+    "estimated_factual_risk": 0.23156023025512695,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-82594",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8652880476036463,
+      "RETRIEVE_MORE": 0.05444576983207559,
+      "ABSTAIN": 0.03629440205072422,
+      "ESCALATE": 0.04397178051355397
+    },
+    "evidence_sufficiency": 0.9287809729576111,
+    "estimated_factual_risk": 0.07121902704238892,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-121759",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7580326621036579,
+      "RETRIEVE_MORE": 0.11801456758252812,
+      "ABSTAIN": 0.05761393796274448,
+      "ESCALATE": 0.06633883235106941
+    },
+    "evidence_sufficiency": 0.8079891204833984,
+    "estimated_factual_risk": 0.19201087951660156,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-122878",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.1817362513531855,
+      "RETRIEVE_MORE": 8.029127468876854e-06,
+      "ABSTAIN": 0.3375186035984254,
+      "ESCALATE": 0.48073711592092033
+    },
+    "evidence_sufficiency": 0.2727190852165222,
+    "estimated_factual_risk": 0.7272809147834778,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-160961",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.856700919873175,
+      "RETRIEVE_MORE": 0.059155400185738935,
+      "ABSTAIN": 0.03811170425029229,
+      "ESCALATE": 0.04603197569079381
+    },
+    "evidence_sufficiency": 0.9163894653320312,
+    "estimated_factual_risk": 0.08361053466796875,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-181614",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.04497224975861769,
+      "RETRIEVE_MORE": 6.510844250843057e-06,
+      "ABSTAIN": 0.565190028036573,
+      "ESCALATE": 0.3898312113605585
+    },
+    "evidence_sufficiency": 0.008962616324424744,
+    "estimated_factual_risk": 0.9910373836755753,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-141798",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6440308371688461,
+      "RETRIEVE_MORE": 0.19431610762883597,
+      "ABSTAIN": 0.07782310071249635,
+      "ESCALATE": 0.08382995448982151
+    },
+    "evidence_sufficiency": 0.7197680473327637,
+    "estimated_factual_risk": 0.28023195266723633,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-53680",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8390359907491881,
+      "RETRIEVE_MORE": 0.0690814620883629,
+      "ABSTAIN": 0.041779927669166085,
+      "ESCALATE": 0.05010261949328301
+    },
+    "evidence_sufficiency": 0.892928957939148,
+    "estimated_factual_risk": 0.10707104206085205,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-1362",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7341080910241018,
+      "RETRIEVE_MORE": 0.133375478377933,
+      "ABSTAIN": 0.06203399839912159,
+      "ESCALATE": 0.07048243219884356
+    },
+    "evidence_sufficiency": 0.7873983979225159,
+    "estimated_factual_risk": 0.21260160207748413,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-86630",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8917533165524781,
+      "RETRIEVE_MORE": 0.04046717775170006,
+      "ABSTAIN": 0.030532537561470733,
+      "ESCALATE": 0.03724696813435103
+    },
+    "evidence_sufficiency": 0.9723597764968872,
+    "estimated_factual_risk": 0.027640223503112793,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-63699",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6880437072211927,
+      "RETRIEVE_MORE": 0.16395463964809695,
+      "ABSTAIN": 0.07026749108051838,
+      "ESCALATE": 0.077734162050192
+    },
+    "evidence_sufficiency": 0.7512350082397461,
+    "estimated_factual_risk": 0.2487649917602539,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-17024",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.631900687423224,
+      "RETRIEVE_MORE": 0.20287065360973033,
+      "ABSTAIN": 0.07985530329577113,
+      "ESCALATE": 0.0853733556712745
+    },
+    "evidence_sufficiency": 0.7114884853363037,
+    "estimated_factual_risk": 0.2885115146636963,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-124819",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8251866915999975,
+      "RETRIEVE_MORE": 0.07707029408850358,
+      "ABSTAIN": 0.0445953259656217,
+      "ESCALATE": 0.05314768834587719
+    },
+    "evidence_sufficiency": 0.8761188983917236,
+    "estimated_factual_risk": 0.12388110160827637,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-154764",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.37637865070317006,
+      "RETRIEVE_MORE": 1.103909792988254e-05,
+      "ABSTAIN": 0.38045799724082086,
+      "ESCALATE": 0.24315231295807924
+    },
+    "evidence_sufficiency": 0.36375725269317627,
+    "estimated_factual_risk": 0.6362427473068237,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-30559",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6065768973627876,
+      "RETRIEVE_MORE": 8.272736424829955e-06,
+      "ABSTAIN": 0.21119568400981883,
+      "ESCALATE": 0.18221914589096874
+    },
+    "evidence_sufficiency": 0.5339158773422241,
+    "estimated_factual_risk": 0.4660841226577759,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-87475",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7989919969974768,
+      "RETRIEVE_MORE": 0.09263066146284388,
+      "ABSTAIN": 0.04979036114869664,
+      "ESCALATE": 0.05858698039098278
+    },
+    "evidence_sufficiency": 0.8472974300384521,
+    "estimated_factual_risk": 0.15270256996154785,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-221146",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4494709148151543,
+      "RETRIEVE_MORE": 0.3408330523165799,
+      "ABSTAIN": 0.1079922881781988,
+      "ESCALATE": 0.10170374469006709
+    },
+    "evidence_sufficiency": 0.5968904495239258,
+    "estimated_factual_risk": 0.4031095504760742,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-201812",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6753857104589629,
+      "RETRIEVE_MORE": 0.17257565381303852,
+      "ABSTAIN": 0.07247039653422113,
+      "ESCALATE": 0.07956823919377742
+    },
+    "evidence_sufficiency": 0.7419264316558838,
+    "estimated_factual_risk": 0.2580735683441162,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-117862",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6896981214741357,
+      "RETRIEVE_MORE": 0.16283462767212478,
+      "ABSTAIN": 0.06997773269225874,
+      "ESCALATE": 0.07748951816148078
+    },
+    "evidence_sufficiency": 0.7524691820144653,
+    "estimated_factual_risk": 0.24753081798553467,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-36371",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7919757522908992,
+      "RETRIEVE_MORE": 0.09689162570811247,
+      "ABSTAIN": 0.051155201517588324,
+      "ESCALATE": 0.05997742048339995
+    },
+    "evidence_sufficiency": 0.8401250243186951,
+    "estimated_factual_risk": 0.15987497568130493,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-144993",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7817642379717127,
+      "RETRIEVE_MORE": 0.10315934499524171,
+      "ABSTAIN": 0.05312278823496532,
+      "ESCALATE": 0.06195362879808021
+    },
+    "evidence_sufficiency": 0.8300371170043945,
+    "estimated_factual_risk": 0.16996288299560547,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-95032",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4241749632753854,
+      "RETRIEVE_MORE": 0.36136110684549655,
+      "ABSTAIN": 0.11154052595675272,
+      "ESCALATE": 0.10292340392236529
+    },
+    "evidence_sufficiency": 0.5813691020011902,
+    "estimated_factual_risk": 0.4186308979988098,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-37626",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4859053055483243,
+      "RETRIEVE_MORE": 0.3118829795883792,
+      "ABSTAIN": 0.10272915655988403,
+      "ESCALATE": 0.09948255830341256
+    },
+    "evidence_sufficiency": 0.6191180944442749,
+    "estimated_factual_risk": 0.3808819055557251,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-224562",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4398401905065947,
+      "RETRIEVE_MORE": 0.34860639937382915,
+      "ABSTAIN": 0.10935351237970153,
+      "ESCALATE": 0.10219989773987466
+    },
+    "evidence_sufficiency": 0.590995728969574,
+    "estimated_factual_risk": 0.409004271030426,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-196161",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5748771349350789,
+      "RETRIEVE_MORE": 0.24412928120721175,
+      "ABSTAIN": 0.08913214967924185,
+      "ESCALATE": 0.09186143417846754
+    },
+    "evidence_sufficiency": 0.6741944551467896,
+    "estimated_factual_risk": 0.32580554485321045,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-5004",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5266181999485291,
+      "RETRIEVE_MORE": 0.2803681256641745,
+      "ABSTAIN": 0.09663813702726183,
+      "ESCALATE": 0.09637553736003457
+    },
+    "evidence_sufficiency": 0.6440496444702148,
+    "estimated_factual_risk": 0.35595035552978516,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-39173",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8579348693661771,
+      "RETRIEVE_MORE": 0.058473801336860025,
+      "ABSTAIN": 0.03785199827455,
+      "ESCALATE": 0.0457393310224128
+    },
+    "evidence_sufficiency": 0.9181265830993652,
+    "estimated_factual_risk": 0.08187341690063477,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-142077",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6723230692460435,
+      "RETRIEVE_MORE": 0.17467516357092627,
+      "ABSTAIN": 0.07299970451899004,
+      "ESCALATE": 0.08000206266404031
+    },
+    "evidence_sufficiency": 0.7397081255912781,
+    "estimated_factual_risk": 0.2602918744087219,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-217021",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8250166025959076,
+      "RETRIEVE_MORE": 0.07716947481096333,
+      "ABSTAIN": 0.0446295933903674,
+      "ESCALATE": 0.053184329202761615
+    },
+    "evidence_sufficiency": 0.8759199380874634,
+    "estimated_factual_risk": 0.12408006191253662,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-62359",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7796443308604898,
+      "RETRIEVE_MORE": 0.10447013495046868,
+      "ABSTAIN": 0.05352853787174994,
+      "ESCALATE": 0.06235699631729153
+    },
+    "evidence_sufficiency": 0.8279915452003479,
+    "estimated_factual_risk": 0.1720084547996521,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-187225",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6457092689560174,
+      "RETRIEVE_MORE": 0.1931386793998214,
+      "ABSTAIN": 0.07754023747139148,
+      "ESCALATE": 0.08361181417276971
+    },
+    "evidence_sufficiency": 0.7209254503250122,
+    "estimated_factual_risk": 0.2790745496749878,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-138436",
+    "label": "supported",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6687483711776367,
+      "RETRIEVE_MORE": 0.1771323516621161,
+      "ABSTAIN": 0.07361571236416678,
+      "ESCALATE": 0.08050356479608049
+    },
+    "evidence_sufficiency": 0.7371347546577454,
+    "estimated_factual_risk": 0.26286524534225464,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-49293",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7997055104274383,
+      "RETRIEVE_MORE": 0.09219947085953321,
+      "ABSTAIN": 0.04965095890956739,
+      "ESCALATE": 0.05844405980346106
+    },
+    "evidence_sufficiency": 0.8480385541915894,
+    "estimated_factual_risk": 0.15196144580841064,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-59856",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.3957737152536993,
+      "RETRIEVE_MORE": 0.3848441909966312,
+      "ABSTAIN": 0.1154185620493117,
+      "ESCALATE": 0.10396353170035783
+    },
+    "evidence_sufficiency": 0.5637338757514954,
+    "estimated_factual_risk": 0.43626612424850464,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-52780",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7090819270707365,
+      "RETRIEVE_MORE": 0.14983086663890574,
+      "ABSTAIN": 0.06655042661715505,
+      "ESCALATE": 0.07453677967320275
+    },
+    "evidence_sufficiency": 0.7672618627548218,
+    "estimated_factual_risk": 0.23273813724517822,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-60541",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4697782540624064,
+      "RETRIEVE_MORE": 1.0146090849628838e-05,
+      "ABSTAIN": 0.3067290767963928,
+      "ESCALATE": 0.22348252305035118
+    },
+    "evidence_sufficiency": 0.4317616820335388,
+    "estimated_factual_risk": 0.5682383179664612,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-183139",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8183427304385562,
+      "RETRIEVE_MORE": 0.08108081512461239,
+      "ABSTAIN": 0.045968458442561776,
+      "ESCALATE": 0.05460799599426963
+    },
+    "evidence_sufficiency": 0.8682446479797363,
+    "estimated_factual_risk": 0.13175535202026367,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-208144",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.46688905108228385,
+      "RETRIEVE_MORE": 0.32690347620784976,
+      "ABSTAIN": 0.10549842648519356,
+      "ESCALATE": 0.10070904622467283
+    },
+    "evidence_sufficiency": 0.6075235605239868,
+    "estimated_factual_risk": 0.3924764394760132,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-142972",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6908504449905459,
+      "RETRIEVE_MORE": 0.16205545486683093,
+      "ABSTAIN": 0.06977565834926895,
+      "ESCALATE": 0.07731844179335415
+    },
+    "evidence_sufficiency": 0.7533313035964966,
+    "estimated_factual_risk": 0.24666869640350342,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-201383",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8760565594339937,
+      "RETRIEVE_MORE": 0.04865556295053664,
+      "ABSTAIN": 0.03398087870140727,
+      "ESCALATE": 0.04130699891406236
+    },
+    "evidence_sufficiency": 0.9454219341278076,
+    "estimated_factual_risk": 0.05457806587219238,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-26524",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5412986946863777,
+      "RETRIEVE_MORE": 0.2692165166268157,
+      "ABSTAIN": 0.09438772745824323,
+      "ESCALATE": 0.09509706122856341
+    },
+    "evidence_sufficiency": 0.6531273722648621,
+    "estimated_factual_risk": 0.34687262773513794,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-136310",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8478033436699852,
+      "RETRIEVE_MORE": 0.06411645825932898,
+      "ABSTAIN": 0.03997067534457609,
+      "ESCALATE": 0.04810952272610972
+    },
+    "evidence_sufficiency": 0.9042596817016602,
+    "estimated_factual_risk": 0.09574031829833984,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-111943",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03822796253064563,
+      "RETRIEVE_MORE": 6.214490766776483e-06,
+      "ABSTAIN": 0.5896785221208241,
+      "ESCALATE": 0.3720873008577636
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0188903138041496,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-43535",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4312920804776681,
+      "RETRIEVE_MORE": 1.0557570402151263e-05,
+      "ABSTAIN": 0.336151398612681,
+      "ESCALATE": 0.23254596333924873
+    },
+    "evidence_sufficiency": 0.4039328098297119,
+    "estimated_factual_risk": 0.5960671901702881,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-214977",
+    "label": "supported",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8565102688221283,
+      "RETRIEVE_MORE": 0.059260852459762904,
+      "ABSTAIN": 0.03815178799418123,
+      "ESCALATE": 0.04607709072392759
+    },
+    "evidence_sufficiency": 0.916122317314148,
+    "estimated_factual_risk": 0.08387768268585205,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-182686",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03516548809626054,
+      "RETRIEVE_MORE": 6.057923828564675e-06,
+      "ABSTAIN": 0.602115464168556,
+      "ESCALATE": 0.36271298981135497
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0333866775035858,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-114189",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.07255230540069989,
+      "RETRIEVE_MORE": 7.269921019739643e-06,
+      "ABSTAIN": 0.49216014328409324,
+      "ESCALATE": 0.43528028139418706
+    },
+    "evidence_sufficiency": 0.0907372459769249,
+    "estimated_factual_risk": 0.9092627540230751,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-93739",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8294186586082527,
+      "RETRIEVE_MORE": 0.07461078457690996,
+      "ABSTAIN": 0.043740347243524914,
+      "ESCALATE": 0.052230209571312414
+    },
+    "evidence_sufficiency": 0.8811253309249878,
+    "estimated_factual_risk": 0.11887466907501221,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-104036",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.08848310353973424,
+      "RETRIEVE_MORE": 7.536415061301534e-06,
+      "ABSTAIN": 0.4602729766402849,
+      "ESCALATE": 0.4512363834049196
+    },
+    "evidence_sufficiency": 0.1268489509820938,
+    "estimated_factual_risk": 0.8731510490179062,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-7026",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5853909191841408,
+      "RETRIEVE_MORE": 8.600818139621555e-06,
+      "ABSTAIN": 0.22515485343799216,
+      "ESCALATE": 0.18944562655972744
+    },
+    "evidence_sufficiency": 0.5173728466033936,
+    "estimated_factual_risk": 0.48262715339660645,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-150399",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5937653129537419,
+      "RETRIEVE_MORE": 8.472690144650536e-06,
+      "ABSTAIN": 0.21960279469497235,
+      "ESCALATE": 0.1866234196611411
+    },
+    "evidence_sufficiency": 0.52386474609375,
+    "estimated_factual_risk": 0.47613525390625,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-113560",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7896298008287466,
+      "RETRIEVE_MORE": 0.09832467716611346,
+      "ABSTAIN": 0.05160917396874656,
+      "ESCALATE": 0.0604363480363934
+    },
+    "evidence_sufficiency": 0.8377718925476074,
+    "estimated_factual_risk": 0.16222810745239258,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-129412",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.609627710303448,
+      "RETRIEVE_MORE": 8.224426892247049e-06,
+      "ABSTAIN": 0.2092090076456916,
+      "ESCALATE": 0.18115505762396825
+    },
+    "evidence_sufficiency": 0.5363322496414185,
+    "estimated_factual_risk": 0.46366775035858154,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-76266",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7527078757995915,
+      "RETRIEVE_MORE": 0.12140089447952304,
+      "ABSTAIN": 0.05860673429322752,
+      "ESCALATE": 0.06728449542765783
+    },
+    "evidence_sufficiency": 0.8032771944999695,
+    "estimated_factual_risk": 0.19672280550003052,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-52801",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5802958739955812,
+      "RETRIEVE_MORE": 0.24013554218048494,
+      "ABSTAIN": 0.08826981028283971,
+      "ESCALATE": 0.09129877354109417
+    },
+    "evidence_sufficiency": 0.6776446104049683,
+    "estimated_factual_risk": 0.32235538959503174,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-224133",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5906835181569106,
+      "RETRIEVE_MORE": 8.520079745667077e-06,
+      "ABSTAIN": 0.22164071667638233,
+      "ESCALATE": 0.18766724508696148
+    },
+    "evidence_sufficiency": 0.5214688777923584,
+    "estimated_factual_risk": 0.4785311222076416,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-110749",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.035389914000723915,
+      "RETRIEVE_MORE": 6.06982302751275e-06,
+      "ABSTAIN": 0.6011785720407795,
+      "ESCALATE": 0.3634254441354691
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0322868265211582,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-62697",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7811546041033858,
+      "RETRIEVE_MORE": 0.10353596218550241,
+      "ABSTAIN": 0.05323956640644978,
+      "ESCALATE": 0.06206986730466205
+    },
+    "evidence_sufficiency": 0.8294472098350525,
+    "estimated_factual_risk": 0.1705527901649475,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-24744",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6102354697571803,
+      "RETRIEVE_MORE": 0.21834502114684334,
+      "ABSTAIN": 0.08343296929483844,
+      "ESCALATE": 0.08798653980113791
+    },
+    "evidence_sufficiency": 0.6970357894897461,
+    "estimated_factual_risk": 0.3029642105102539,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-140286",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03554965873550014,
+      "RETRIEVE_MORE": 6.078250129857664e-06,
+      "ABSTAIN": 0.6005142533588529,
+      "ESCALATE": 0.3639300096555172
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0315077528357506,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-12105",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6092320734749384,
+      "RETRIEVE_MORE": 0.21906771078872184,
+      "ABSTAIN": 0.0835970711669481,
+      "ESCALATE": 0.08810314456939165
+    },
+    "evidence_sufficiency": 0.6963757872581482,
+    "estimated_factual_risk": 0.3036242127418518,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-201110",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.20321978690005274,
+      "RETRIEVE_MORE": 8.005276901189998e-06,
+      "ABSTAIN": 0.31746312417179656,
+      "ESCALATE": 0.4793090836512496
+    },
+    "evidence_sufficiency": 0.29820942878723145,
+    "estimated_factual_risk": 0.7017905712127686,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-106850",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.11640548365404485,
+      "RETRIEVE_MORE": 7.829589202357549e-06,
+      "ABSTAIN": 0.4147967532830142,
+      "ESCALATE": 0.46878993347373854
+    },
+    "evidence_sufficiency": 0.17931663990020752,
+    "estimated_factual_risk": 0.8206833600997925,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-128127",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.784557530833638,
+      "RETRIEVE_MORE": 0.10143718607531262,
+      "ABSTAIN": 0.05258673892153843,
+      "ESCALATE": 0.061418544169510904
+    },
+    "evidence_sufficiency": 0.8327573537826538,
+    "estimated_factual_risk": 0.1672426462173462,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-29704",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8423296331881348,
+      "RETRIEVE_MORE": 0.06720758990311691,
+      "ABSTAIN": 0.041102781722490836,
+      "ESCALATE": 0.04935999518625741
+    },
+    "evidence_sufficiency": 0.8971180319786072,
+    "estimated_factual_risk": 0.10288196802139282,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-63465",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6450857842839943,
+      "RETRIEVE_MORE": 0.19357587875728896,
+      "ABSTAIN": 0.07764535996688561,
+      "ESCALATE": 0.08369297699183102
+    },
+    "evidence_sufficiency": 0.7204951643943787,
+    "estimated_factual_risk": 0.27950483560562134,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-46627",
+    "label": "supported",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.078583444822199,
+      "RETRIEVE_MORE": 7.381655634974965e-06,
+      "ABSTAIN": 0.47943887794088635,
+      "ESCALATE": 0.44197029558127976
+    },
+    "evidence_sufficiency": 0.10509297251701355,
+    "estimated_factual_risk": 0.8949070274829865,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-91577",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8658321407900573,
+      "RETRIEVE_MORE": 0.0541500557721197,
+      "ABSTAIN": 0.03617845304583815,
+      "ESCALATE": 0.04383935039198493
+    },
+    "evidence_sufficiency": 0.9295909404754639,
+    "estimated_factual_risk": 0.07040905952453613,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-15186",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.574888648837289,
+      "RETRIEVE_MORE": 8.758585936408694e-06,
+      "ABSTAIN": 0.23218189903759331,
+      "ESCALATE": 0.19292069353918137
+    },
+    "evidence_sufficiency": 0.5093104839324951,
+    "estimated_factual_risk": 0.4906895160675049,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-191432",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6670164622504294,
+      "RETRIEVE_MORE": 0.17832540350109838,
+      "ABSTAIN": 0.07391346978268619,
+      "ESCALATE": 0.08074466446578599
+    },
+    "evidence_sufficiency": 0.735893964767456,
+    "estimated_factual_risk": 0.26410603523254395,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-200274",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7482262817706712,
+      "RETRIEVE_MORE": 0.12426558988758404,
+      "ABSTAIN": 0.05943824616075342,
+      "ESCALATE": 0.06806988218099132
+    },
+    "evidence_sufficiency": 0.7993712425231934,
+    "estimated_factual_risk": 0.20062875747680664,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-177867",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8729051412171285,
+      "RETRIEVE_MORE": 0.05033622187231667,
+      "ABSTAIN": 0.034662089948129804,
+      "ESCALATE": 0.04209654696242509
+    },
+    "evidence_sufficiency": 0.9404135942459106,
+    "estimated_factual_risk": 0.059586405754089355,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-160051",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6509080211382264,
+      "RETRIEVE_MORE": 0.18950143760455063,
+      "ABSTAIN": 0.07666150112692442,
+      "ESCALATE": 0.08292904013029856
+    },
+    "evidence_sufficiency": 0.7245295643806458,
+    "estimated_factual_risk": 0.27547043561935425,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-54411",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7077970955722865,
+      "RETRIEVE_MORE": 0.15068594967937524,
+      "ABSTAIN": 0.06677947476944122,
+      "ESCALATE": 0.07473747997889699
+    },
+    "evidence_sufficiency": 0.7662612795829773,
+    "estimated_factual_risk": 0.2337387204170227,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-78426",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8054658602110304,
+      "RETRIEVE_MORE": 0.08873301318530437,
+      "ABSTAIN": 0.04852135513442059,
+      "ESCALATE": 0.057279771469244636
+    },
+    "evidence_sufficiency": 0.8541051745414734,
+    "estimated_factual_risk": 0.1458948254585266,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-36425",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7506966854826754,
+      "RETRIEVE_MORE": 0.12268483523995628,
+      "ABSTAIN": 0.058980345923210345,
+      "ESCALATE": 0.06763813335415798
+    },
+    "evidence_sufficiency": 0.8015177249908447,
+    "estimated_factual_risk": 0.19848227500915527,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-44864",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8278922837998158,
+      "RETRIEVE_MORE": 0.07549604846378909,
+      "ABSTAIN": 0.04404924795624532,
+      "ESCALATE": 0.05256241978014977
+    },
+    "evidence_sufficiency": 0.8793070316314697,
+    "estimated_factual_risk": 0.12069296836853027,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-46333",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.49012161328910814,
+      "RETRIEVE_MORE": 9.906370078100204e-06,
+      "ABSTAIN": 0.2916661586648428,
+      "ESCALATE": 0.218202321675971
+    },
+    "evidence_sufficiency": 0.44649574160575867,
+    "estimated_factual_risk": 0.5535042583942413,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-192766",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4866042256288683,
+      "RETRIEVE_MORE": 0.3113345983647444,
+      "ABSTAIN": 0.10262645352389485,
+      "ESCALATE": 0.09943472248249234
+    },
+    "evidence_sufficiency": 0.6195443868637085,
+    "estimated_factual_risk": 0.3804556131362915,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-49895",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6077280122252705,
+      "RETRIEVE_MORE": 0.22015199287138776,
+      "ABSTAIN": 0.08384279309368606,
+      "ESCALATE": 0.08827720180965576
+    },
+    "evidence_sufficiency": 0.6953878998756409,
+    "estimated_factual_risk": 0.30461210012435913,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-178336",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.701251960404512,
+      "RETRIEVE_MORE": 0.1550570960722166,
+      "ABSTAIN": 0.06794211740539663,
+      "ESCALATE": 0.07574882611787485
+    },
+    "evidence_sufficiency": 0.7612098455429077,
+    "estimated_factual_risk": 0.23879015445709229,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-171062",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.43800317758290913,
+      "RETRIEVE_MORE": 0.3500949747220584,
+      "ABSTAIN": 0.10961172147048885,
+      "ESCALATE": 0.10229012622454364
+    },
+    "evidence_sufficiency": 0.5898695588111877,
+    "estimated_factual_risk": 0.41013044118881226,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-179097",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5879323107229164,
+      "RETRIEVE_MORE": 0.2345331970397229,
+      "ABSTAIN": 0.08704777987303094,
+      "ESCALATE": 0.0904867123643297
+    },
+    "evidence_sufficiency": 0.6825352907180786,
+    "estimated_factual_risk": 0.3174647092819214,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-71418",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7130102086424898,
+      "RETRIEVE_MORE": 0.14722263936917768,
+      "ABSTAIN": 0.06584844818940293,
+      "ESCALATE": 0.0739187037989296
+    },
+    "evidence_sufficiency": 0.7703399658203125,
+    "estimated_factual_risk": 0.2296600341796875,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-151819",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8701465267808962,
+      "RETRIEVE_MORE": 0.05181691633308333,
+      "ABSTAIN": 0.035255532565633504,
+      "ESCALATE": 0.04278102432038702
+    },
+    "evidence_sufficiency": 0.9361259937286377,
+    "estimated_factual_risk": 0.0638740062713623,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-19310",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8781579775387269,
+      "RETRIEVE_MORE": 0.04754144655065505,
+      "ABSTAIN": 0.0335246548850036,
+      "ESCALATE": 0.0407759210256144
+    },
+    "evidence_sufficiency": 0.9488299489021301,
+    "estimated_factual_risk": 0.05117005109786987,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-198209",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.564249276460716,
+      "RETRIEVE_MORE": 0.25200646844419167,
+      "ABSTAIN": 0.09081195178207502,
+      "ESCALATE": 0.0929323033130173
+    },
+    "evidence_sufficiency": 0.6674721837043762,
+    "estimated_factual_risk": 0.3325278162956238,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-106016",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8631866748824013,
+      "RETRIEVE_MORE": 0.05559092331817275,
+      "ABSTAIN": 0.03674130296134886,
+      "ESCALATE": 0.04448109883807704
+    },
+    "evidence_sufficiency": 0.925681471824646,
+    "estimated_factual_risk": 0.074318528175354,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-152850",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6194460536263038,
+      "RETRIEVE_MORE": 8.067158492462777e-06,
+      "ABSTAIN": 0.20285488861968773,
+      "ESCALATE": 0.17769099059551596
+    },
+    "evidence_sufficiency": 0.5441732406616211,
+    "estimated_factual_risk": 0.4558267593383789,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-108839",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8681947219928082,
+      "RETRIEVE_MORE": 0.0528698190230924,
+      "ABSTAIN": 0.03567383336281019,
+      "ESCALATE": 0.04326162562128915
+    },
+    "evidence_sufficiency": 0.9331444501876831,
+    "estimated_factual_risk": 0.0668555498123169,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-192035",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8343307014727462,
+      "RETRIEVE_MORE": 0.07177610705689806,
+      "ABSTAIN": 0.04274214611459524,
+      "ESCALATE": 0.05115104535576052
+    },
+    "evidence_sufficiency": 0.8870770931243896,
+    "estimated_factual_risk": 0.11292290687561035,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-32595",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7761321922971963,
+      "RETRIEVE_MORE": 0.10664891366537713,
+      "ABSTAIN": 0.05419874520717625,
+      "ESCALATE": 0.06302014883025035
+    },
+    "evidence_sufficiency": 0.8246374130249023,
+    "estimated_factual_risk": 0.17536258697509766,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-147246",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.1583380952943885,
+      "RETRIEVE_MORE": 8.013034502784533e-06,
+      "ABSTAIN": 0.36188032828261785,
+      "ESCALATE": 0.47977356338849086
+    },
+    "evidence_sufficiency": 0.24253740906715393,
+    "estimated_factual_risk": 0.7574625909328461,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-36815",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4191320694820735,
+      "RETRIEVE_MORE": 0.3654966262417714,
+      "ABSTAIN": 0.11223735126906662,
+      "ESCALATE": 0.1031339530070885
+    },
+    "evidence_sufficiency": 0.5782572031021118,
+    "estimated_factual_risk": 0.4217427968978882,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-2700",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7549743578408934,
+      "RETRIEVE_MORE": 0.11995719505250961,
+      "ABSTAIN": 0.05818480016160987,
+      "ESCALATE": 0.06688364694498701
+    },
+    "evidence_sufficiency": 0.805273175239563,
+    "estimated_factual_risk": 0.194726824760437,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-5972",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8447270749380704,
+      "RETRIEVE_MORE": 0.06585011631428414,
+      "ABSTAIN": 0.0406079791690674,
+      "ESCALATE": 0.04881482957857793
+    },
+    "evidence_sufficiency": 0.9002176523208618,
+    "estimated_factual_risk": 0.09978234767913818,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-78072",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8038448652163714,
+      "RETRIEVE_MORE": 0.08970584247770498,
+      "ABSTAIN": 0.04883998965460274,
+      "ESCALATE": 0.05760930265132089
+    },
+    "evidence_sufficiency": 0.8523827195167542,
+    "estimated_factual_risk": 0.14761728048324585,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-75629",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4784729458310451,
+      "RETRIEVE_MORE": 0.31773058545212,
+      "ABSTAIN": 0.10381726987378925,
+      "ESCALATE": 0.09997919884304561
+    },
+    "evidence_sufficiency": 0.6145861148834229,
+    "estimated_factual_risk": 0.38541388511657715,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-190648",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5379319925394336,
+      "RETRIEVE_MORE": 0.2717640556509499,
+      "ABSTAIN": 0.0949063532186338,
+      "ESCALATE": 0.09539759859098276
+    },
+    "evidence_sufficiency": 0.651039719581604,
+    "estimated_factual_risk": 0.348960280418396,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-160053",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.851204977607506,
+      "RETRIEVE_MORE": 0.06221032897818132,
+      "ABSTAIN": 0.039262763881161726,
+      "ESCALATE": 0.047321929533150904
+    },
+    "evidence_sufficiency": 0.9088175892829895,
+    "estimated_factual_risk": 0.0911824107170105,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-149230",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7014888911614443,
+      "RETRIEVE_MORE": 0.15489842103136142,
+      "ABSTAIN": 0.06790015105137046,
+      "ESCALATE": 0.07571253675582383
+    },
+    "evidence_sufficiency": 0.7613914012908936,
+    "estimated_factual_risk": 0.23860859870910645,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-68413",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5783134964227117,
+      "RETRIEVE_MORE": 8.707496195458756e-06,
+      "ABSTAIN": 0.22988242897341074,
+      "ESCALATE": 0.19179536710768205
+    },
+    "evidence_sufficiency": 0.5119304656982422,
+    "estimated_factual_risk": 0.4880695343017578,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-128709",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8507030991308798,
+      "RETRIEVE_MORE": 0.06249083218387501,
+      "ABSTAIN": 0.039367423786164625,
+      "ESCALATE": 0.04743864489908049
+    },
+    "evidence_sufficiency": 0.9081391096115112,
+    "estimated_factual_risk": 0.09186089038848877,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-208919",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6071555250202658,
+      "RETRIEVE_MORE": 0.22056501296722614,
+      "ABSTAIN": 0.08393623916243974,
+      "ESCALATE": 0.08834322285006832
+    },
+    "evidence_sufficiency": 0.6950123310089111,
+    "estimated_factual_risk": 0.30498766899108887,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-71437",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.21625334654639364,
+      "RETRIEVE_MORE": 7.975979137285395e-06,
+      "ABSTAIN": 0.3061837722911821,
+      "ESCALATE": 0.47755490518328697
+    },
+    "evidence_sufficiency": 0.3128381073474884,
+    "estimated_factual_risk": 0.6871618926525116,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-22192",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5019018031803049,
+      "RETRIEVE_MORE": 9.760914785123482e-06,
+      "ABSTAIN": 0.2830899802643643,
+      "ESCALATE": 0.21499845564054565
+    },
+    "evidence_sufficiency": 0.45506080985069275,
+    "estimated_factual_risk": 0.5449391901493073,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-62971",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8899914629402893,
+      "RETRIEVE_MORE": 0.04137038811653006,
+      "ABSTAIN": 0.030924428512241458,
+      "ESCALATE": 0.037713720430939235
+    },
+    "evidence_sufficiency": 0.9691528677940369,
+    "estimated_factual_risk": 0.030847132205963135,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-46583",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7510845050798967,
+      "RETRIEVE_MORE": 0.12243704354266581,
+      "ABSTAIN": 0.05890836012132318,
+      "ESCALATE": 0.06757009125611438
+    },
+    "evidence_sufficiency": 0.8018561601638794,
+    "estimated_factual_risk": 0.1981438398361206,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-206148",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4421231225524764,
+      "RETRIEVE_MORE": 0.34675910410134725,
+      "ABSTAIN": 0.10903198223814817,
+      "ESCALATE": 0.10208579110802819
+    },
+    "evidence_sufficiency": 0.5923944115638733,
+    "estimated_factual_risk": 0.4076055884361267,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-28307",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8742702499739493,
+      "RETRIEVE_MORE": 0.049606767809617355,
+      "ABSTAIN": 0.03436744048122312,
+      "ESCALATE": 0.04175554173521019
+    },
+    "evidence_sufficiency": 0.942568302154541,
+    "estimated_factual_risk": 0.057431697845458984,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-49218",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4875852957065508,
+      "RETRIEVE_MORE": 0.31056527647009724,
+      "ABSTAIN": 0.10248217986678611,
+      "ESCALATE": 0.099367247956566
+    },
+    "evidence_sufficiency": 0.6201428174972534,
+    "estimated_factual_risk": 0.3798571825027466,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-164502",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8422002919662258,
+      "RETRIEVE_MORE": 0.06728098222197977,
+      "ABSTAIN": 0.0411294301500033,
+      "ESCALATE": 0.04938929566179098
+    },
+    "evidence_sufficiency": 0.8969520330429077,
+    "estimated_factual_risk": 0.10304796695709229,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-164097",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.856525846239776,
+      "RETRIEVE_MORE": 0.05925223490868656,
+      "ABSTAIN": 0.0381485133152925,
+      "ESCALATE": 0.04607340553624491
+    },
+    "evidence_sufficiency": 0.9161441326141357,
+    "estimated_factual_risk": 0.08385586738586426,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-183624",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6761093564913421,
+      "RETRIEVE_MORE": 0.17208034899796118,
+      "ABSTAIN": 0.07234512224141032,
+      "ESCALATE": 0.07946517226928648
+    },
+    "evidence_sufficiency": 0.7424524426460266,
+    "estimated_factual_risk": 0.2575475573539734,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-185417",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.2145499039754448,
+      "RETRIEVE_MORE": 7.980381755540254e-06,
+      "ABSTAIN": 0.3076236074702034,
+      "ESCALATE": 0.47781850817259636
+    },
+    "evidence_sufficiency": 0.3109580874443054,
+    "estimated_factual_risk": 0.6890419125556946,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-131540",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7485831783466242,
+      "RETRIEVE_MORE": 0.12403697204521884,
+      "ABSTAIN": 0.05937216284299287,
+      "ESCALATE": 0.06800768676516412
+    },
+    "evidence_sufficiency": 0.7996803522109985,
+    "estimated_factual_risk": 0.20031964778900146,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-101555",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6723725003890149,
+      "RETRIEVE_MORE": 0.17464123557519487,
+      "ABSTAIN": 0.07299117277740864,
+      "ESCALATE": 0.07999509125838157
+    },
+    "evidence_sufficiency": 0.7397438287734985,
+    "estimated_factual_risk": 0.26025617122650146,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-214253",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.0330013180103275,
+      "RETRIEVE_MORE": 5.939438599451244e-06,
+      "ABSTAIN": 0.6113739541388133,
+      "ESCALATE": 0.3556187884122597
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0443279594182968,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-195082",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.020090213967024127,
+      "RETRIEVE_MORE": 5.044867031169169e-06,
+      "ABSTAIN": 0.6778476576073929,
+      "ESCALATE": 0.3020570835585519
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.1275957971811295,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-87245",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.12495776530238417,
+      "RETRIEVE_MORE": 7.887444415517796e-06,
+      "ABSTAIN": 0.40278038254774207,
+      "ESCALATE": 0.47225396470545816
+    },
+    "evidence_sufficiency": 0.19343531131744385,
+    "estimated_factual_risk": 0.8065646886825562,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-133686",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7740794488345153,
+      "RETRIEVE_MORE": 0.10792643298969834,
+      "ABSTAIN": 0.05458930998390435,
+      "ESCALATE": 0.06340480819188204
+    },
+    "evidence_sufficiency": 0.8226966261863708,
+    "estimated_factual_risk": 0.17730337381362915,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-168000",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8738895531106998,
+      "RETRIEVE_MORE": 0.04980997561756535,
+      "ABSTAIN": 0.03444967741561748,
+      "ESCALATE": 0.041850793856117216
+    },
+    "evidence_sufficiency": 0.9419651627540588,
+    "estimated_factual_risk": 0.05803483724594116,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-124881",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8307915991043104,
+      "RETRIEVE_MORE": 0.07381628557854979,
+      "ABSTAIN": 0.04346198229136554,
+      "ESCALATE": 0.05193013302577419
+    },
+    "evidence_sufficiency": 0.8827732801437378,
+    "estimated_factual_risk": 0.11722671985626221,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-66539",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8127706503890024,
+      "RETRIEVE_MORE": 0.08437533809076454,
+      "ABSTAIN": 0.04707795512303341,
+      "ESCALATE": 0.05577605639719951
+    },
+    "evidence_sufficiency": 0.8620231747627258,
+    "estimated_factual_risk": 0.13797682523727417,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-160856",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7728590998495667,
+      "RETRIEVE_MORE": 0.10868733173425676,
+      "ABSTAIN": 0.05482110009056744,
+      "ESCALATE": 0.0636324683256091
+    },
+    "evidence_sufficiency": 0.8215495347976685,
+    "estimated_factual_risk": 0.17845046520233154,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-120678",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03667190256717156,
+      "RETRIEVE_MORE": 6.136474800380104e-06,
+      "ABSTAIN": 0.5959057991283293,
+      "ESCALATE": 0.36741616182969866
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.026121074333787,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-188579",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.36327880153887127,
+      "RETRIEVE_MORE": 1.1133534328388603e-05,
+      "ABSTAIN": 0.3914776518672423,
+      "ESCALATE": 0.2452324130595581
+    },
+    "evidence_sufficiency": 0.3539920449256897,
+    "estimated_factual_risk": 0.6460079550743103,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-182921",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4352810003379056,
+      "RETRIEVE_MORE": 1.0517597859245049e-05,
+      "ABSTAIN": 0.33304297257404153,
+      "ESCALATE": 0.23166550949019357
+    },
+    "evidence_sufficiency": 0.406821608543396,
+    "estimated_factual_risk": 0.593178391456604,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-190153",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7902031035454191,
+      "RETRIEVE_MORE": 0.09797408632952981,
+      "ABSTAIN": 0.05149834087464276,
+      "ESCALATE": 0.06032446925040836
+    },
+    "evidence_sufficiency": 0.838344931602478,
+    "estimated_factual_risk": 0.16165506839752197,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-140892",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6463600981363185,
+      "RETRIEVE_MORE": 0.19268253047671005,
+      "ABSTAIN": 0.07743044436214677,
+      "ESCALATE": 0.08352692702482477
+    },
+    "evidence_sufficiency": 0.721375048160553,
+    "estimated_factual_risk": 0.278624951839447,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-70698",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.1795170111550523,
+      "RETRIEVE_MORE": 8.029640313622242e-06,
+      "ABSTAIN": 0.3397071371447504,
+      "ESCALATE": 0.48076782205988366
+    },
+    "evidence_sufficiency": 0.26997455954551697,
+    "estimated_factual_risk": 0.730025440454483,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-125760",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6780936303826571,
+      "RETRIEVE_MORE": 0.1707237143553132,
+      "ABSTAIN": 0.07200120344864838,
+      "ESCALATE": 0.07918145181338135
+    },
+    "evidence_sufficiency": 0.7438985109329224,
+    "estimated_factual_risk": 0.25610148906707764,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-160337",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8686940597749194,
+      "RETRIEVE_MORE": 0.05260003963772132,
+      "ABSTAIN": 0.035566940926188874,
+      "ESCALATE": 0.043138959661170276
+    },
+    "evidence_sufficiency": 0.9339032173156738,
+    "estimated_factual_risk": 0.06609678268432617,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-166658",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7480020104076769,
+      "RETRIEVE_MORE": 0.12440929450482996,
+      "ABSTAIN": 0.059479760569569426,
+      "ESCALATE": 0.06810893451792371
+    },
+    "evidence_sufficiency": 0.7991771697998047,
+    "estimated_factual_risk": 0.2008228302001953,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-137201",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5163893988209914,
+      "RETRIEVE_MORE": 0.28820434127712957,
+      "ABSTAIN": 0.0981891911955716,
+      "ESCALATE": 0.0972170687063074
+    },
+    "evidence_sufficiency": 0.6377588510513306,
+    "estimated_factual_risk": 0.36224114894866943,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-161787",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5644211977701284,
+      "RETRIEVE_MORE": 0.25187857779765394,
+      "ABSTAIN": 0.09078489954859643,
+      "ESCALATE": 0.09291532488362116
+    },
+    "evidence_sufficiency": 0.6675804853439331,
+    "estimated_factual_risk": 0.3324195146560669,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-204003",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8470895630583182,
+      "RETRIEVE_MORE": 0.06451788884722606,
+      "ABSTAIN": 0.040118790531949486,
+      "ESCALATE": 0.04827375756250626
+    },
+    "evidence_sufficiency": 0.9033151865005493,
+    "estimated_factual_risk": 0.09668481349945068,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-14510",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4463349998998676,
+      "RETRIEVE_MORE": 0.343358541728151,
+      "ABSTAIN": 0.10843691136767472,
+      "ESCALATE": 0.10186954700430668
+    },
+    "evidence_sufficiency": 0.5949726104736328,
+    "estimated_factual_risk": 0.4050273895263672,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-204571",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5659902669402361,
+      "RETRIEVE_MORE": 0.2507120691207225,
+      "ABSTAIN": 0.09053781905567884,
+      "ESCALATE": 0.09275984488336245
+    },
+    "evidence_sufficiency": 0.6685695648193359,
+    "estimated_factual_risk": 0.33143043518066406,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-83091",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.06767356460382642,
+      "RETRIEVE_MORE": 7.1681750835998185e-06,
+      "ABSTAIN": 0.5031309364262848,
+      "ESCALATE": 0.4291883307948052
+    },
+    "evidence_sufficiency": 0.07839995622634888,
+    "estimated_factual_risk": 0.9216000437736511,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-192853",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5586705442842653,
+      "RETRIEVE_MORE": 0.2561647376708656,
+      "ABSTAIN": 0.09168762428977273,
+      "ESCALATE": 0.09347709375509637
+    },
+    "evidence_sufficiency": 0.6639652252197266,
+    "estimated_factual_risk": 0.33603477478027344,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-178223",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8556215886489157,
+      "RETRIEVE_MORE": 0.059752895354629194,
+      "ABSTAIN": 0.0383384823008794,
+      "ESCALATE": 0.0462870336955758
+    },
+    "evidence_sufficiency": 0.9148814082145691,
+    "estimated_factual_risk": 0.08511859178543091,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-37093",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6223273263440688,
+      "RETRIEVE_MORE": 8.020490040583022e-06,
+      "ABSTAIN": 0.2010016036294005,
+      "ESCALATE": 0.17666304953648998
+    },
+    "evidence_sufficiency": 0.5464937686920166,
+    "estimated_factual_risk": 0.4535062313079834,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-180590",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6873231681486002,
+      "RETRIEVE_MORE": 0.16444292509231972,
+      "ABSTAIN": 0.07039355439496602,
+      "ESCALATE": 0.07784035236411414
+    },
+    "evidence_sufficiency": 0.7506988048553467,
+    "estimated_factual_risk": 0.24930119514465332,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-183490",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.3900079605220587,
+      "RETRIEVE_MORE": 1.0932110430475983e-05,
+      "ABSTAIN": 0.3691853509055817,
+      "ESCALATE": 0.24079575646192913
+    },
+    "evidence_sufficiency": 0.3738262355327606,
+    "estimated_factual_risk": 0.6261737644672394,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-165688",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6798095009266877,
+      "RETRIEVE_MORE": 0.1695523807062679,
+      "ABSTAIN": 0.07170331868928242,
+      "ESCALATE": 0.07893479967776193
+    },
+    "evidence_sufficiency": 0.7451534271240234,
+    "estimated_factual_risk": 0.25484657287597656,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-164983",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.19189466060994342,
+      "RETRIEVE_MORE": 8.02194210525558e-06,
+      "ABSTAIN": 0.3277904190067664,
+      "ESCALATE": 0.4803068984411849
+    },
+    "evidence_sufficiency": 0.28500473499298096,
+    "estimated_factual_risk": 0.714995265007019,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-133876",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7474137525499266,
+      "RETRIEVE_MORE": 0.12478638445368216,
+      "ABSTAIN": 0.059588608198616985,
+      "ESCALATE": 0.06821125479777415
+    },
+    "evidence_sufficiency": 0.7986687421798706,
+    "estimated_factual_risk": 0.2013312578201294,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-226441",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7281787697836893,
+      "RETRIEVE_MORE": 0.13723924749726188,
+      "ABSTAIN": 0.06311367710540798,
+      "ESCALATE": 0.07146830561364081
+    },
+    "evidence_sufficiency": 0.782509446144104,
+    "estimated_factual_risk": 0.217490553855896,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-181617",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.12051483626338208,
+      "RETRIEVE_MORE": 7.858943515292149e-06,
+      "ABSTAIN": 0.4089298070267655,
+      "ESCALATE": 0.4705474977663371
+    },
+    "evidence_sufficiency": 0.18619465827941895,
+    "estimated_factual_risk": 0.813805341720581,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-203622",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5578142915324821,
+      "RETRIEVE_MORE": 0.25680439620215395,
+      "ABSTAIN": 0.09182165738591168,
+      "ESCALATE": 0.09355965487945227
+    },
+    "evidence_sufficiency": 0.6634281873703003,
+    "estimated_factual_risk": 0.3365718126296997,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-98044",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.3968448335884885,
+      "RETRIEVE_MORE": 1.0875213098320047e-05,
+      "ABSTAIN": 0.36360178187703257,
+      "ESCALATE": 0.2395425093213807
+    },
+    "evidence_sufficiency": 0.3788476586341858,
+    "estimated_factual_risk": 0.6211523413658142,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-141522",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.06899660197314696,
+      "RETRIEVE_MORE": 7.196852967074353e-06,
+      "ABSTAIN": 0.5000908067198341,
+      "ESCALATE": 0.4309053944540519
+    },
+    "evidence_sufficiency": 0.08181526511907578,
+    "estimated_factual_risk": 0.9181847348809242,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-7138",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5707740761035363,
+      "RETRIEVE_MORE": 0.24716346340888945,
+      "ABSTAIN": 0.08978246957147422,
+      "ESCALATE": 0.09227999091610008
+    },
+    "evidence_sufficiency": 0.6715924739837646,
+    "estimated_factual_risk": 0.32840752601623535,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-209360",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8187539363880064,
+      "RETRIEVE_MORE": 0.08083871943860796,
+      "ABSTAIN": 0.045886283089391716,
+      "ESCALATE": 0.05452106108399392
+    },
+    "evidence_sufficiency": 0.8687103390693665,
+    "estimated_factual_risk": 0.13128966093063354,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-219289",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5886407644719674,
+      "RETRIEVE_MORE": 0.23401498914082447,
+      "ABSTAIN": 0.08693400617161952,
+      "ESCALATE": 0.09041024021558851
+    },
+    "evidence_sufficiency": 0.6829907894134521,
+    "estimated_factual_risk": 0.31700921058654785,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-155942",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8360508240459978,
+      "RETRIEVE_MORE": 0.07078864136290157,
+      "ABSTAIN": 0.042391079537021766,
+      "ESCALATE": 0.050769455054078816
+    },
+    "evidence_sufficiency": 0.8891987800598145,
+    "estimated_factual_risk": 0.11080121994018555,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-154494",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.06036260833545318,
+      "RETRIEVE_MORE": 6.993462572972943e-06,
+      "ABSTAIN": 0.5209028290278598,
+      "ESCALATE": 0.418727569174114
+    },
+    "evidence_sufficiency": 0.058477628976106644,
+    "estimated_factual_risk": 0.9415223710238934,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-171595",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.855855533366451,
+      "RETRIEVE_MORE": 0.05962328569451626,
+      "ABSTAIN": 0.03828935863713532,
+      "ESCALATE": 0.046231822301897346
+    },
+    "evidence_sufficiency": 0.9152073860168457,
+    "estimated_factual_risk": 0.0847926139831543,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-164497",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8596933559599771,
+      "RETRIEVE_MORE": 0.0575052334640716,
+      "ABSTAIN": 0.0374810731569776,
+      "ESCALATE": 0.04532033741897362
+    },
+    "evidence_sufficiency": 0.9206266403198242,
+    "estimated_factual_risk": 0.07937335968017578,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-191425",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5030039357061363,
+      "RETRIEVE_MORE": 9.747063138719123e-06,
+      "ABSTAIN": 0.28229296440590673,
+      "ESCALATE": 0.2146933528248183
+    },
+    "evidence_sufficiency": 0.4558638334274292,
+    "estimated_factual_risk": 0.5441361665725708,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-97377",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.554193321003153,
+      "RETRIEVE_MORE": 0.25951361532740014,
+      "ABSTAIN": 0.09238737810099938,
+      "ESCALATE": 0.09390568556844749
+    },
+    "evidence_sufficiency": 0.6611605882644653,
+    "estimated_factual_risk": 0.33883941173553467,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-61763",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.03429739124899156,
+      "RETRIEVE_MORE": 6.011224652884348e-06,
+      "ABSTAIN": 0.6057796807776672,
+      "ESCALATE": 0.35991691674868836
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.0377009809017181,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-112222",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.39528077716017135,
+      "RETRIEVE_MORE": 0.3852559478239882,
+      "ABSTAIN": 0.11548486474679653,
+      "ESCALATE": 0.10397841026904392
+    },
+    "evidence_sufficiency": 0.5634251236915588,
+    "estimated_factual_risk": 0.43657487630844116,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-168539",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5176916986407775,
+      "RETRIEVE_MORE": 9.558571090420472e-06,
+      "ABSTAIN": 0.2717572036177571,
+      "ESCALATE": 0.21054153917037496
+    },
+    "evidence_sufficiency": 0.46659931540489197,
+    "estimated_factual_risk": 0.533400684595108,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-97181",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6907703084491515,
+      "RETRIEVE_MORE": 0.16210961643225025,
+      "ABSTAIN": 0.06978971803939905,
+      "ESCALATE": 0.07733035707919916
+    },
+    "evidence_sufficiency": 0.7532712817192078,
+    "estimated_factual_risk": 0.24672871828079224,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-15495",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.0715405816988512,
+      "RETRIEVE_MORE": 7.249705454692356e-06,
+      "ABSTAIN": 0.4943822768080015,
+      "ESCALATE": 0.4340698917876926
+    },
+    "evidence_sufficiency": 0.08823540061712265,
+    "estimated_factual_risk": 0.9117645993828773,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-99495",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6700861283565197,
+      "RETRIEVE_MORE": 0.17621196276172155,
+      "ABSTAIN": 0.07338541009961216,
+      "ESCALATE": 0.08031649878214646
+    },
+    "evidence_sufficiency": 0.7380958199501038,
+    "estimated_factual_risk": 0.26190418004989624,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-13211",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7873124068622979,
+      "RETRIEVE_MORE": 0.09974433426742549,
+      "ABSTAIN": 0.052056470927603404,
+      "ESCALATE": 0.06088678794267319
+    },
+    "evidence_sufficiency": 0.8354686498641968,
+    "estimated_factual_risk": 0.16453135013580322,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-144773",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8085367135399991,
+      "RETRIEVE_MORE": 0.08689582552812239,
+      "ABSTAIN": 0.04791607618613853,
+      "ESCALATE": 0.056651384745739976
+    },
+    "evidence_sufficiency": 0.8574021458625793,
+    "estimated_factual_risk": 0.14259785413742065,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-129088",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.10670288633368843,
+      "RETRIEVE_MORE": 7.74770601268031e-06,
+      "ABSTAIN": 0.42940211818938784,
+      "ESCALATE": 0.4638872477709111
+    },
+    "evidence_sufficiency": 0.1623125970363617,
+    "estimated_factual_risk": 0.8376874029636383,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-129752",
+    "label": "supported",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6799473119352016,
+      "RETRIEVE_MORE": 0.16945837683645748,
+      "ABSTAIN": 0.0716793743126596,
+      "ESCALATE": 0.07891493691568129
+    },
+    "evidence_sufficiency": 0.745254397392273,
+    "estimated_factual_risk": 0.25474560260772705,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-73207",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4482027436951001,
+      "RETRIEVE_MORE": 1.0383781074679417e-05,
+      "ABSTAIN": 0.32306887386163763,
+      "ESCALATE": 0.22871799866218764
+    },
+    "evidence_sufficiency": 0.4161679744720459,
+    "estimated_factual_risk": 0.5838320255279541,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-36141",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.46122902886862277,
+      "RETRIEVE_MORE": 0.33141177098235153,
+      "ABSTAIN": 0.10631330052092856,
+      "ESCALATE": 0.10104589962809718
+    },
+    "evidence_sufficiency": 0.6040710806846619,
+    "estimated_factual_risk": 0.39592891931533813,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-173728",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6041142467464852,
+      "RETRIEVE_MORE": 0.22276202438364692,
+      "ABSTAIN": 0.08443190036685168,
+      "ESCALATE": 0.08869182850301632
+    },
+    "evidence_sufficiency": 0.6930212378501892,
+    "estimated_factual_risk": 0.3069787621498108,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-139406",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5003444225480386,
+      "RETRIEVE_MORE": 9.780417599312971e-06,
+      "ABSTAIN": 0.2842177633241691,
+      "ESCALATE": 0.21542803371019295
+    },
+    "evidence_sufficiency": 0.45392662286758423,
+    "estimated_factual_risk": 0.5460733771324158,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-218469",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.36072123745764173,
+      "RETRIEVE_MORE": 1.1150978138700236e-05,
+      "ABSTAIN": 0.3936509730135011,
+      "ESCALATE": 0.24561663855071839
+    },
+    "evidence_sufficiency": 0.35207411646842957,
+    "estimated_factual_risk": 0.6479258835315704,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-178153",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8409822361042391,
+      "RETRIEVE_MORE": 0.06797292891356277,
+      "ABSTAIN": 0.04138015937739983,
+      "ESCALATE": 0.0496646756047984
+    },
+    "evidence_sufficiency": 0.8953948020935059,
+    "estimated_factual_risk": 0.10460519790649414,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-78289",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.4708384198097934,
+      "RETRIEVE_MORE": 1.0133965431587128e-05,
+      "ABSTAIN": 0.3059360032801673,
+      "ESCALATE": 0.2232154429446077
+    },
+    "evidence_sufficiency": 0.4325283467769623,
+    "estimated_factual_risk": 0.5674716532230377,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-164500",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8732761519848862,
+      "RETRIEVE_MORE": 0.050137754007423124,
+      "ABSTAIN": 0.034582074728569626,
+      "ESCALATE": 0.04200401927912111
+    },
+    "evidence_sufficiency": 0.9409970045089722,
+    "estimated_factual_risk": 0.05900299549102783,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-125381",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8773347561944745,
+      "RETRIEVE_MORE": 0.04797726294331655,
+      "ABSTAIN": 0.03370356980722873,
+      "ESCALATE": 0.040984411054980116
+    },
+    "evidence_sufficiency": 0.9474881887435913,
+    "estimated_factual_risk": 0.05251181125640869,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-116591",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ABSTAIN",
+    "probabilities": {
+      "ANSWER": 0.02063750349955415,
+      "RETRIEVE_MORE": 5.09150196176387e-06,
+      "ABSTAIN": 0.6745080949966266,
+      "ESCALATE": 0.30484931000185755
+    },
+    "evidence_sufficiency": 0.0,
+    "estimated_factual_risk": 1.1231769025325775,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-174039",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7799026804841137,
+      "RETRIEVE_MORE": 0.10431021679845358,
+      "ABSTAIN": 0.05347913906130814,
+      "ESCALATE": 0.06230796365612457
+    },
+    "evidence_sufficiency": 0.8282399773597717,
+    "estimated_factual_risk": 0.17176002264022827,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-99849",
+    "label": "refuted",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6121630983082933,
+      "RETRIEVE_MORE": 0.21695814636017188,
+      "ABSTAIN": 0.08311731959686695,
+      "ESCALATE": 0.08776143573466795
+    },
+    "evidence_sufficiency": 0.6983059048652649,
+    "estimated_factual_risk": 0.3016940951347351,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-194435",
+    "label": "notEnoughInfo",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7630220731312729,
+      "RETRIEVE_MORE": 0.1148588693073279,
+      "ABSTAIN": 0.05667882311645577,
+      "ESCALATE": 0.06544023444494337
+    },
+    "evidence_sufficiency": 0.812477707862854,
+    "estimated_factual_risk": 0.187522292137146,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-64843",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8118635715855762,
+      "RETRIEVE_MORE": 0.08491409301854605,
+      "ABSTAIN": 0.04725786851645142,
+      "ESCALATE": 0.05596446687942634
+    },
+    "evidence_sufficiency": 0.8610256314277649,
+    "estimated_factual_risk": 0.1389743685722351,
+    "n_retrievals": 1,
+    "correct": false
+  },
+  {
+    "id": "fever-21775",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6445803584060085,
+      "RETRIEVE_MORE": 0.19393044767932507,
+      "ABSTAIN": 0.07773053580523166,
+      "ESCALATE": 0.08375865810943484
+    },
+    "evidence_sufficiency": 0.720146656036377,
+    "estimated_factual_risk": 0.27985334396362305,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-16527",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.6703195125383473,
+      "RETRIEVE_MORE": 0.1760514948007801,
+      "ABSTAIN": 0.07334520406882458,
+      "ESCALATE": 0.080283788592048
+    },
+    "evidence_sufficiency": 0.738263726234436,
+    "estimated_factual_risk": 0.26173627376556396,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-174616",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ESCALATE",
+    "probabilities": {
+      "ANSWER": 0.11487928203790591,
+      "RETRIEVE_MORE": 7.817915442951763e-06,
+      "ABSTAIN": 0.41702192289792367,
+      "ESCALATE": 0.4680909771487274
+    },
+    "evidence_sufficiency": 0.17671537399291992,
+    "estimated_factual_risk": 0.8232846260070801,
+    "n_retrievals": 3,
+    "correct": true
+  },
+  {
+    "id": "fever-74583",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8064565110788661,
+      "RETRIEVE_MORE": 0.08813951275072543,
+      "ABSTAIN": 0.04832633036436797,
+      "ESCALATE": 0.05707764580604049
+    },
+    "evidence_sufficiency": 0.8551638722419739,
+    "estimated_factual_risk": 0.14483612775802612,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-57255",
+    "label": "supported",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.40186424389096786,
+      "RETRIEVE_MORE": 0.3797686190517363,
+      "ABSTAIN": 0.11459650174093271,
+      "ESCALATE": 0.10377063531636306
+    },
+    "evidence_sufficiency": 0.5675402879714966,
+    "estimated_factual_risk": 0.4324597120285034,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-115261",
+    "label": "notEnoughInfo",
+    "answer": "supported",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.5943920987308029,
+      "RETRIEVE_MORE": 8.463018074566114e-06,
+      "ABSTAIN": 0.2191890601108609,
+      "ESCALATE": 0.18641037814026162
+    },
+    "evidence_sufficiency": 0.52435302734375,
+    "estimated_factual_risk": 0.47564697265625,
+    "n_retrievals": 3,
+    "correct": false
+  },
+  {
+    "id": "fever-172464",
+    "label": "notEnoughInfo",
+    "answer": "notEnoughInfo",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.8315304574392585,
+      "RETRIEVE_MORE": 0.07338942056076754,
+      "ABSTAIN": 0.043311974567383144,
+      "ESCALATE": 0.05176814743259085
+    },
+    "evidence_sufficiency": 0.8836650848388672,
+    "estimated_factual_risk": 0.11633491516113281,
+    "n_retrievals": 1,
+    "correct": true
+  },
+  {
+    "id": "fever-170000",
+    "label": "refuted",
+    "answer": "refuted",
+    "action": "ANSWER",
+    "probabilities": {
+      "ANSWER": 0.7136632413757386,
+      "RETRIEVE_MORE": 0.14678994980060098,
+      "ABSTAIN": 0.06573150556562385,
+      "ESCALATE": 0.07381530325803667
+    },
+    "evidence_sufficiency": 0.7708544731140137,
+    "estimated_factual_risk": 0.22914552688598633,
+    "n_retrievals": 1,
+    "correct": true
+  }
+]

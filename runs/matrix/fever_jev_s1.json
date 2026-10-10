@@ -1,0 +1,4997 @@
+{
+  "config": {
+    "dataset": "fever",
+    "split": "dev",
+    "n": 300,
+    "calib": 300,
+    "k": 5,
+    "max_retrievals": 2,
+    "corpus_max": 70000,
+    "corpus_file": "data/processed/corpus/fever/corpus_gold.jsonl",
+    "retriever": "bm25",
+    "dense_model": "BAAI/bge-small-en-v1.5",
+    "verifier": "embedding",
+    "verifier_model": "cross-encoder/nli-deberta-v3-base",
+    "router": "jev",
+    "backend": "ollama",
+    "llm_model": "gemma4:31b-cloud",
+    "base_url": "",
+    "api_key": "",
+    "device": null,
+    "target_risk": 0.15,
+    "seed": 1,
+    "calib_split": "dev",
+    "out": "runs/matrix/fever_jev_s1.json"
+  },
+  "n_calib": 300,
+  "n_test": 300,
+  "raw_accuracy": 0.7633333333333333,
+  "conformal_decisions": {
+    "coverage": 0.13,
+    "answered_risk": 0.10256410256410253
+  },
+  "metrics": {
+    "ece": 0.06058602759236289,
+    "brier": 0.17507144979393005,
+    "aurc": 0.14726054750873724,
+    "risk_at_80_cov": 0.20331950207468885,
+    "abstention": {
+      "coverage": 0.13,
+      "answered_risk": 0.10256410256410253,
+      "abstain_rate": 0.87,
+      "abstain_precision": 0.8773946360153256,
+      "escalate_rate": 0.0
+    }
+  },
+  "cost": {
+    "mean_retrievals": 1.7733333333333334,
+    "llm_calls": 1089,
+    "mean_llm_latency_s": 0.5709356190826503
+  },
+  "calibration": {
+    "method": "isotonic",
+    "temperature": 5.0,
+    "report": {
+      "method": "temperature",
+      "n": 300,
+      "ece": 0.19247167938193313,
+      "brier": 0.22437636558196047,
+      "nll": 0.6378740206386262
+    }
+  },
+  "conformal": {
+    "target_risk": 0.15,
+    "threshold": 1.0
+  },
+  "runtime_s": 1499.1302630901337,
+  "calib_records": [
+    {
+      "id": "fever-119831",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.94,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-220957",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.18,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.5700000000000001,
+      "estimated_factual_risk": 0.8200000000000001,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-59048",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.98,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-148609",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.15,
+        "RETRIEVE_MORE": 0.8,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.541,
+      "estimated_factual_risk": 0.85,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-57897",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.82,
+        "ABSTAIN": 0.11,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.393,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-209093",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9390000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-125322",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.985,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-224574",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.18,
+        "RETRIEVE_MORE": 0.8,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.537,
+      "estimated_factual_risk": 0.8200000000000001,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-195028",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.38,
+        "RETRIEVE_MORE": 0.47,
+        "ABSTAIN": 0.12,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.64,
+      "estimated_factual_risk": 0.62,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-88853",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.19,
+        "RETRIEVE_MORE": 0.47000000000000003,
+        "ABSTAIN": 0.31,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.577,
+      "estimated_factual_risk": 0.81,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-130747",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.08,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.517,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-60577",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.46,
+        "ABSTAIN": 0.35,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.46699999999999997,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-126050",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.65,
+        "RETRIEVE_MORE": 0.33,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.718,
+      "estimated_factual_risk": 0.35,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-145588",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.934,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-175479",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.75,
+        "RETRIEVE_MORE": 0.18,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.06
+      },
+      "evidence_sufficiency": 0.7110000000000001,
+      "estimated_factual_risk": 0.25,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-63462",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.27,
+        "RETRIEVE_MORE": 0.44,
+        "ABSTAIN": 0.2,
+        "ESCALATE": 0.09
+      },
+      "evidence_sufficiency": 0.6120000000000001,
+      "estimated_factual_risk": 0.73,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-131376",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.924,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-84694",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.945,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-61226",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.23,
+        "RETRIEVE_MORE": 0.68,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.554,
+      "estimated_factual_risk": 0.77,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-195134",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.55,
+        "RETRIEVE_MORE": 0.41,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.7070000000000001,
+      "estimated_factual_risk": 0.44999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-224570",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7,
+        "RETRIEVE_MORE": 0.16,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.1
+      },
+      "evidence_sufficiency": 0.791,
+      "estimated_factual_risk": 0.30000000000000004,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-189456",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.421,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-54298",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.40900000000000003,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-94160",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9410000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-180563",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.99,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-46390",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.437,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-143556",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.909,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-142966",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6,
+        "RETRIEVE_MORE": 0.37,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.6990000000000001,
+      "estimated_factual_risk": 0.4,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-195024",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.12,
+        "RETRIEVE_MORE": 0.73,
+        "ABSTAIN": 0.12,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.44,
+      "estimated_factual_risk": 0.88,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-116588",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.27,
+        "RETRIEVE_MORE": 0.64,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.575,
+      "estimated_factual_risk": 0.73,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-92352",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.91,
+        "RETRIEVE_MORE": 0.09,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.903,
+      "estimated_factual_risk": 0.08999999999999997,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-166647",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.33599999999999997,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-8464",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9430000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-64584",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.96,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8009999999999999,
+      "estimated_factual_risk": 0.040000000000000036,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-22619",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.39,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-202981",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.91,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.536,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-206466",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.93,
+        "RETRIEVE_MORE": 0.06,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.866,
+      "estimated_factual_risk": 0.06999999999999995,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-87633",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.62,
+        "RETRIEVE_MORE": 0.35,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.677,
+      "estimated_factual_risk": 0.38,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-60442",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.91,
+        "RETRIEVE_MORE": 0.09,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.893,
+      "estimated_factual_risk": 0.08999999999999997,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-15297",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.25,
+        "RETRIEVE_MORE": 0.51,
+        "ABSTAIN": 0.18,
+        "ESCALATE": 0.06
+      },
+      "evidence_sufficiency": 0.497,
+      "estimated_factual_risk": 0.75,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-41700",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.11,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.508,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-217172",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.64,
+        "RETRIEVE_MORE": 0.34,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.739,
+      "estimated_factual_risk": 0.36,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-64149",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6799999999999999,
+        "RETRIEVE_MORE": 0.26,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.79,
+      "estimated_factual_risk": 0.32000000000000006,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-107520",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.27,
+        "RETRIEVE_MORE": 0.64,
+        "ABSTAIN": 0.08,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.592,
+      "estimated_factual_risk": 0.73,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-76869",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9550000000000001,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-183483",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.14,
+        "RETRIEVE_MORE": 0.8,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.491,
+      "estimated_factual_risk": 0.86,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-8067",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.977,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-51097",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.99,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-141474",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.14,
+        "RETRIEVE_MORE": 0.82,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.413,
+      "estimated_factual_risk": 0.86,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-27777",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9430000000000001,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-49650",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9159999999999999,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-114469",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.21,
+        "RETRIEVE_MORE": 0.77,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.5640000000000001,
+      "estimated_factual_risk": 0.79,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-107833",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.09,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.342,
+      "estimated_factual_risk": 0.91,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-193558",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.966,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-128931",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.18,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.618,
+      "estimated_factual_risk": 0.8200000000000001,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-83371",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.77,
+        "RETRIEVE_MORE": 0.22,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.7869999999999999,
+      "estimated_factual_risk": 0.22999999999999998,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-55398",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6,
+        "RETRIEVE_MORE": 0.37,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.689,
+      "estimated_factual_risk": 0.4,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-169984",
+      "label": "refuted",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9339999999999999,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-112152",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.25,
+        "RETRIEVE_MORE": 0.55,
+        "ABSTAIN": 0.2,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.535,
+      "estimated_factual_risk": 0.75,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-98169",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.5,
+        "ABSTAIN": 0.26,
+        "ESCALATE": 0.13
+      },
+      "evidence_sufficiency": 0.509,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-168919",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.8,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.519,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-46225",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.16,
+        "RETRIEVE_MORE": 0.77,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.5840000000000001,
+      "estimated_factual_risk": 0.84,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-206992",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.965,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-193876",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.77,
+        "RETRIEVE_MORE": 0.21,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.79,
+      "estimated_factual_risk": 0.22999999999999998,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-92030",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.927,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-61612",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.86,
+        "RETRIEVE_MORE": 0.11,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.848,
+      "estimated_factual_risk": 0.14,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-4824",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9530000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-132874",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.972,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-220978",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.546,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-73282",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.15,
+        "RETRIEVE_MORE": 0.61,
+        "ABSTAIN": 0.23,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.43699999999999994,
+      "estimated_factual_risk": 0.85,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-177975",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.911,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-52620",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.1,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.24700000000000003,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-224131",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.928,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-175487",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.977,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-145735",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.964,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-188885",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.976,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-54410",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.969,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-168978",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9650000000000001,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-24810",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9259999999999999,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-122250",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.56,
+        "RETRIEVE_MORE": 0.36000000000000004,
+        "ABSTAIN": 0.030000000000000002,
+        "ESCALATE": 0.05000000000000001
+      },
+      "evidence_sufficiency": 0.74,
+      "estimated_factual_risk": 0.43999999999999995,
+      "n_retrievals": 2,
+      "correct": false
+    },
+    {
+      "id": "fever-88141",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.942,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-182283",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.962,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-102797",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9319999999999999,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-122281",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.466,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-223488",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.96,
+        "RETRIEVE_MORE": 0.04,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9490000000000001,
+      "estimated_factual_risk": 0.040000000000000036,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-9099",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.976,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-1904",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.77,
+        "ABSTAIN": 0.12,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.488,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-204998",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.946,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-21209",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.36,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-223298",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.85,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.5940000000000001,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-112295",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.938,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-49740",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.21,
+        "RETRIEVE_MORE": 0.72,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.5409999999999999,
+      "estimated_factual_risk": 0.79,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-132273",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.89,
+        "RETRIEVE_MORE": 0.11,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.889,
+      "estimated_factual_risk": 0.10999999999999999,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-103118",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.92,
+        "RETRIEVE_MORE": 0.08,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.835,
+      "estimated_factual_risk": 0.07999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-84561",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.94,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-198541",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.71,
+        "RETRIEVE_MORE": 0.28,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.7849999999999999,
+      "estimated_factual_risk": 0.29000000000000004,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-200045",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.96,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-108997",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.963,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-73137",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.2,
+        "RETRIEVE_MORE": 0.75,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.642,
+      "estimated_factual_risk": 0.8,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-227120",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.971,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-49399",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.9039999999999999,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-129063",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.972,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-60320",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.509,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-196752",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.96,
+        "RETRIEVE_MORE": 0.04,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.952,
+      "estimated_factual_risk": 0.040000000000000036,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-228678",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.87,
+        "RETRIEVE_MORE": 0.1,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.863,
+      "estimated_factual_risk": 0.13,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-194795",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.966,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-160551",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9359999999999999,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-201750",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.38,
+        "RETRIEVE_MORE": 0.6,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.6849999999999999,
+      "estimated_factual_risk": 0.62,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-196983",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.911,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-95236",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.952,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-141971",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.966,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-2415",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.28,
+        "RETRIEVE_MORE": 0.43,
+        "ABSTAIN": 0.26,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.58,
+      "estimated_factual_risk": 0.72,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-44553",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.27,
+        "RETRIEVE_MORE": 0.54,
+        "ABSTAIN": 0.11,
+        "ESCALATE": 0.08
+      },
+      "evidence_sufficiency": 0.525,
+      "estimated_factual_risk": 0.73,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-29256",
+      "label": "refuted",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.9,
+        "RETRIEVE_MORE": 0.06,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.04
+      },
+      "evidence_sufficiency": 0.907,
+      "estimated_factual_risk": 0.09999999999999998,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-164901",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.08,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.548,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-126261",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.908,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-170406",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.77,
+        "RETRIEVE_MORE": 0.22,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.813,
+      "estimated_factual_risk": 0.22999999999999998,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-37960",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.91,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.382,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-31482",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.8,
+        "ABSTAIN": 0.1,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.558,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-161864",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.456,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-81623",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.11,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.339,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-1577",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.958,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-225730",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.84,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.488,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-33130",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9470000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-146593",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.96,
+        "RETRIEVE_MORE": 0.04,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9279999999999999,
+      "estimated_factual_risk": 0.040000000000000036,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-143144",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.4,
+        "RETRIEVE_MORE": 0.59,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.708,
+      "estimated_factual_risk": 0.6,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-128631",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.15,
+        "RETRIEVE_MORE": 0.82,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.514,
+      "estimated_factual_risk": 0.85,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-84675",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.96,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-125478",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9099999999999999,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-100556",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.8099999999999999,
+        "ABSTAIN": 0.1,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.525,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-204417",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.05,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.865,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-160304",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.83,
+        "RETRIEVE_MORE": 0.14,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.632,
+      "estimated_factual_risk": 0.17000000000000004,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-163985",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.91,
+        "RETRIEVE_MORE": 0.08,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.933,
+      "estimated_factual_risk": 0.08999999999999997,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-74650",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.49,
+        "RETRIEVE_MORE": 0.39,
+        "ABSTAIN": 0.11,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.519,
+      "estimated_factual_risk": 0.51,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-58299",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.05,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.903,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-124363",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.05,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.946,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-50223",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.938,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-42643",
+      "label": "refuted",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.85,
+        "RETRIEVE_MORE": 0.15,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.855,
+      "estimated_factual_risk": 0.15000000000000002,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-9269",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.19,
+        "RETRIEVE_MORE": 0.75,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.62,
+      "estimated_factual_risk": 0.81,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-47209",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.985,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-201060",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.79,
+        "ABSTAIN": 0.18,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.254,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-23906",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.45999999999999996,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-202794",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.958,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-150925",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.89,
+        "RETRIEVE_MORE": 0.08,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.874,
+      "estimated_factual_risk": 0.10999999999999999,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-64769",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.962,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-112326",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9490000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-74135",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.962,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-135341",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.09,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.29800000000000004,
+      "estimated_factual_risk": 0.91,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-193848",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.08,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.367,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-201586",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.34,
+        "RETRIEVE_MORE": 0.49,
+        "ABSTAIN": 0.16,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.519,
+      "estimated_factual_risk": 0.6599999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-41953",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.79,
+        "RETRIEVE_MORE": 0.2,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.842,
+      "estimated_factual_risk": 0.20999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-138811",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.72,
+        "RETRIEVE_MORE": 0.27,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.807,
+      "estimated_factual_risk": 0.28,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-171523",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.967,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-192200",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.37,
+        "ABSTAIN": 0.16,
+        "ESCALATE": 0.37
+      },
+      "evidence_sufficiency": 0.42900000000000005,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-113712",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.82,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.542,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-12088",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.76,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.518,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-106092",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.09,
+        "RETRIEVE_MORE": 0.82,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.612,
+      "estimated_factual_risk": 0.91,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-188880",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.75,
+        "RETRIEVE_MORE": 0.19,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.05
+      },
+      "evidence_sufficiency": 0.841,
+      "estimated_factual_risk": 0.25,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-21494",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.58,
+        "ABSTAIN": 0.3,
+        "ESCALATE": 0.04
+      },
+      "evidence_sufficiency": 0.41100000000000003,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-147762",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9339999999999999,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-91881",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.93,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.46499999999999997,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-88366",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.334,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-130765",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.09000000000000001,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.09000000000000001,
+        "ESCALATE": 0.010000000000000002
+      },
+      "evidence_sufficiency": 0.5840000000000001,
+      "estimated_factual_risk": 0.91,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-121709",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.917,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-123823",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.931,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-7884",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.976,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-216585",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.965,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-225310",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.84,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.599,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-164418",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.842,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-66692",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.17800000000000002,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-166899",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9440000000000001,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-59573",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.93,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.29400000000000004,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-55045",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9520000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-27439",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.544,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-186326",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.935,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-74284",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.16,
+        "RETRIEVE_MORE": 0.82,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.545,
+      "estimated_factual_risk": 0.84,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-179327",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.1,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.403,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-5109",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.518,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-68973",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.984,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-1947",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.979,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-60763",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.69,
+        "RETRIEVE_MORE": 0.18,
+        "ABSTAIN": 0.13,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.6499999999999999,
+      "estimated_factual_risk": 0.31000000000000005,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-167984",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9670000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-90427",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.94,
+        "RETRIEVE_MORE": 0.06,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.913,
+      "estimated_factual_risk": 0.06000000000000005,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-24240",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.96,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-38940",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.311,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-105128",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.976,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-62201",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.984,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-74936",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.91,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.346,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-120781",
+      "label": "refuted",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.334,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-67244",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.14,
+        "RETRIEVE_MORE": 0.85,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.432,
+      "estimated_factual_risk": 0.86,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-156541",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.463,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-169996",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.912,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-162837",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.569,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-185213",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.2,
+        "RETRIEVE_MORE": 0.78,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.444,
+      "estimated_factual_risk": 0.8,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-54719",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.09,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.47200000000000003,
+      "estimated_factual_risk": 0.91,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-99932",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.85,
+        "RETRIEVE_MORE": 0.15,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.869,
+      "estimated_factual_risk": 0.15000000000000002,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-182690",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.83,
+        "RETRIEVE_MORE": 0.15,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.823,
+      "estimated_factual_risk": 0.17000000000000004,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-165248",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9199999999999999,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-222717",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.944,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-15247",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.97,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.546,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-5421",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.891,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-60633",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.94,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.512,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-161253",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.942,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-109744",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.76,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.08
+      },
+      "evidence_sufficiency": 0.365,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-198424",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.36,
+        "RETRIEVE_MORE": 0.51,
+        "ABSTAIN": 0.12,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.448,
+      "estimated_factual_risk": 0.64,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-175459",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.964,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-58396",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.84,
+        "RETRIEVE_MORE": 0.15,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8859999999999999,
+      "estimated_factual_risk": 0.16000000000000003,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-94946",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.94,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.28500000000000003,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-77048",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.979,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-61475",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.58,
+        "ABSTAIN": 0.23,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.38,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-208921",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.4,
+        "RETRIEVE_MORE": 0.52,
+        "ABSTAIN": 0.08,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.479,
+      "estimated_factual_risk": 0.6,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-190164",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.41700000000000004,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-128744",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.31,
+        "RETRIEVE_MORE": 0.49,
+        "ABSTAIN": 0.19,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.578,
+      "estimated_factual_risk": 0.69,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-12537",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.979,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-127133",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.375,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-161277",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.438,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-216590",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.946,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-13773",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.954,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-216195",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.537,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-117695",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.23,
+        "RETRIEVE_MORE": 0.66,
+        "ABSTAIN": 0.11,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.519,
+      "estimated_factual_risk": 0.77,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-193883",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.88,
+        "RETRIEVE_MORE": 0.1,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.652,
+      "estimated_factual_risk": 0.12,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-7244",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.76,
+        "ABSTAIN": 0.15,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.4790000000000001,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-59113",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.91,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.437,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-130369",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.35,
+        "RETRIEVE_MORE": 0.61,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.673,
+      "estimated_factual_risk": 0.65,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-76526",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.387,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-50383",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.12,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.46499999999999997,
+      "estimated_factual_risk": 0.88,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-173663",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.971,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-43109",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.984,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-102173",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.397,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-150689",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.2,
+        "RETRIEVE_MORE": 0.54,
+        "ABSTAIN": 0.25,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.512,
+      "estimated_factual_risk": 0.8,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-39188",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.04,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.9490000000000001,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-160065",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.928,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-70239",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.966,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-205278",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.91,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.325,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-201749",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.944,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-96333",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9510000000000001,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-211301",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.15,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.463,
+      "estimated_factual_risk": 0.85,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-147049",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.87,
+        "RETRIEVE_MORE": 0.13,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.887,
+      "estimated_factual_risk": 0.13,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-146531",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.903,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-48684",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.15,
+        "RETRIEVE_MORE": 0.79,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.609,
+      "estimated_factual_risk": 0.85,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-122614",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.48,
+        "RETRIEVE_MORE": 0.36,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.09
+      },
+      "evidence_sufficiency": 0.6419999999999999,
+      "estimated_factual_risk": 0.52,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-41492",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.948,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-93412",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9510000000000001,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-12",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.578,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-22003",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.979,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-173926",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.49,
+        "RETRIEVE_MORE": 0.25,
+        "ABSTAIN": 0.16,
+        "ESCALATE": 0.1
+      },
+      "evidence_sufficiency": 0.5660000000000001,
+      "estimated_factual_risk": 0.51,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-43522",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.974,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-204312",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5,
+        "RETRIEVE_MORE": 0.48,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.7,
+      "estimated_factual_risk": 0.5,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-187312",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.538,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-29027",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.15,
+        "RETRIEVE_MORE": 0.79,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.44200000000000006,
+      "estimated_factual_risk": 0.85,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-109691",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.96,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-228571",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.78,
+        "ABSTAIN": 0.18,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.24800000000000003,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-227097",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.75,
+        "ABSTAIN": 0.18,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.214,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-58966",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.486,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-54168",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.948,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-106929",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.944,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-18629",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.15,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.477,
+      "estimated_factual_risk": 0.85,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-209115",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.93,
+        "RETRIEVE_MORE": 0.06,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.79,
+      "estimated_factual_risk": 0.06999999999999995,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-101716",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.96,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.926,
+      "estimated_factual_risk": 0.040000000000000036,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-138949",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.975,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-150125",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.13,
+        "RETRIEVE_MORE": 0.82,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.583,
+      "estimated_factual_risk": 0.87,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-135773",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.93,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.40800000000000003,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-55560",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.921,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-128278",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.921,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-189772",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.93,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.255,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-166501",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.982,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-191420",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.962,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-52472",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.81,
+        "RETRIEVE_MORE": 0.14,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.737,
+      "estimated_factual_risk": 0.18999999999999995,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-82367",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9259999999999999,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-158261",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.43599999999999994,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-197384",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7,
+        "RETRIEVE_MORE": 0.23,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.05
+      },
+      "evidence_sufficiency": 0.795,
+      "estimated_factual_risk": 0.30000000000000004,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-172100",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9570000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-179110",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.67,
+        "ABSTAIN": 0.31,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.48100000000000004,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-91755",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.6,
+        "ABSTAIN": 0.29,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.385,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-9582",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.46,
+        "RETRIEVE_MORE": 0.44,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.481,
+      "estimated_factual_risk": 0.54,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-218371",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.43400000000000005,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-89918",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.91,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.42600000000000005,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-153601",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.91,
+        "RETRIEVE_MORE": 0.08,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.883,
+      "estimated_factual_risk": 0.08999999999999997,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-150834",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.92,
+        "RETRIEVE_MORE": 0.07,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.851,
+      "estimated_factual_risk": 0.07999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-12466",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.976,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-70536",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.96,
+        "RETRIEVE_MORE": 0.04,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.904,
+      "estimated_factual_risk": 0.040000000000000036,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-90860",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.64,
+        "ABSTAIN": 0.25,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.443,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-49512",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8959999999999999,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-158909",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.967,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-134944",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1717171717171717,
+        "RETRIEVE_MORE": 0.8181818181818181,
+        "ABSTAIN": 0.0101010101010101,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.499,
+      "estimated_factual_risk": 0.8282828282828283,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-222652",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9570000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-156694",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.954,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-200300",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.979,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-56735",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.91,
+        "RETRIEVE_MORE": 0.06,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.9279999999999999,
+      "estimated_factual_risk": 0.08999999999999997,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-5719",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.05,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8600000000000001,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-146214",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.61,
+        "RETRIEVE_MORE": 0.33,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.672,
+      "estimated_factual_risk": 0.39,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "fever-32355",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.4,
+        "RETRIEVE_MORE": 0.53,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.617,
+      "estimated_factual_risk": 0.6,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-16250",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.979,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-179007",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.973,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-156525",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.16,
+        "RETRIEVE_MORE": 0.79,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.46099999999999997,
+      "estimated_factual_risk": 0.84,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-171504",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.942,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-217205",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9279999999999999,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "fever-89538",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.446,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "fever-8148",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.5680000000000001,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "fever-10461",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.29,
+        "RETRIEVE_MORE": 0.64,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.359,
+      "estimated_factual_risk": 0.71,
+      "n_retrievals": 3,
+      "correct": true
+    }
+  ],
+  "risk_coverage_curve": [
+    {
+      "coverage": 0.0033333333333333335,
+      "risk": 0.0,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "coverage": 0.05333333333333334,
+      "risk": 0.0625,
+      "accuracy": 0.9375,
+      "k": 16
+    },
+    {
+      "coverage": 0.10333333333333333,
+      "risk": 0.12903225806451613,
+      "accuracy": 0.8709677419354839,
+      "k": 31
+    },
+    {
+      "coverage": 0.15333333333333332,
+      "risk": 0.08695652173913049,
+      "accuracy": 0.9130434782608695,
+      "k": 46
+    },
+    {
+      "coverage": 0.20333333333333334,
+      "risk": 0.1311475409836066,
+      "accuracy": 0.8688524590163934,
+      "k": 61
+    },
+    {
+      "coverage": 0.25333333333333335,
+      "risk": 0.11842105263157898,
+      "accuracy": 0.881578947368421,
+      "k": 76
+    },
+    {
+      "coverage": 0.30333333333333334,
+      "risk": 0.10989010989010994,
+      "accuracy": 0.8901098901098901,
+      "k": 91
+    },
+    {
+      "coverage": 0.35333333333333333,
+      "risk": 0.12264150943396224,
+      "accuracy": 0.8773584905660378,
+      "k": 106
+    },
+    {
+      "coverage": 0.4033333333333333,
+      "risk": 0.1322314049586777,
+      "accuracy": 0.8677685950413223,
+      "k": 121
+    },
+    {
+      "coverage": 0.4533333333333333,
+      "risk": 0.125,
+      "accuracy": 0.875,
+      "k": 136
+    },
+    {
+      "coverage": 0.5033333333333333,
+      "risk": 0.13245033112582782,
+      "accuracy": 0.8675496688741722,
+      "k": 151
+    },
+    {
+      "coverage": 0.5533333333333333,
+      "risk": 0.14457831325301207,
+      "accuracy": 0.8554216867469879,
+      "k": 166
+    },
+    {
+      "coverage": 0.6033333333333334,
+      "risk": 0.1712707182320442,
+      "accuracy": 0.8287292817679558,
+      "k": 181
+    },
+    {
+      "coverage": 0.6533333333333333,
+      "risk": 0.18367346938775508,
+      "accuracy": 0.8163265306122449,
+      "k": 196
+    },
+    {
+      "coverage": 0.7033333333333334,
+      "risk": 0.18957345971563977,
+      "accuracy": 0.8104265402843602,
+      "k": 211
+    },
+    {
+      "coverage": 0.7533333333333333,
+      "risk": 0.1991150442477876,
+      "accuracy": 0.8008849557522124,
+      "k": 226
+    },
+    {
+      "coverage": 0.8033333333333333,
+      "risk": 0.20331950207468885,
+      "accuracy": 0.7966804979253111,
+      "k": 241
+    },
+    {
+      "coverage": 0.8533333333333334,
+      "risk": 0.20703125,
+      "accuracy": 0.79296875,
+      "k": 256
+    },
+    {
+      "coverage": 0.9033333333333333,
+      "risk": 0.20664206642066418,
+      "accuracy": 0.7933579335793358,
+      "k": 271
+    },
+    {
+      "coverage": 0.9533333333333334,
+      "risk": 0.22377622377622375,
+      "accuracy": 0.7762237762237763,
+      "k": 286
+    },
+    {
+      "coverage": 1.0,
+      "risk": 0.2366666666666667,
+      "accuracy": 0.7633333333333333,
+      "k": 300
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "dataset": "scifact",
+    "baseline": "feature",
+    "n_agree": 394,
+    "delta_acc_agree_pts": 0.0,
+    "n_differ": 506,
+    "delta_acc_differ_pts": 4.545454545454546,
+    "share_of_total_delta_from_differ": 1.0,
+    "mean_retrievals_baseline": 1.1533333333333333,
+    "mean_retrievals_case": 2.1355555555555554
+  },
+  {
+    "dataset": "scifact",
+    "baseline": "selfrag",
+    "n_agree": 374,
+    "delta_acc_agree_pts": 0.26737967914438504,
+    "n_differ": 526,
+    "delta_acc_differ_pts": 2.661596958174905,
+    "share_of_total_delta_from_differ": null,
+    "mean_retrievals_baseline": 1.1866666666666668,
+    "mean_retrievals_case": 2.1355555555555554
+  },
+  {
+    "dataset": "fever",
+    "baseline": "feature",
+    "n_agree": 418,
+    "delta_acc_agree_pts": 0.23923444976076555,
+    "n_differ": 482,
+    "delta_acc_differ_pts": 0.0,
+    "share_of_total_delta_from_differ": null,
+    "mean_retrievals_baseline": 1.728888888888889,
+    "mean_retrievals_case": 1.781111111111111
+  },
+  {
+    "dataset": "fever",
+    "baseline": "selfrag",
+    "n_agree": 573,
+    "delta_acc_agree_pts": -0.34904013961605584,
+    "n_differ": 327,
+    "delta_acc_differ_pts": -0.3058103975535168,
+    "share_of_total_delta_from_differ": null,
+    "mean_retrievals_baseline": 1.0755555555555556,
+    "mean_retrievals_case": 1.781111111111111
+  },
+  {
+    "dataset": "hotpotqa",
+    "baseline": "feature",
+    "n_agree": 460,
+    "delta_acc_agree_pts": 0.0,
+    "n_differ": 440,
+    "delta_acc_differ_pts": 14.090909090909092,
+    "share_of_total_delta_from_differ": 1.0,
+    "mean_retrievals_baseline": 1.5955555555555556,
+    "mean_retrievals_case": 1.9088888888888889
+  },
+  {
+    "dataset": "hotpotqa",
+    "baseline": "selfrag",
+    "n_agree": 494,
+    "delta_acc_agree_pts": 0.0,
+    "n_differ": 406,
+    "delta_acc_differ_pts": 21.428571428571427,
+    "share_of_total_delta_from_differ": 1.0,
+    "mean_retrievals_baseline": 1.0355555555555556,
+    "mean_retrievals_case": 1.9088888888888889
+  }
+]

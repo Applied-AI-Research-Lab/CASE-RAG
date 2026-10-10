@@ -1,0 +1,4997 @@
+{
+  "config": {
+    "dataset": "scifact",
+    "split": "dev",
+    "n": 300,
+    "calib": 300,
+    "k": 5,
+    "max_retrievals": 2,
+    "corpus_max": 70000,
+    "corpus_file": "data/processed/corpus/scifact/corpus.jsonl",
+    "retriever": "bm25",
+    "dense_model": "BAAI/bge-small-en-v1.5",
+    "verifier": "embedding",
+    "verifier_model": "cross-encoder/nli-deberta-v3-base",
+    "router": "jev",
+    "backend": "ollama",
+    "llm_model": "gemma4:31b-cloud",
+    "base_url": "",
+    "api_key": "",
+    "device": null,
+    "target_risk": 0.15,
+    "seed": 1,
+    "calib_split": "train",
+    "out": "runs/matrix/scifact_jev_s1.json"
+  },
+  "n_calib": 300,
+  "n_test": 300,
+  "raw_accuracy": 0.7866666666666666,
+  "conformal_decisions": {
+    "coverage": 0.03,
+    "answered_risk": 0.0
+  },
+  "metrics": {
+    "ece": 0.09129804373477649,
+    "brier": 0.17041424511926853,
+    "aurc": 0.15467374621436383,
+    "risk_at_80_cov": 0.23236514522821572,
+    "abstention": {
+      "coverage": 0.03,
+      "answered_risk": 0.0,
+      "abstain_rate": 0.97,
+      "abstain_precision": 0.8109965635738832,
+      "escalate_rate": 0.0
+    }
+  },
+  "cost": {
+    "mean_retrievals": 2.1433333333333335,
+    "llm_calls": 1293,
+    "mean_llm_latency_s": 0.5170803330492495
+  },
+  "calibration": {
+    "method": "isotonic",
+    "temperature": 5.0,
+    "report": {
+      "method": "temperature",
+      "n": 300,
+      "ece": 0.3113094780792237,
+      "brier": 0.26189972898550407,
+      "nll": 0.7255492261660105
+    }
+  },
+  "conformal": {
+    "target_risk": 0.15,
+    "threshold": 1.0
+  },
+  "runtime_s": 1700.0706408023834,
+  "calib_records": [
+    {
+      "id": "scifact-1018",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.54,
+        "RETRIEVE_MORE": 0.42,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.7050000000000001,
+      "estimated_factual_risk": 0.45999999999999996,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-126",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.84,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.55,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-355",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.9,
+        "RETRIEVE_MORE": 0.1,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.882,
+      "estimated_factual_risk": 0.09999999999999998,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1330",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.46,
+        "RETRIEVE_MORE": 0.51,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.736,
+      "estimated_factual_risk": 0.54,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-662",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.85,
+        "RETRIEVE_MORE": 0.15,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.855,
+      "estimated_factual_risk": 0.15000000000000002,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-856",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.87,
+        "RETRIEVE_MORE": 0.12,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.826,
+      "estimated_factual_risk": 0.13,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-488",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.92,
+        "RETRIEVE_MORE": 0.08,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.882,
+      "estimated_factual_risk": 0.07999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-197",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.423,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1114",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.88,
+        "RETRIEVE_MORE": 0.12,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.847,
+      "estimated_factual_risk": 0.12,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1223",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.09,
+        "RETRIEVE_MORE": 0.78,
+        "ABSTAIN": 0.12,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.365,
+      "estimated_factual_risk": 0.91,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-250",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.916,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-762",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.64,
+        "ABSTAIN": 0.14,
+        "ESCALATE": 0.2
+      },
+      "evidence_sufficiency": 0.41700000000000004,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-568",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.83,
+        "RETRIEVE_MORE": 0.17,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8460000000000001,
+      "estimated_factual_risk": 0.17000000000000004,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1153",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.46,
+        "RETRIEVE_MORE": 0.53,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.6930000000000001,
+      "estimated_factual_risk": 0.54,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1142",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.15400000000000003,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-663",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.72,
+        "RETRIEVE_MORE": 0.28,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8029999999999999,
+      "estimated_factual_risk": 0.28,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-531",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.975,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1087",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9470000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-886",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.964,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1324",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6,
+        "RETRIEVE_MORE": 0.38,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.779,
+      "estimated_factual_risk": 0.4,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-469",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.442,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-389",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.327,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-828",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.1,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.261,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-848",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.91,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.494,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-890",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.1,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.30600000000000005,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1052",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.12,
+        "RETRIEVE_MORE": 0.85,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.437,
+      "estimated_factual_risk": 0.88,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-361",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.24,
+        "RETRIEVE_MORE": 0.71,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.5609999999999999,
+      "estimated_factual_risk": 0.76,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1254",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.351,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-804",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.927,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-515",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.05,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.899,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-564",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.94,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.917,
+      "estimated_factual_risk": 0.06000000000000005,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-713",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.85,
+        "ABSTAIN": 0.1,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.31200000000000006,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1404",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.962,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-17",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.84,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.578,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-228",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9390000000000001,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1206",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.96,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.329,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-737",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.51,
+        "RETRIEVE_MORE": 0.48,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.72,
+      "estimated_factual_risk": 0.49,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-85",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.88,
+        "RETRIEVE_MORE": 0.11,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.875,
+      "estimated_factual_risk": 0.12,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-265",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9460000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-305",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.40404040404040403,
+        "RETRIEVE_MORE": 0.5555555555555556,
+        "ABSTAIN": 0.0303030303030303,
+        "ESCALATE": 0.0101010101010101
+      },
+      "evidence_sufficiency": 0.714,
+      "estimated_factual_risk": 0.595959595959596,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-176",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.474,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-376",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.67,
+        "ABSTAIN": 0.16,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.405,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-262",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.53,
+        "RETRIEVE_MORE": 0.47,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.747,
+      "estimated_factual_risk": 0.47,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1376",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.44000000000000006,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-358",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.79,
+        "RETRIEVE_MORE": 0.2,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.795,
+      "estimated_factual_risk": 0.20999999999999996,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-891",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.08,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.521,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1361",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.9,
+        "RETRIEVE_MORE": 0.1,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.864,
+      "estimated_factual_risk": 0.09999999999999998,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1236",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.61,
+        "RETRIEVE_MORE": 0.38,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.688,
+      "estimated_factual_risk": 0.39,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1386",
+      "label": "refuted",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.65,
+        "RETRIEVE_MORE": 0.34,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.793,
+      "estimated_factual_risk": 0.35,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-112",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.62,
+        "RETRIEVE_MORE": 0.36,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.763,
+      "estimated_factual_risk": 0.38,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-661",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.25,
+        "RETRIEVE_MORE": 0.72,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.607,
+      "estimated_factual_risk": 0.75,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-34",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.91,
+        "RETRIEVE_MORE": 0.09,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8520000000000001,
+      "estimated_factual_risk": 0.08999999999999997,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1224",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.83,
+        "RETRIEVE_MORE": 0.17,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.819,
+      "estimated_factual_risk": 0.17000000000000004,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-992",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.41400000000000003,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-822",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.94,
+        "RETRIEVE_MORE": 0.06,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9530000000000001,
+      "estimated_factual_risk": 0.06000000000000005,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1015",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.969,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-505",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.971,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-492",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.96,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.272,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-375",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.925,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-951",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.4,
+        "RETRIEVE_MORE": 0.57,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.628,
+      "estimated_factual_risk": 0.6,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1334",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.63,
+        "RETRIEVE_MORE": 0.36,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.773,
+      "estimated_factual_risk": 0.37,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1406",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.964,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-801",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.944,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-530",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.964,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-342",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1717171717171717,
+        "RETRIEVE_MORE": 0.8181818181818181,
+        "ABSTAIN": 0.0101010101010101,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.6,
+      "estimated_factual_risk": 0.8282828282828283,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-309",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.96,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.401,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-255",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.42000000000000004,
+        "RETRIEVE_MORE": 0.5700000000000001,
+        "ABSTAIN": 0.010000000000000002,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.695,
+      "estimated_factual_risk": 0.58,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-835",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.434,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-689",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.16,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.28900000000000003,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-524",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.84,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.473,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1378",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.42,
+        "RETRIEVE_MORE": 0.56,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.716,
+      "estimated_factual_risk": 0.5800000000000001,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-666",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.75,
+        "RETRIEVE_MORE": 0.25,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.817,
+      "estimated_factual_risk": 0.25,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-44",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.378,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-332",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.905,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-214",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.39,
+        "RETRIEVE_MORE": 0.58,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.6719999999999999,
+      "estimated_factual_risk": 0.61,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-703",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.445,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1268",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.14,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.496,
+      "estimated_factual_risk": 0.86,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-189",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5700000000000001,
+        "RETRIEVE_MORE": 0.35000000000000003,
+        "ABSTAIN": 0.030000000000000002,
+        "ESCALATE": 0.05000000000000001
+      },
+      "evidence_sufficiency": 0.738,
+      "estimated_factual_risk": 0.42999999999999994,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-81",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.89,
+        "RETRIEVE_MORE": 0.11,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8420000000000001,
+      "estimated_factual_risk": 0.10999999999999999,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-336",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.18,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.42600000000000005,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-6",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.09,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.458,
+      "estimated_factual_risk": 0.91,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1050",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.87,
+        "RETRIEVE_MORE": 0.13,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8680000000000001,
+      "estimated_factual_risk": 0.13,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1367",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.897,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1158",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.92,
+        "RETRIEVE_MORE": 0.07,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.929,
+      "estimated_factual_risk": 0.07999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1247",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.13,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.309,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-588",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.09,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.47100000000000003,
+      "estimated_factual_risk": 0.91,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1075",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.93,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.35800000000000004,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-175",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.11,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.183,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-483",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.927,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-898",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7000000000000001,
+        "RETRIEVE_MORE": 0.29000000000000004,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.010000000000000002
+      },
+      "evidence_sufficiency": 0.781,
+      "estimated_factual_risk": 0.29999999999999993,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-15",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.6,
+        "ABSTAIN": 0.28,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.562,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1074",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.8,
+        "ABSTAIN": 0.08,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.366,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-894",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.12,
+        "RETRIEVE_MORE": 0.84,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.42,
+      "estimated_factual_risk": 0.88,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-753",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.93,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.295,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1193",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.46,
+        "RETRIEVE_MORE": 0.52,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.6859999999999999,
+      "estimated_factual_risk": 0.54,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-940",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.89,
+        "RETRIEVE_MORE": 0.11,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.897,
+      "estimated_factual_risk": 0.10999999999999999,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1053",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.34500000000000003,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-168",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.97,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.33999999999999997,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-20",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.08,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.35000000000000003,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-541",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.73,
+        "RETRIEVE_MORE": 0.27,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.785,
+      "estimated_factual_risk": 0.27,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-454",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8200000000000001,
+        "RETRIEVE_MORE": 0.18,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.843,
+      "estimated_factual_risk": 0.17999999999999994,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-104",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.0,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.11,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.297,
+      "estimated_factual_risk": 1.0,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-746",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.356,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1128",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.19,
+        "RETRIEVE_MORE": 0.75,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.56,
+      "estimated_factual_risk": 0.81,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-979",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.36,
+        "RETRIEVE_MORE": 0.61,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.634,
+      "estimated_factual_risk": 0.64,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-776",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.91,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.40900000000000003,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-563",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.962,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1263",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.966,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-267",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.89,
+        "RETRIEVE_MORE": 0.11,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.91,
+      "estimated_factual_risk": 0.10999999999999999,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-537",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.14,
+        "RETRIEVE_MORE": 0.84,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.47200000000000003,
+      "estimated_factual_risk": 0.86,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1037",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.54,
+        "RETRIEVE_MORE": 0.42,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.629,
+      "estimated_factual_risk": 0.45999999999999996,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-758",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.2,
+        "RETRIEVE_MORE": 0.77,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.536,
+      "estimated_factual_risk": 0.8,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-771",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.87,
+        "RETRIEVE_MORE": 0.12,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.859,
+      "estimated_factual_risk": 0.13,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-788",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.91,
+        "RETRIEVE_MORE": 0.09,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.865,
+      "estimated_factual_risk": 0.08999999999999997,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-854",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.964,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-479",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.72,
+        "RETRIEVE_MORE": 0.28,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.7689999999999999,
+      "estimated_factual_risk": 0.28,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-963",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.9,
+        "RETRIEVE_MORE": 0.1,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.866,
+      "estimated_factual_risk": 0.09999999999999998,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-545",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.21999999999999997,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-226",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.12,
+        "RETRIEVE_MORE": 0.8,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.512,
+      "estimated_factual_risk": 0.88,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-884",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9610000000000001,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-485",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.09,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.48100000000000004,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1025",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.22,
+        "RETRIEVE_MORE": 0.74,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.506,
+      "estimated_factual_risk": 0.78,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-92",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.323,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-287",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.19,
+        "RETRIEVE_MORE": 0.79,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.524,
+      "estimated_factual_risk": 0.81,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-612",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.926,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1210",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.93,
+        "RETRIEVE_MORE": 0.07,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8640000000000001,
+      "estimated_factual_risk": 0.06999999999999995,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-11",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.276,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1056",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.54,
+        "RETRIEVE_MORE": 0.44,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.777,
+      "estimated_factual_risk": 0.45999999999999996,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-810",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.34700000000000003,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-244",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.337,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-43",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.21,
+        "RETRIEVE_MORE": 0.75,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.577,
+      "estimated_factual_risk": 0.79,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1115",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.97,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1308",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.11,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.31800000000000006,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-407",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.45899999999999996,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-602",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.51,
+        "RETRIEVE_MORE": 0.45,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.609,
+      "estimated_factual_risk": 0.49,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1307",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.81,
+        "RETRIEVE_MORE": 0.18,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8420000000000001,
+      "estimated_factual_risk": 0.18999999999999995,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-944",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.18,
+        "RETRIEVE_MORE": 0.73,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.05
+      },
+      "evidence_sufficiency": 0.402,
+      "estimated_factual_risk": 0.8200000000000001,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1391",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.83,
+        "RETRIEVE_MORE": 0.16,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8540000000000001,
+      "estimated_factual_risk": 0.17000000000000004,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-767",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.36,
+        "RETRIEVE_MORE": 0.62,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.7170000000000001,
+      "estimated_factual_risk": 0.64,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-779",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9570000000000001,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-392",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.93,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.31100000000000005,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-734",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.24,
+        "RETRIEVE_MORE": 0.74,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.6020000000000001,
+      "estimated_factual_risk": 0.76,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-18",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.78,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.651,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-941",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.73,
+        "RETRIEVE_MORE": 0.26,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.859,
+      "estimated_factual_risk": 0.27,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-93",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.32,
+        "RETRIEVE_MORE": 0.64,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.635,
+      "estimated_factual_risk": 0.6799999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-576",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.367,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-989",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.49,
+        "RETRIEVE_MORE": 0.49,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.62,
+      "estimated_factual_risk": 0.51,
+      "n_retrievals": 2,
+      "correct": false
+    },
+    {
+      "id": "scifact-803",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9450000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-299",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.904,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-688",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.15000000000000002,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-482",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6,
+        "RETRIEVE_MORE": 0.39,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.765,
+      "estimated_factual_risk": 0.4,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1045",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.34,
+        "RETRIEVE_MORE": 0.63,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.684,
+      "estimated_factual_risk": 0.6599999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-95",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.29400000000000004,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1171",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.92,
+        "RETRIEVE_MORE": 0.08,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.86,
+      "estimated_factual_risk": 0.07999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-978",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.85,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.04
+      },
+      "evidence_sufficiency": 0.451,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-792",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.79,
+        "RETRIEVE_MORE": 0.21,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8460000000000001,
+      "estimated_factual_risk": 0.20999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-929",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.963,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-739",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.77,
+        "ABSTAIN": 0.21,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.26,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-621",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.53,
+        "RETRIEVE_MORE": 0.42,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.44100000000000006,
+      "estimated_factual_risk": 0.47,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1350",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.87,
+        "RETRIEVE_MORE": 0.12,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.812,
+      "estimated_factual_risk": 0.13,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1239",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.332,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-61",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.82,
+        "RETRIEVE_MORE": 0.17,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.815,
+      "estimated_factual_risk": 0.18000000000000005,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-732",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.255,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-860",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.28,
+        "RETRIEVE_MORE": 0.71,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.64,
+      "estimated_factual_risk": 0.72,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-667",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9390000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-167",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.79,
+        "RETRIEVE_MORE": 0.2,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.831,
+      "estimated_factual_risk": 0.20999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1231",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.975,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-413",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.62,
+        "RETRIEVE_MORE": 0.37,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.724,
+      "estimated_factual_risk": 0.38,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1234",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.404,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-241",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.394,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-4",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6900000000000001,
+        "RETRIEVE_MORE": 0.31,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8140000000000001,
+      "estimated_factual_risk": 0.30999999999999994,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-184",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.40900000000000003,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-286",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.356,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-772",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.13,
+        "RETRIEVE_MORE": 0.85,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.395,
+      "estimated_factual_risk": 0.87,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-611",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.12,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.475,
+      "estimated_factual_risk": 0.88,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-66",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.96,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.267,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1011",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.964,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-39",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.51,
+        "RETRIEVE_MORE": 0.48,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.732,
+      "estimated_factual_risk": 0.49,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-12",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.46299999999999997,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1208",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.12,
+        "RETRIEVE_MORE": 0.54,
+        "ABSTAIN": 0.3,
+        "ESCALATE": 0.04
+      },
+      "evidence_sufficiency": 0.43900000000000006,
+      "estimated_factual_risk": 0.88,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-165",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.96,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.43800000000000006,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-952",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.54,
+        "RETRIEVE_MORE": 0.43,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.781,
+      "estimated_factual_risk": 0.45999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1103",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.14,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.585,
+      "estimated_factual_risk": 0.86,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-881",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.04,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.826,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-205",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.71,
+        "ABSTAIN": 0.18,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.41900000000000004,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-186",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.66,
+        "ABSTAIN": 0.16,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.513,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-638",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.78,
+        "ABSTAIN": 0.17,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.30000000000000004,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-98",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9590000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-778",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9410000000000001,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-209",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.93,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.369,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-169",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.97,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.304,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-926",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.98,
+        "RETRIEVE_MORE": 0.02,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.926,
+      "estimated_factual_risk": 0.020000000000000018,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-160",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.32,
+        "RETRIEVE_MORE": 0.66,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.507,
+      "estimated_factual_risk": 0.6799999999999999,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1067",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.272,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1055",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.29,
+        "RETRIEVE_MORE": 0.68,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.5920000000000001,
+      "estimated_factual_risk": 0.71,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-416",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.75,
+        "ABSTAIN": 0.21,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.345,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-487",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.91,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.45200000000000007,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-572",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.34700000000000003,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1043",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.971,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-797",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.25,
+        "RETRIEVE_MORE": 0.73,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.619,
+      "estimated_factual_risk": 0.75,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-352",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.0,
+        "RETRIEVE_MORE": 0.93,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.24800000000000005,
+      "estimated_factual_risk": 1.0,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-278",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.565,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1346",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.96,
+        "RETRIEVE_MORE": 0.04,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8800000000000001,
+      "estimated_factual_risk": 0.040000000000000036,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1085",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.343,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-474",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.377,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-372",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.495,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-333",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.984,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1373",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.91,
+        "RETRIEVE_MORE": 0.09,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.901,
+      "estimated_factual_risk": 0.08999999999999997,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-694",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.37,
+        "RETRIEVE_MORE": 0.55,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.619,
+      "estimated_factual_risk": 0.63,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1176",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.94,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-867",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.89,
+        "RETRIEVE_MORE": 0.11,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.8640000000000001,
+      "estimated_factual_risk": 0.10999999999999999,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-221",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.963,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-259",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.28,
+        "RETRIEVE_MORE": 0.65,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.05
+      },
+      "evidence_sufficiency": 0.599,
+      "estimated_factual_risk": 0.72,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-669",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6,
+        "RETRIEVE_MORE": 0.38,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.613,
+      "estimated_factual_risk": 0.4,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-109",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.25,
+        "RETRIEVE_MORE": 0.73,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.558,
+      "estimated_factual_risk": 0.75,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-152",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.45,
+        "RETRIEVE_MORE": 0.52,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.6819999999999999,
+      "estimated_factual_risk": 0.55,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-857",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.83,
+        "RETRIEVE_MORE": 0.17,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.796,
+      "estimated_factual_risk": 0.17000000000000004,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-363",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.326,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-378",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1616161616161616,
+        "RETRIEVE_MORE": 0.8181818181818181,
+        "ABSTAIN": 0.0202020202020202,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.5640000000000001,
+      "estimated_factual_risk": 0.8383838383838385,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-617",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.08,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.21500000000000002,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-654",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.08,
+        "RETRIEVE_MORE": 0.73,
+        "ABSTAIN": 0.18,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.4,
+      "estimated_factual_risk": 0.92,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1387",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.84,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.431,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1295",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.69,
+        "RETRIEVE_MORE": 0.31,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.829,
+      "estimated_factual_risk": 0.31000000000000005,
+      "n_retrievals": 2,
+      "correct": true
+    },
+    {
+      "id": "scifact-1081",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.8,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.6200000000000001,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-499",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.14,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.485,
+      "estimated_factual_risk": 0.86,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-89",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5700000000000001,
+        "RETRIEVE_MORE": 0.42000000000000004,
+        "ABSTAIN": 0.010000000000000002,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.6990000000000001,
+      "estimated_factual_risk": 0.42999999999999994,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-422",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.12,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.17,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1304",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.0,
+        "RETRIEVE_MORE": 0.96,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.257,
+      "estimated_factual_risk": 1.0,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-55",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.96,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.47400000000000003,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-156",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.92,
+        "RETRIEVE_MORE": 0.08,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.853,
+      "estimated_factual_risk": 0.07999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-484",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.1,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.34500000000000003,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1109",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.13,
+        "RETRIEVE_MORE": 0.82,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.374,
+      "estimated_factual_risk": 0.87,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-747",
+      "label": "refuted",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.0,
+        "RETRIEVE_MORE": 0.9400000000000001,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.245,
+      "estimated_factual_risk": 1.0,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1403",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.96,
+        "RETRIEVE_MORE": 0.04,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9560000000000001,
+      "estimated_factual_risk": 0.040000000000000036,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-335",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.33,
+        "RETRIEVE_MORE": 0.65,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.677,
+      "estimated_factual_risk": 0.6699999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-738",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5700000000000001,
+        "RETRIEVE_MORE": 0.42000000000000004,
+        "ABSTAIN": 0.010000000000000002,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.7889999999999999,
+      "estimated_factual_risk": 0.42999999999999994,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-726",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5,
+        "RETRIEVE_MORE": 0.49,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.732,
+      "estimated_factual_risk": 0.5,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1390",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.968,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1261",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.62,
+        "RETRIEVE_MORE": 0.36,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.6950000000000001,
+      "estimated_factual_risk": 0.38,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1258",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.0101010101010101,
+        "RETRIEVE_MORE": 0.9393939393939393,
+        "ABSTAIN": 0.050505050505050504,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.32500000000000007,
+      "estimated_factual_risk": 0.98989898989899,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1101",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.45,
+        "RETRIEVE_MORE": 0.54,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.6890000000000001,
+      "estimated_factual_risk": 0.55,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-954",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.77,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.04
+      },
+      "evidence_sufficiency": 0.579,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1065",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.65,
+        "RETRIEVE_MORE": 0.29,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.05
+      },
+      "evidence_sufficiency": 0.813,
+      "estimated_factual_risk": 0.35,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-547",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.92,
+        "RETRIEVE_MORE": 0.08,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.881,
+      "estimated_factual_risk": 0.07999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-82",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.11,
+        "RETRIEVE_MORE": 0.85,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.402,
+      "estimated_factual_risk": 0.89,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-896",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.0808080808080808,
+        "RETRIEVE_MORE": 0.8181818181818181,
+        "ABSTAIN": 0.10101010101010101,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.381,
+      "estimated_factual_risk": 0.9191919191919192,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-959",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.77,
+        "RETRIEVE_MORE": 0.21,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.899,
+      "estimated_factual_risk": 0.22999999999999998,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-717",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.21,
+        "RETRIEVE_MORE": 0.76,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.613,
+      "estimated_factual_risk": 0.79,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-962",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.05,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.938,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-780",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.82,
+        "RETRIEVE_MORE": 0.18,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.899,
+      "estimated_factual_risk": 0.18000000000000005,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-390",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.89,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.34,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1096",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9590000000000001,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1310",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.16,
+        "RETRIEVE_MORE": 0.67,
+        "ABSTAIN": 0.1,
+        "ESCALATE": 0.07
+      },
+      "evidence_sufficiency": 0.498,
+      "estimated_factual_risk": 0.84,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1127",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.04,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.29900000000000004,
+      "estimated_factual_risk": 0.96,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1016",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.0,
+        "RETRIEVE_MORE": 0.97,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.30700000000000005,
+      "estimated_factual_risk": 1.0,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1126",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.96,
+        "RETRIEVE_MORE": 0.04,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.898,
+      "estimated_factual_risk": 0.040000000000000036,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-144",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.54,
+        "RETRIEVE_MORE": 0.43,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.758,
+      "estimated_factual_risk": 0.45999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-973",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.968,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-582",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.38,
+        "RETRIEVE_MORE": 0.61,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.6739999999999999,
+      "estimated_factual_risk": 0.62,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-574",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.0,
+        "RETRIEVE_MORE": 0.95,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.23099999999999998,
+      "estimated_factual_risk": 1.0,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-853",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.88,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.376,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-791",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9550000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-281",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.03,
+        "RETRIEVE_MORE": 0.9,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.42600000000000005,
+      "estimated_factual_risk": 0.97,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-181",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.81,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.5,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1004",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.954,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-337",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.13,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.42800000000000005,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1383",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.94,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.303,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-984",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.87,
+        "RETRIEVE_MORE": 0.12,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.875,
+      "estimated_factual_risk": 0.13,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1125",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8,
+        "RETRIEVE_MORE": 0.18,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.7050000000000001,
+      "estimated_factual_risk": 0.19999999999999996,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-245",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.32,
+        "RETRIEVE_MORE": 0.64,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.03
+      },
+      "evidence_sufficiency": 0.612,
+      "estimated_factual_risk": 0.6799999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-455",
+      "label": "supported",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.12,
+        "RETRIEVE_MORE": 0.87,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.368,
+      "estimated_factual_risk": 0.88,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-988",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.96,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.29700000000000004,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-861",
+      "label": "refuted",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.17,
+        "RETRIEVE_MORE": 0.79,
+        "ABSTAIN": 0.04,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.563,
+      "estimated_factual_risk": 0.83,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-201",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9259999999999999,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1005",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.977,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1136",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.74,
+        "RETRIEVE_MORE": 0.24,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.7909999999999999,
+      "estimated_factual_risk": 0.26,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-69",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.49,
+        "RETRIEVE_MORE": 0.5,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.6930000000000001,
+      "estimated_factual_risk": 0.51,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-435",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.05,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.03,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.397,
+      "estimated_factual_risk": 0.95,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-119",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.95,
+        "RETRIEVE_MORE": 0.05,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.849,
+      "estimated_factual_risk": 0.050000000000000044,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-463",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.54,
+        "RETRIEVE_MORE": 0.45,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.716,
+      "estimated_factual_risk": 0.45999999999999996,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-346",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.1,
+        "RETRIEVE_MORE": 0.83,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.369,
+      "estimated_factual_risk": 0.9,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-949",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.06,
+        "RETRIEVE_MORE": 0.78,
+        "ABSTAIN": 0.15,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.273,
+      "estimated_factual_risk": 0.94,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-900",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.37,
+        "RETRIEVE_MORE": 0.54,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.04
+      },
+      "evidence_sufficiency": 0.5609999999999999,
+      "estimated_factual_risk": 0.63,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-73",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.16,
+        "RETRIEVE_MORE": 0.78,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.502,
+      "estimated_factual_risk": 0.84,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1072",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.09,
+        "RETRIEVE_MORE": 0.85,
+        "ABSTAIN": 0.05,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.503,
+      "estimated_factual_risk": 0.91,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-686",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.02,
+        "RETRIEVE_MORE": 0.84,
+        "ABSTAIN": 0.14,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.26,
+      "estimated_factual_risk": 0.98,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-272",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.35,
+        "RETRIEVE_MORE": 0.55,
+        "ABSTAIN": 0.06,
+        "ESCALATE": 0.04
+      },
+      "evidence_sufficiency": 0.5790000000000001,
+      "estimated_factual_risk": 0.65,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1257",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.222,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1141",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9369999999999999,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-709",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.85,
+        "RETRIEVE_MORE": 0.13,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.02
+      },
+      "evidence_sufficiency": 0.867,
+      "estimated_factual_risk": 0.15000000000000002,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-813",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.4,
+        "RETRIEVE_MORE": 0.57,
+        "ABSTAIN": 0.02,
+        "ESCALATE": 0.01
+      },
+      "evidence_sufficiency": 0.6759999999999999,
+      "estimated_factual_risk": 0.6,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-62",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.07,
+        "RETRIEVE_MORE": 0.92,
+        "ABSTAIN": 0.01,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.338,
+      "estimated_factual_risk": 0.9299999999999999,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1027",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.01,
+        "RETRIEVE_MORE": 0.86,
+        "ABSTAIN": 0.13,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.24200000000000002,
+      "estimated_factual_risk": 0.99,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-671",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.97,
+        "RETRIEVE_MORE": 0.03,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.923,
+      "estimated_factual_risk": 0.030000000000000027,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1235",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.81,
+        "RETRIEVE_MORE": 0.19,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.789,
+      "estimated_factual_risk": 0.18999999999999995,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-105",
+      "label": "refuted",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.86,
+        "RETRIEVE_MORE": 0.14,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.812,
+      "estimated_factual_risk": 0.14,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-565",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.99,
+        "RETRIEVE_MORE": 0.01,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9470000000000001,
+      "estimated_factual_risk": 0.010000000000000009,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1106",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.9630000000000001,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-591",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 1.0,
+        "RETRIEVE_MORE": 0.0,
+        "ABSTAIN": 0.0,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.984,
+      "estimated_factual_risk": 0.0,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-382",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "RETRIEVE_MORE",
+      "probabilities": {
+        "ANSWER": 0.19,
+        "RETRIEVE_MORE": 0.74,
+        "ABSTAIN": 0.07,
+        "ESCALATE": 0.0
+      },
+      "evidence_sufficiency": 0.46099999999999997,
+      "estimated_factual_risk": 0.81,
+      "n_retrievals": 3,
+      "correct": false
+    }
+  ],
+  "risk_coverage_curve": [
+    {
+      "coverage": 0.0033333333333333335,
+      "risk": 0.0,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "coverage": 0.05333333333333334,
+      "risk": 0.0,
+      "accuracy": 1.0,
+      "k": 16
+    },
+    {
+      "coverage": 0.10333333333333333,
+      "risk": 0.0,
+      "accuracy": 1.0,
+      "k": 31
+    },
+    {
+      "coverage": 0.15333333333333332,
+      "risk": 0.04347826086956519,
+      "accuracy": 0.9565217391304348,
+      "k": 46
+    },
+    {
+      "coverage": 0.20333333333333334,
+      "risk": 0.032786885245901676,
+      "accuracy": 0.9672131147540983,
+      "k": 61
+    },
+    {
+      "coverage": 0.25333333333333335,
+      "risk": 0.07894736842105265,
+      "accuracy": 0.9210526315789473,
+      "k": 76
+    },
+    {
+      "coverage": 0.30333333333333334,
+      "risk": 0.1208791208791209,
+      "accuracy": 0.8791208791208791,
+      "k": 91
+    },
+    {
+      "coverage": 0.35333333333333333,
+      "risk": 0.12264150943396224,
+      "accuracy": 0.8773584905660378,
+      "k": 106
+    },
+    {
+      "coverage": 0.4033333333333333,
+      "risk": 0.14876033057851235,
+      "accuracy": 0.8512396694214877,
+      "k": 121
+    },
+    {
+      "coverage": 0.4533333333333333,
+      "risk": 0.19117647058823528,
+      "accuracy": 0.8088235294117647,
+      "k": 136
+    },
+    {
+      "coverage": 0.5033333333333333,
+      "risk": 0.21192052980132448,
+      "accuracy": 0.7880794701986755,
+      "k": 151
+    },
+    {
+      "coverage": 0.5533333333333333,
+      "risk": 0.2168674698795181,
+      "accuracy": 0.7831325301204819,
+      "k": 166
+    },
+    {
+      "coverage": 0.6033333333333334,
+      "risk": 0.22099447513812154,
+      "accuracy": 0.7790055248618785,
+      "k": 181
+    },
+    {
+      "coverage": 0.6533333333333333,
+      "risk": 0.23979591836734693,
+      "accuracy": 0.7602040816326531,
+      "k": 196
+    },
+    {
+      "coverage": 0.7033333333333334,
+      "risk": 0.23222748815165872,
+      "accuracy": 0.7677725118483413,
+      "k": 211
+    },
+    {
+      "coverage": 0.7533333333333333,
+      "risk": 0.22123893805309736,
+      "accuracy": 0.7787610619469026,
+      "k": 226
+    },
+    {
+      "coverage": 0.8033333333333333,
+      "risk": 0.23236514522821572,
+      "accuracy": 0.7676348547717843,
+      "k": 241
+    },
+    {
+      "coverage": 0.8533333333333334,
+      "risk": 0.23046875,
+      "accuracy": 0.76953125,
+      "k": 256
+    },
+    {
+      "coverage": 0.9033333333333333,
+      "risk": 0.22140221402214022,
+      "accuracy": 0.7785977859778598,
+      "k": 271
+    },
+    {
+      "coverage": 0.9533333333333334,
+      "risk": 0.21678321678321677,
+      "accuracy": 0.7832167832167832,
+      "k": 286
+    },
+    {
+      "coverage": 1.0,
+      "risk": 0.21333333333333337,
+      "accuracy": 0.7866666666666666,
+      "k": 300
+    }
+  ]
+}

@@ -1,0 +1,4997 @@
+{
+  "config": {
+    "dataset": "scifact",
+    "split": "dev",
+    "n": 300,
+    "calib": 300,
+    "k": 5,
+    "max_retrievals": 2,
+    "corpus_max": 70000,
+    "corpus_file": "data/processed/corpus/scifact/corpus.jsonl",
+    "retriever": "bm25",
+    "dense_model": "BAAI/bge-small-en-v1.5",
+    "verifier": "embedding",
+    "verifier_model": "cross-encoder/nli-deberta-v3-base",
+    "router": "feature",
+    "backend": "ollama",
+    "llm_model": "gemma4:31b-cloud",
+    "base_url": "",
+    "api_key": "",
+    "device": null,
+    "target_risk": 0.15,
+    "seed": 2,
+    "calib_split": "train",
+    "out": "runs/matrix/scifact_feature_s2.json"
+  },
+  "n_calib": 300,
+  "n_test": 300,
+  "raw_accuracy": 0.7633333333333333,
+  "conformal_decisions": {
+    "coverage": 0.01,
+    "answered_risk": 0.33333333333333337
+  },
+  "metrics": {
+    "ece": 0.05042867005522598,
+    "brier": 0.18957254630866946,
+    "aurc": 0.24951944601103354,
+    "risk_at_80_cov": 0.2365145228215768,
+    "abstention": {
+      "coverage": 0.01,
+      "answered_risk": 0.33333333333333337,
+      "abstain_rate": 0.9766666666666667,
+      "abstain_precision": 0.7815699658703071,
+      "escalate_rate": 0.013333333333333334
+    }
+  },
+  "cost": {
+    "mean_retrievals": 1.1533333333333333,
+    "llm_calls": 694,
+    "mean_llm_latency_s": 0.528758687033831
+  },
+  "calibration": {
+    "method": "isotonic",
+    "temperature": 1.4180904522613067,
+    "report": {
+      "method": "temperature",
+      "n": 300,
+      "ece": 0.13810179631646496,
+      "brier": 0.1979662617930471,
+      "nll": 0.5868087856800283
+    }
+  },
+  "conformal": {
+    "target_risk": 0.15,
+    "threshold": 1.0
+  },
+  "runtime_s": 566.0550119876862,
+  "calib_records": [
+    {
+      "id": "scifact-265",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6593726916465859,
+        "RETRIEVE_MORE": 0.1836108259571729,
+        "ABSTAIN": 0.07522225829151649,
+        "ESCALATE": 0.08179422410472476
+      },
+      "evidence_sufficiency": 0.7304627299308777,
+      "estimated_factual_risk": 0.2695372700691223,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-441",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8202314127512678,
+        "RETRIEVE_MORE": 0.07997004593060336,
+        "ABSTAIN": 0.045590682874980734,
+        "ESCALATE": 0.05420785844314821
+      },
+      "evidence_sufficiency": 0.8703912496566772,
+      "estimated_factual_risk": 0.12960875034332275,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1381",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8639475400098661,
+        "RETRIEVE_MORE": 0.055175727139223606,
+        "ABSTAIN": 0.03657965561521004,
+        "ESCALATE": 0.04429707723570038
+      },
+      "evidence_sufficiency": 0.9267985224723816,
+      "estimated_factual_risk": 0.07320147752761841,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-187",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8719233695782934,
+        "RETRIEVE_MORE": 0.050862182551356286,
+        "ABSTAIN": 0.03487359454386878,
+        "ESCALATE": 0.042340853326481465
+      },
+      "evidence_sufficiency": 0.9388775825500488,
+      "estimated_factual_risk": 0.06112241744995117,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-280",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8765474632257698,
+        "RETRIEVE_MORE": 0.04839482344647439,
+        "ABSTAIN": 0.03387444546003018,
+        "ESCALATE": 0.041183267867725644
+      },
+      "evidence_sufficiency": 0.9462130665779114,
+      "estimated_factual_risk": 0.05378693342208862,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-776",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8113927711322894,
+        "RETRIEVE_MORE": 0.08519398907113818,
+        "ABSTAIN": 0.04735117230895374,
+        "ESCALATE": 0.05606206748761874
+      },
+      "evidence_sufficiency": 0.8605095148086548,
+      "estimated_factual_risk": 0.13949048519134521,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1212",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8571314593051771,
+        "RETRIEVE_MORE": 0.05891740125517675,
+        "ABSTAIN": 0.038021143441323575,
+        "ESCALATE": 0.045929995998322586
+      },
+      "evidence_sufficiency": 0.9169939756393433,
+      "estimated_factual_risk": 0.08300602436065674,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-201",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8231932684144035,
+        "RETRIEVE_MORE": 0.0782342631887136,
+        "ABSTAIN": 0.044996478248300956,
+        "ESCALATE": 0.053575990148581824
+      },
+      "evidence_sufficiency": 0.8737977743148804,
+      "estimated_factual_risk": 0.12620222568511963,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-686",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6706493284968212,
+        "RETRIEVE_MORE": 0.17582477518538026,
+        "ABSTAIN": 0.07328837132125052,
+        "ESCALATE": 0.080237524996548
+      },
+      "evidence_sufficiency": 0.7385011315345764,
+      "estimated_factual_risk": 0.2614988684654236,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-778",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7798857663620724,
+        "RETRIEVE_MORE": 0.10432068514574482,
+        "ABSTAIN": 0.053482373613137346,
+        "ESCALATE": 0.06231117487904552
+      },
+      "evidence_sufficiency": 0.828223705291748,
+      "estimated_factual_risk": 0.17177629470825195,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1231",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.775339259176409,
+        "RETRIEVE_MORE": 0.10714203785901881,
+        "ABSTAIN": 0.0543497126339055,
+        "ESCALATE": 0.06316899033066661
+      },
+      "evidence_sufficiency": 0.8238860368728638,
+      "estimated_factual_risk": 0.17611396312713623,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-736",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7771811708676226,
+        "RETRIEVE_MORE": 0.10599724527138604,
+        "ABSTAIN": 0.05399883445325217,
+        "ESCALATE": 0.06282274940773917
+      },
+      "evidence_sufficiency": 0.8256347179412842,
+      "estimated_factual_risk": 0.17436528205871582,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-803",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8717368320316823,
+        "RETRIEVE_MORE": 0.05096224201746076,
+        "ABSTAIN": 0.03491374266069216,
+        "ESCALATE": 0.04238718329016483
+      },
+      "evidence_sufficiency": 0.9385870099067688,
+      "estimated_factual_risk": 0.0614129900932312,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1380",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8542915074573323,
+        "RETRIEVE_MORE": 0.060490860125118305,
+        "ABSTAIN": 0.038617454436708554,
+        "ESCALATE": 0.046600177980840825
+      },
+      "evidence_sufficiency": 0.9130373597145081,
+      "estimated_factual_risk": 0.08696264028549194,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1091",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4373914613082904,
+        "RETRIEVE_MORE": 0.3505910809427193,
+        "ABSTAIN": 0.10969760130246944,
+        "ESCALATE": 0.10231985644652096
+      },
+      "evidence_sufficiency": 0.5894944071769714,
+      "estimated_factual_risk": 0.41050559282302856,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-748",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5641304230991474,
+        "RETRIEVE_MORE": 0.252094891288489,
+        "ABSTAIN": 0.09083065132282733,
+        "ESCALATE": 0.09294403428953632
+      },
+      "evidence_sufficiency": 0.6673973202705383,
+      "estimated_factual_risk": 0.33260267972946167,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-86",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ABSTAIN",
+      "probabilities": {
+        "ANSWER": 0.07475391257485851,
+        "RETRIEVE_MORE": 7.312405578090408e-06,
+        "ABSTAIN": 0.48741476715797527,
+        "ESCALATE": 0.43782400786158804
+      },
+      "evidence_sufficiency": 0.09608545154333115,
+      "estimated_factual_risk": 0.9039145484566689,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-883",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4385303352951643,
+        "RETRIEVE_MORE": 0.3496676136999801,
+        "ABSTAIN": 0.10953767184532974,
+        "ESCALATE": 0.10226437915952577
+      },
+      "evidence_sufficiency": 0.5901927947998047,
+      "estimated_factual_risk": 0.4098072052001953,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-896",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.805124979354964,
+        "RETRIEVE_MORE": 0.0889374168082008,
+        "ABSTAIN": 0.048588410838180475,
+        "ESCALATE": 0.05734919299865484
+      },
+      "evidence_sufficiency": 0.8537419438362122,
+      "estimated_factual_risk": 0.14625805616378784,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-801",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7716847900114814,
+        "RETRIEVE_MORE": 0.10942051792345427,
+        "ABSTAIN": 0.055043866087901766,
+        "ESCALATE": 0.06385082597716267
+      },
+      "evidence_sufficiency": 0.8204503655433655,
+      "estimated_factual_risk": 0.17954963445663452,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-473",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8205063912205889,
+        "RETRIEVE_MORE": 0.07980857915434224,
+        "ABSTAIN": 0.045535608450396156,
+        "ESCALATE": 0.054149421174672745
+      },
+      "evidence_sufficiency": 0.8707054257392883,
+      "estimated_factual_risk": 0.12929457426071167,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-392",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6668854583738937,
+        "RETRIEVE_MORE": 0.1784157154937968,
+        "ABSTAIN": 0.07393597420795073,
+        "ESCALATE": 0.08076285192435878
+      },
+      "evidence_sufficiency": 0.7358002662658691,
+      "estimated_factual_risk": 0.26419973373413086,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-866",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8680707272308394,
+        "RETRIEVE_MORE": 0.052936853815886226,
+        "ABSTAIN": 0.03570036367924927,
+        "ESCALATE": 0.043292055274025056
+      },
+      "evidence_sufficiency": 0.9329564571380615,
+      "estimated_factual_risk": 0.06704354286193848,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-789",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8080710766306144,
+        "RETRIEVE_MORE": 0.0871739120735268,
+        "ABSTAIN": 0.04800799515731666,
+        "ESCALATE": 0.05674701613854204
+      },
+      "evidence_sufficiency": 0.8568993210792542,
+      "estimated_factual_risk": 0.14310067892074585,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1139",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8526510219767954,
+        "RETRIEVE_MORE": 0.061403547923083036,
+        "ABSTAIN": 0.038960791570679935,
+        "ESCALATE": 0.04698463852944162
+      },
+      "evidence_sufficiency": 0.9107843637466431,
+      "estimated_factual_risk": 0.08921563625335693,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1223",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8437520092639705,
+        "RETRIEVE_MORE": 0.0664015471704275,
+        "ABSTAIN": 0.04080941667417379,
+        "ESCALATE": 0.0490370268914282
+      },
+      "evidence_sufficiency": 0.8989517688751221,
+      "estimated_factual_risk": 0.10104823112487793,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-969",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7713301668152801,
+        "RETRIEVE_MORE": 0.10964211961308555,
+        "ABSTAIN": 0.055111084220330724,
+        "ESCALATE": 0.06391662935130371
+      },
+      "evidence_sufficiency": 0.820119321346283,
+      "estimated_factual_risk": 0.17988067865371704,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-64",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ESCALATE",
+      "probabilities": {
+        "ANSWER": 0.22156225368463564,
+        "RETRIEVE_MORE": 7.961210476854387e-06,
+        "ABSTAIN": 0.3017591407891903,
+        "ESCALATE": 0.47667064431569717
+      },
+      "evidence_sufficiency": 0.31863951683044434,
+      "estimated_factual_risk": 0.6813604831695557,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1106",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8471521176592756,
+        "RETRIEVE_MORE": 0.06448268804097171,
+        "ABSTAIN": 0.04010581584944002,
+        "ESCALATE": 0.04825937845031278
+      },
+      "evidence_sufficiency": 0.903397798538208,
+      "estimated_factual_risk": 0.09660220146179199,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-626",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7430450049058508,
+        "RETRIEVE_MORE": 0.12759393444243655,
+        "ABSTAIN": 0.06039501121606264,
+        "ESCALATE": 0.06896604943565007
+      },
+      "evidence_sufficiency": 0.7949205040931702,
+      "estimated_factual_risk": 0.20507949590682983,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-545",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8214111347768687,
+        "RETRIEVE_MORE": 0.07927777205058882,
+        "ABSTAIN": 0.04535426895010395,
+        "ESCALATE": 0.053956824222438686
+      },
+      "evidence_sufficiency": 0.8717421293258667,
+      "estimated_factual_risk": 0.1282578706741333,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-11",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8251608157147484,
+        "RETRIEVE_MORE": 0.07708538096457868,
+        "ABSTAIN": 0.04460053959016432,
+        "ESCALATE": 0.05315326373050861
+      },
+      "evidence_sufficiency": 0.8760886192321777,
+      "estimated_factual_risk": 0.12391138076782227,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-256",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8547255939321927,
+        "RETRIEVE_MORE": 0.06024981670156392,
+        "ABSTAIN": 0.03852646814639784,
+        "ESCALATE": 0.04649812121984553
+      },
+      "evidence_sufficiency": 0.9136374592781067,
+      "estimated_factual_risk": 0.08636254072189331,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-398",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8113363744594304,
+        "RETRIEVE_MORE": 0.08522752970133181,
+        "ABSTAIN": 0.047362345569527634,
+        "ESCALATE": 0.05607375026971021
+      },
+      "evidence_sufficiency": 0.8604477643966675,
+      "estimated_factual_risk": 0.13955223560333252,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-933",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8450541791633887,
+        "RETRIEVE_MORE": 0.06566533476532624,
+        "ABSTAIN": 0.040540342623089545,
+        "ESCALATE": 0.04874014344819561
+      },
+      "evidence_sufficiency": 0.9006439447402954,
+      "estimated_factual_risk": 0.09935605525970459,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-178",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7694663004200339,
+        "RETRIEVE_MORE": 0.11080828812496382,
+        "ABSTAIN": 0.05546396854204115,
+        "ESCALATE": 0.0642614429129611
+      },
+      "evidence_sufficiency": 0.8183860778808594,
+      "estimated_factual_risk": 0.18161392211914062,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-658",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6815861594031872,
+        "RETRIEVE_MORE": 0.16834131003653544,
+        "ABSTAIN": 0.07139440393309668,
+        "ESCALATE": 0.07867812662718061
+      },
+      "evidence_sufficiency": 0.7464572191238403,
+      "estimated_factual_risk": 0.25354278087615967,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1376",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ABSTAIN",
+      "probabilities": {
+        "ANSWER": 0.0765851718418873,
+        "RETRIEVE_MORE": 7.3462337242907585e-06,
+        "ABSTAIN": 0.48355804284323795,
+        "ESCALATE": 0.4398494390811505
+      },
+      "evidence_sufficiency": 0.10043799877166748,
+      "estimated_factual_risk": 0.8995620012283325,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-571",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.829412080009657,
+        "RETRIEVE_MORE": 0.07461459556846681,
+        "ABSTAIN": 0.04374167988158982,
+        "ESCALATE": 0.05223164454028634
+      },
+      "evidence_sufficiency": 0.8811174631118774,
+      "estimated_factual_risk": 0.11888253688812256,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-972",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8698339795362942,
+        "RETRIEVE_MORE": 0.051985228923298474,
+        "ABSTAIN": 0.03532260330063513,
+        "ESCALATE": 0.04285818823977234
+      },
+      "evidence_sufficiency": 0.9356456995010376,
+      "estimated_factual_risk": 0.0643543004989624,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-444",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5657262674127038,
+        "RETRIEVE_MORE": 8.893539095030336e-06,
+        "ABSTAIN": 0.238371604376739,
+        "ESCALATE": 0.1958932346714621
+      },
+      "evidence_sufficiency": 0.5023423433303833,
+      "estimated_factual_risk": 0.4976576566696167,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1161",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8518469822394479,
+        "RETRIEVE_MORE": 0.0618518786525395,
+        "ABSTAIN": 0.039128773412530425,
+        "ESCALATE": 0.04717236569548218
+      },
+      "evidence_sufficiency": 0.9096885919570923,
+      "estimated_factual_risk": 0.09031140804290771,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-154",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.42983012914399593,
+        "RETRIEVE_MORE": 0.3567406942629084,
+        "ABSTAIN": 0.11075490807117631,
+        "ESCALATE": 0.10267426852191933
+      },
+      "evidence_sufficiency": 0.5848507881164551,
+      "estimated_factual_risk": 0.4151492118835449,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-10",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8699605894952,
+        "RETRIEVE_MORE": 0.05191703363054429,
+        "ABSTAIN": 0.035295437601022016,
+        "ESCALATE": 0.04282693927323364
+      },
+      "evidence_sufficiency": 0.9358401298522949,
+      "estimated_factual_risk": 0.06415987014770508,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-14",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5750809303360624,
+        "RETRIEVE_MORE": 8.755726857581322e-06,
+        "ABSTAIN": 0.23205259579989426,
+        "ESCALATE": 0.19285771813718564
+      },
+      "evidence_sufficiency": 0.5094573497772217,
+      "estimated_factual_risk": 0.4905426502227783,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-979",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ESCALATE",
+      "probabilities": {
+        "ANSWER": 0.24647297325536585,
+        "RETRIEVE_MORE": 7.872523643016127e-06,
+        "ABSTAIN": 0.28215855796279826,
+        "ESCALATE": 0.47136059625819293
+      },
+      "evidence_sufficiency": 0.344806432723999,
+      "estimated_factual_risk": 0.655193567276001,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-844",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8111310243094845,
+        "RETRIEVE_MORE": 0.08534967901060644,
+        "ABSTAIN": 0.04740302304783199,
+        "ESCALATE": 0.056116273632077156
+      },
+      "evidence_sufficiency": 0.8602230548858643,
+      "estimated_factual_risk": 0.13977694511413574,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1340",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8162106515739734,
+        "RETRIEVE_MORE": 0.08233835383622393,
+        "ABSTAIN": 0.04639387394098636,
+        "ESCALATE": 0.05505712064881634
+      },
+      "evidence_sufficiency": 0.8658447265625,
+      "estimated_factual_risk": 0.1341552734375,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-740",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6480203043133462,
+        "RETRIEVE_MORE": 0.1915199776245827,
+        "ABSTAIN": 0.07715009321683175,
+        "ESCALATE": 0.08330962484523936
+      },
+      "evidence_sufficiency": 0.7225239872932434,
+      "estimated_factual_risk": 0.2774760127067566,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1134",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7723694850874623,
+        "RETRIEVE_MORE": 0.10899290695871724,
+        "ABSTAIN": 0.0549140130234152,
+        "ESCALATE": 0.06372359493040525
+      },
+      "evidence_sufficiency": 0.8210906982421875,
+      "estimated_factual_risk": 0.1789093017578125,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-181",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8833403510123713,
+        "RETRIEVE_MORE": 0.044816986420643815,
+        "ABSTAIN": 0.03239256315771855,
+        "ESCALATE": 0.039450099409266366
+      },
+      "evidence_sufficiency": 0.9574831128120422,
+      "estimated_factual_risk": 0.042516887187957764,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1366",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6337168808322645,
+        "RETRIEVE_MORE": 0.20158478604949884,
+        "ABSTAIN": 0.0795523732974425,
+        "ESCALATE": 0.08514595982079422
+      },
+      "evidence_sufficiency": 0.7127189636230469,
+      "estimated_factual_risk": 0.2872810363769531,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-426",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5505319057419206,
+        "RETRIEVE_MORE": 0.26225999424117974,
+        "ABSTAIN": 0.0929576332659478,
+        "ESCALATE": 0.0942504667509519
+      },
+      "evidence_sufficiency": 0.6588731408119202,
+      "estimated_factual_risk": 0.34112685918807983,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-309",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.612411003274192,
+        "RETRIEVE_MORE": 0.21677992772952803,
+        "ABSTAIN": 0.08307668754212662,
+        "ESCALATE": 0.08773238145415346
+      },
+      "evidence_sufficiency": 0.6984694600105286,
+      "estimated_factual_risk": 0.30153053998947144,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-109",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8586803987351418,
+        "RETRIEVE_MORE": 0.058062767234988495,
+        "ABSTAIN": 0.03769485899838439,
+        "ESCALATE": 0.04556197503148542
+      },
+      "evidence_sufficiency": 0.9191829562187195,
+      "estimated_factual_risk": 0.08081704378128052,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-488",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8008841667094361,
+        "RETRIEVE_MORE": 0.09148805496605743,
+        "ABSTAIN": 0.0494204315232651,
+        "ESCALATE": 0.05820734680124144
+      },
+      "evidence_sufficiency": 0.8492677211761475,
+      "estimated_factual_risk": 0.15073227882385254,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-361",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8498984756678589,
+        "RETRIEVE_MORE": 0.06294106957451609,
+        "ABSTAIN": 0.039535061451280266,
+        "ESCALATE": 0.04762539330634478
+      },
+      "evidence_sufficiency": 0.9070557355880737,
+      "estimated_factual_risk": 0.09294426441192627,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-683",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.566421779261971,
+        "RETRIEVE_MORE": 0.2503914891139788,
+        "ABSTAIN": 0.09046981097551189,
+        "ESCALATE": 0.09271692064853833
+      },
+      "evidence_sufficiency": 0.6688417792320251,
+      "estimated_factual_risk": 0.33115822076797485,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1391",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7963031753894828,
+        "RETRIEVE_MORE": 0.09425911734290333,
+        "ABSTAIN": 0.05031467713837241,
+        "ESCALATE": 0.05912303012924154
+      },
+      "evidence_sufficiency": 0.8445243239402771,
+      "estimated_factual_risk": 0.1554756760597229,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-420",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7407088010664901,
+        "RETRIEVE_MORE": 0.129100354834834,
+        "ABSTAIN": 0.060824828788140196,
+        "ESCALATE": 0.06936601531053567
+      },
+      "evidence_sufficiency": 0.7929356694221497,
+      "estimated_factual_risk": 0.20706433057785034,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-652",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7804894970256951,
+        "RETRIEVE_MORE": 0.10394715745583168,
+        "ABSTAIN": 0.05336688368428423,
+        "ESCALATE": 0.062196461834188956
+      },
+      "evidence_sufficiency": 0.828805148601532,
+      "estimated_factual_risk": 0.17119485139846802,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-164",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.45883417692553546,
+        "RETRIEVE_MORE": 0.33332454217003993,
+        "ABSTAIN": 0.10665678731880554,
+        "ESCALATE": 0.10118449358561916
+      },
+      "evidence_sufficiency": 0.6026096343994141,
+      "estimated_factual_risk": 0.39739036560058594,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1070",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8894370443205473,
+        "RETRIEVE_MORE": 0.04165547178500802,
+        "ABSTAIN": 0.03104748439830176,
+        "ESCALATE": 0.037859999496143
+      },
+      "evidence_sufficiency": 0.9681541323661804,
+      "estimated_factual_risk": 0.03184586763381958,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-515",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.870542909147588,
+        "RETRIEVE_MORE": 0.05160361760381633,
+        "ABSTAIN": 0.03517042318607521,
+        "ESCALATE": 0.042683050062520454
+      },
+      "evidence_sufficiency": 0.9367367029190063,
+      "estimated_factual_risk": 0.06326329708099365,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-89",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7998934877579444,
+        "RETRIEVE_MORE": 0.09208593836803727,
+        "ABSTAIN": 0.04961421412946349,
+        "ESCALATE": 0.0584063597445547
+      },
+      "evidence_sufficiency": 0.8482341766357422,
+      "estimated_factual_risk": 0.1517658233642578,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-346",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8756657360059174,
+        "RETRIEVE_MORE": 0.04886335143612279,
+        "ABSTAIN": 0.03406555140263362,
+        "ESCALATE": 0.04140536115532621
+      },
+      "evidence_sufficiency": 0.944794237613678,
+      "estimated_factual_risk": 0.05520576238632202,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-389",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8634036367895334,
+        "RETRIEVE_MORE": 0.05547246507048947,
+        "ABSTAIN": 0.03669522813934009,
+        "ESCALATE": 0.04442867000063723
+      },
+      "evidence_sufficiency": 0.9259994029998779,
+      "estimated_factual_risk": 0.07400059700012207,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1148",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8496384778918108,
+        "RETRIEVE_MORE": 0.06308669325701807,
+        "ABSTAIN": 0.03958918934988413,
+        "ESCALATE": 0.04768563950128702
+      },
+      "evidence_sufficiency": 0.9067068099975586,
+      "estimated_factual_risk": 0.0932931900024414,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-600",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8331782633141706,
+        "RETRIEVE_MORE": 0.07243920133320453,
+        "ABSTAIN": 0.04297690980204651,
+        "ESCALATE": 0.051405625550578385
+      },
+      "evidence_sufficiency": 0.8856666684150696,
+      "estimated_factual_risk": 0.11433333158493042,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-992",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5210839359969142,
+        "RETRIEVE_MORE": 0.2846011225105446,
+        "ABSTAIN": 0.09747905714813238,
+        "ESCALATE": 0.09683588434440882
+      },
+      "evidence_sufficiency": 0.6406430006027222,
+      "estimated_factual_risk": 0.35935699939727783,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1314",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.676693943847788,
+        "RETRIEVE_MORE": 0.17168043954852658,
+        "ABSTAIN": 0.07224386279406658,
+        "ESCALATE": 0.07938175380961886
+      },
+      "evidence_sufficiency": 0.7428779006004333,
+      "estimated_factual_risk": 0.25712209939956665,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1128",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8447408084316691,
+        "RETRIEVE_MORE": 0.06584235615910568,
+        "ABSTAIN": 0.0406051400568309,
+        "ESCALATE": 0.048811695352394345
+      },
+      "evidence_sufficiency": 0.9002355337142944,
+      "estimated_factual_risk": 0.09976446628570557,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1330",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4023673926686254,
+        "RETRIEVE_MORE": 1.0827722637229664e-05,
+        "ABSTAIN": 0.35912531730414354,
+        "ESCALATE": 0.23849646230459376
+      },
+      "evidence_sufficiency": 0.38289135694503784,
+      "estimated_factual_risk": 0.6171086430549622,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-313",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7610774571812332,
+        "RETRIEVE_MORE": 0.11608678601113052,
+        "ABSTAIN": 0.05704384601921701,
+        "ESCALATE": 0.06579191078841923
+      },
+      "evidence_sufficiency": 0.8107196092605591,
+      "estimated_factual_risk": 0.18928039073944092,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-657",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8082793974952627,
+        "RETRIEVE_MORE": 0.08704947752919591,
+        "ABSTAIN": 0.04796687782214315,
+        "ESCALATE": 0.05670424715339837
+      },
+      "evidence_sufficiency": 0.8571241497993469,
+      "estimated_factual_risk": 0.14287585020065308,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1257",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8588652134970783,
+        "RETRIEVE_MORE": 0.0579609637154101,
+        "ABSTAIN": 0.03765587767730398,
+        "ESCALATE": 0.04551794511020755
+      },
+      "evidence_sufficiency": 0.9194456338882446,
+      "estimated_factual_risk": 0.08055436611175537,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1065",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7966210376361014,
+        "RETRIEVE_MORE": 0.09406631652525187,
+        "ABSTAIN": 0.05025277738623203,
+        "ESCALATE": 0.05905986845241473
+      },
+      "evidence_sufficiency": 0.8448505401611328,
+      "estimated_factual_risk": 0.1551494598388672,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1230",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8333215938480885,
+        "RETRIEVE_MORE": 0.07235666528110593,
+        "ABSTAIN": 0.042947731079628536,
+        "ESCALATE": 0.05137400979117702
+      },
+      "evidence_sufficiency": 0.8858416080474854,
+      "estimated_factual_risk": 0.11415839195251465,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-447",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.47239346578947317,
+        "RETRIEVE_MORE": 0.32253572678157705,
+        "ABSTAIN": 0.10470182220683046,
+        "ESCALATE": 0.1003689852221194
+      },
+      "evidence_sufficiency": 0.6108797788619995,
+      "estimated_factual_risk": 0.3891202211380005,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-655",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8348437004671018,
+        "RETRIEVE_MORE": 0.07148132653373795,
+        "ABSTAIN": 0.04263752907933354,
+        "ESCALATE": 0.05103744391982674
+      },
+      "evidence_sufficiency": 0.8877077698707581,
+      "estimated_factual_risk": 0.11229223012924194,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-342",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6653405306495607,
+        "RETRIEVE_MORE": 0.17948148421569682,
+        "ABSTAIN": 0.07420117454524158,
+        "ESCALATE": 0.08097681058950086
+      },
+      "evidence_sufficiency": 0.7346969246864319,
+      "estimated_factual_risk": 0.2653030753135681,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-401",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.795532553625575,
+        "RETRIEVE_MORE": 0.09472686391218095,
+        "ABSTAIN": 0.05046465444604761,
+        "ESCALATE": 0.059275928016196446
+      },
+      "evidence_sufficiency": 0.8437352180480957,
+      "estimated_factual_risk": 0.1562647819519043,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-897",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8223782551646253,
+        "RETRIEVE_MORE": 0.07871114562334552,
+        "ABSTAIN": 0.04516020282180475,
+        "ESCALATE": 0.05375039639022449
+      },
+      "evidence_sufficiency": 0.8728554248809814,
+      "estimated_factual_risk": 0.12714457511901855,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-548",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8187742308300965,
+        "RETRIEVE_MORE": 0.08082677488315594,
+        "ABSTAIN": 0.04588222638133074,
+        "ESCALATE": 0.054516767905416694
+      },
+      "evidence_sufficiency": 0.8687333464622498,
+      "estimated_factual_risk": 0.13126665353775024,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-379",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8667531554854203,
+        "RETRIEVE_MORE": 0.05365023407743248,
+        "ABSTAIN": 0.035981956675885905,
+        "ESCALATE": 0.04361465376126139
+      },
+      "evidence_sufficiency": 0.9309691190719604,
+      "estimated_factual_risk": 0.06903088092803955,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-804",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8901502760379593,
+        "RETRIEVE_MORE": 0.04128880165218065,
+        "ABSTAIN": 0.03088915601497873,
+        "ESCALATE": 0.03767176629488125
+      },
+      "evidence_sufficiency": 0.9694398641586304,
+      "estimated_factual_risk": 0.03056013584136963,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-890",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4664677965046231,
+        "RETRIEVE_MORE": 0.32723841463308234,
+        "ABSTAIN": 0.10555922311788109,
+        "ESCALATE": 0.10073456574441353
+      },
+      "evidence_sufficiency": 0.6072666645050049,
+      "estimated_factual_risk": 0.3927333354949951,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1400",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6162591165877802,
+        "RETRIEVE_MORE": 0.21401767998585303,
+        "ABSTAIN": 0.08244487542858427,
+        "ESCALATE": 0.08727832799778248
+      },
+      "evidence_sufficiency": 0.701014518737793,
+      "estimated_factual_risk": 0.29898548126220703,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-673",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8167726736885375,
+        "RETRIEVE_MORE": 0.0820064920433467,
+        "ABSTAIN": 0.0462818400480914,
+        "ESCALATE": 0.054938994220024344
+      },
+      "evidence_sufficiency": 0.866474986076355,
+      "estimated_factual_risk": 0.13352501392364502,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1404",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8519422313447241,
+        "RETRIEVE_MORE": 0.06179873373742971,
+        "ABSTAIN": 0.03910888384715465,
+        "ESCALATE": 0.04715015107069154
+      },
+      "evidence_sufficiency": 0.9098181128501892,
+      "estimated_factual_risk": 0.09018188714981079,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1003",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.579283227496629,
+        "RETRIEVE_MORE": 0.24088072889691495,
+        "ABSTAIN": 0.08843126532000475,
+        "ESCALATE": 0.09140477828645138
+      },
+      "evidence_sufficiency": 0.6769986152648926,
+      "estimated_factual_risk": 0.3230013847351074,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-366",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8433442765652437,
+        "RETRIEVE_MORE": 0.0666324053276814,
+        "ABSTAIN": 0.040893569804890555,
+        "ESCALATE": 0.04912974830218429
+      },
+      "evidence_sufficiency": 0.8984245657920837,
+      "estimated_factual_risk": 0.10157543420791626,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-306",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5159347488244888,
+        "RETRIEVE_MORE": 0.2885539112577567,
+        "ABSTAIN": 0.09825780970298537,
+        "ESCALATE": 0.09725353021476911
+      },
+      "evidence_sufficiency": 0.6374797821044922,
+      "estimated_factual_risk": 0.3625202178955078,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-611",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8478508919475366,
+        "RETRIEVE_MORE": 0.06408973493896652,
+        "ABSTAIN": 0.039960803447671334,
+        "ESCALATE": 0.04809856966582559
+      },
+      "evidence_sufficiency": 0.9043227434158325,
+      "estimated_factual_risk": 0.09567725658416748,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-739",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.632732303842292,
+        "RETRIEVE_MORE": 7.850022914443803e-06,
+        "ABSTAIN": 0.1943515849213481,
+        "ESCALATE": 0.17290826121344546
+      },
+      "evidence_sufficiency": 0.5549525022506714,
+      "estimated_factual_risk": 0.4450474977493286,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-114",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8675024162486047,
+        "RETRIEVE_MORE": 0.053244318864913286,
+        "ABSTAIN": 0.03582189513264429,
+        "ESCALATE": 0.04343136975383774
+      },
+      "evidence_sufficiency": 0.9320969581604004,
+      "estimated_factual_risk": 0.06790304183959961,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1033",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8491575422934848,
+        "RETRIEVE_MORE": 0.06335624116280741,
+        "ABSTAIN": 0.039689261047995625,
+        "ESCALATE": 0.04779695549571216
+      },
+      "evidence_sufficiency": 0.9060628414154053,
+      "estimated_factual_risk": 0.09393715858459473,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-790",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8535576757436345,
+        "RETRIEVE_MORE": 0.060898788872510295,
+        "ABSTAIN": 0.03877113850546132,
+        "ESCALATE": 0.04677239687839378
+      },
+      "evidence_sufficiency": 0.9120266437530518,
+      "estimated_factual_risk": 0.08797335624694824,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1032",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8467431022509581,
+        "RETRIEVE_MORE": 0.06471291937866556,
+        "ABSTAIN": 0.04019063078968827,
+        "ESCALATE": 0.04835334758068811
+      },
+      "evidence_sufficiency": 0.9028581976890564,
+      "estimated_factual_risk": 0.0971418023109436,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-680",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8278674667419635,
+        "RETRIEVE_MORE": 0.07551045890661111,
+        "ABSTAIN": 0.04405426536003648,
+        "ESCALATE": 0.052567808991388826
+      },
+      "evidence_sufficiency": 0.8792775869369507,
+      "estimated_factual_risk": 0.12072241306304932,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-85",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ABSTAIN",
+      "probabilities": {
+        "ANSWER": 0.07475391257485851,
+        "RETRIEVE_MORE": 7.312405578090408e-06,
+        "ABSTAIN": 0.48741476715797527,
+        "ESCALATE": 0.43782400786158804
+      },
+      "evidence_sufficiency": 0.09608545154333115,
+      "estimated_factual_risk": 0.9039145484566689,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-6",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8872718762271162,
+        "RETRIEVE_MORE": 0.04277270990330892,
+        "ABSTAIN": 0.03152686102070955,
+        "ESCALATE": 0.03842855284886527
+      },
+      "evidence_sufficiency": 0.9643001556396484,
+      "estimated_factual_risk": 0.03569984436035156,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-483",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8802485068430215,
+        "RETRIEVE_MORE": 0.04643842183589109,
+        "ABSTAIN": 0.03306918866022989,
+        "ESCALATE": 0.040243882660857544
+      },
+      "evidence_sufficiency": 0.9522769451141357,
+      "estimated_factual_risk": 0.04772305488586426,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-813",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8507066759505802,
+        "RETRIEVE_MORE": 0.06248883217897037,
+        "ABSTAIN": 0.03936667815350007,
+        "ESCALATE": 0.047437813716949315
+      },
+      "evidence_sufficiency": 0.908143937587738,
+      "estimated_factual_risk": 0.09185606241226196,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-925",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.807347463857831,
+        "RETRIEVE_MORE": 0.08760641364516594,
+        "ABSTAIN": 0.04815074029632041,
+        "ESCALATE": 0.05689538220068272
+      },
+      "evidence_sufficiency": 0.8561199903488159,
+      "estimated_factual_risk": 0.14388000965118408,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-396",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.49357227143682075,
+        "RETRIEVE_MORE": 9.864258758290413e-06,
+        "ABSTAIN": 0.2891431061738145,
+        "ESCALATE": 0.21727475813060648
+      },
+      "evidence_sufficiency": 0.4490014612674713,
+      "estimated_factual_risk": 0.5509985387325287,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1138",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8199681919160593,
+        "RETRIEVE_MORE": 0.0801246690869513,
+        "ABSTAIN": 0.045643384965189555,
+        "ESCALATE": 0.054263754031799824
+      },
+      "evidence_sufficiency": 0.870090901851654,
+      "estimated_factual_risk": 0.12990909814834595,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-669",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.636999079884699,
+        "RETRIEVE_MORE": 7.779247972500294e-06,
+        "ABSTAIN": 0.1916438014917313,
+        "ESCALATE": 0.17134933937559732
+      },
+      "evidence_sufficiency": 0.5584586262702942,
+      "estimated_factual_risk": 0.4415413737297058,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-1386",
+      "label": "refuted",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6755438901591304,
+        "RETRIEVE_MORE": 0.17246736135551244,
+        "ABSTAIN": 0.07244302000798872,
+        "ESCALATE": 0.07954572847736847
+      },
+      "evidence_sufficiency": 0.7420413494110107,
+      "estimated_factual_risk": 0.25795865058898926,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-787",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7774749254254707,
+        "RETRIEVE_MORE": 0.10581489416186207,
+        "ABSTAIN": 0.05394281188698996,
+        "ESCALATE": 0.06276736852567724
+      },
+      "evidence_sufficiency": 0.8259146809577942,
+      "estimated_factual_risk": 0.1740853190422058,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-357",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7983940180485072,
+        "RETRIEVE_MORE": 0.09299233712660629,
+        "ABSTAIN": 0.04990710398051616,
+        "ESCALATE": 0.05870654084437043
+      },
+      "evidence_sufficiency": 0.8466780185699463,
+      "estimated_factual_risk": 0.1533219814300537,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-791",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5473806784613037,
+        "RETRIEVE_MORE": 0.26462924320705233,
+        "ABSTAIN": 0.0934469931831519,
+        "ESCALATE": 0.09454308514849205
+      },
+      "evidence_sufficiency": 0.6569086313247681,
+      "estimated_factual_risk": 0.34309136867523193,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-376",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8549579651298957,
+        "RETRIEVE_MORE": 0.0601208633004573,
+        "ABSTAIN": 0.03847773862270578,
+        "ESCALATE": 0.046443432946941206
+      },
+      "evidence_sufficiency": 0.9139593839645386,
+      "estimated_factual_risk": 0.08604061603546143,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-990",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6972968336804537,
+        "RETRIEVE_MORE": 0.15771075313445526,
+        "ABSTAIN": 0.06864134022742546,
+        "ESCALATE": 0.0763510729576656
+      },
+      "evidence_sufficiency": 0.7581931352615356,
+      "estimated_factual_risk": 0.24180686473846436,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-251",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8543385182288513,
+        "RETRIEVE_MORE": 0.06046474620369515,
+        "ABSTAIN": 0.0386076035539329,
+        "ESCALATE": 0.04658913201352062
+      },
+      "evidence_sufficiency": 0.9131022691726685,
+      "estimated_factual_risk": 0.08689773082733154,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1249",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8900362436178113,
+        "RETRIEVE_MORE": 0.041347379686632865,
+        "ABSTAIN": 0.03091448373960481,
+        "ESCALATE": 0.03770189295595089
+      },
+      "evidence_sufficiency": 0.9692337512969971,
+      "estimated_factual_risk": 0.03076624870300293,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-430",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6638266594995487,
+        "RETRIEVE_MORE": 0.18052711452328354,
+        "ABSTAIN": 0.07446069710347401,
+        "ESCALATE": 0.08118552887369371
+      },
+      "evidence_sufficiency": 0.7336186766624451,
+      "estimated_factual_risk": 0.26638132333755493,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-120",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6874667038609416,
+        "RETRIEVE_MORE": 0.16434563191508839,
+        "ABSTAIN": 0.07036844828919184,
+        "ESCALATE": 0.07781921593477825
+      },
+      "evidence_sufficiency": 0.7508055567741394,
+      "estimated_factual_risk": 0.2491944432258606,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1181",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8023255116103624,
+        "RETRIEVE_MORE": 0.09061956465223095,
+        "ABSTAIN": 0.049138103855634364,
+        "ESCALATE": 0.057916819881772365
+      },
+      "evidence_sufficiency": 0.8507792353630066,
+      "estimated_factual_risk": 0.1492207646369934,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-853",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8371994323648028,
+        "RETRIEVE_MORE": 0.07013078447830921,
+        "ABSTAIN": 0.04215621209138177,
+        "ESCALATE": 0.0505135710655063
+      },
+      "evidence_sufficiency": 0.8906267285346985,
+      "estimated_factual_risk": 0.10937327146530151,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-480",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7882593609805219,
+        "RETRIEVE_MORE": 0.09916373723838721,
+        "ABSTAIN": 0.05187382974962587,
+        "ESCALATE": 0.06070307203146519
+      },
+      "evidence_sufficiency": 0.8364073038101196,
+      "estimated_factual_risk": 0.16359269618988037,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1297",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8684501071671926,
+        "RETRIEVE_MORE": 0.052731805787885964,
+        "ABSTAIN": 0.03561917399328465,
+        "ESCALATE": 0.04319891305163683
+      },
+      "evidence_sufficiency": 0.933532178401947,
+      "estimated_factual_risk": 0.06646782159805298,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1054",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8563335293739972,
+        "RETRIEVE_MORE": 0.05935864383095583,
+        "ABSTAIN": 0.03818893685325066,
+        "ESCALATE": 0.04611888994179632
+      },
+      "evidence_sufficiency": 0.9158749580383301,
+      "estimated_factual_risk": 0.08412504196166992,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-732",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6057195330993848,
+        "RETRIEVE_MORE": 0.22160176478111798,
+        "ABSTAIN": 0.08417043370158955,
+        "ESCALATE": 0.08850826841790775
+      },
+      "evidence_sufficiency": 0.694071352481842,
+      "estimated_factual_risk": 0.30592864751815796,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-243",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.811761277026813,
+        "RETRIEVE_MORE": 0.08497489279842085,
+        "ABSTAIN": 0.047278145812849795,
+        "ESCALATE": 0.05598568436191631
+      },
+      "evidence_sufficiency": 0.8609133958816528,
+      "estimated_factual_risk": 0.13908660411834717,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-404",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8732926164588433,
+        "RETRIEVE_MORE": 0.05012895025763652,
+        "ABSTAIN": 0.03457852274515057,
+        "ESCALATE": 0.04199991053836972
+      },
+      "evidence_sufficiency": 0.9410229325294495,
+      "estimated_factual_risk": 0.05897706747055054,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-111",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8273551445430443,
+        "RETRIEVE_MORE": 0.07580806919609984,
+        "ABSTAIN": 0.04415780910764045,
+        "ESCALATE": 0.05267897715321541
+      },
+      "evidence_sufficiency": 0.8786705732345581,
+      "estimated_factual_risk": 0.1213294267654419,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-74",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8277599731799511,
+        "RETRIEVE_MORE": 0.0755728831525165,
+        "ABSTAIN": 0.04407599611035802,
+        "ESCALATE": 0.0525911475571744
+      },
+      "evidence_sufficiency": 0.8791500926017761,
+      "estimated_factual_risk": 0.12084990739822388,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-973",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8849383255994457,
+        "RETRIEVE_MORE": 0.043983692292974726,
+        "ABSTAIN": 0.03204142601139639,
+        "ESCALATE": 0.039036556096183124
+      },
+      "evidence_sufficiency": 0.9602265357971191,
+      "estimated_factual_risk": 0.03977346420288086,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-999",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5773836109011168,
+        "RETRIEVE_MORE": 0.24228005530302008,
+        "ABSTAIN": 0.08873376277205616,
+        "ESCALATE": 0.09160257102380698
+      },
+      "evidence_sufficiency": 0.6757883429527283,
+      "estimated_factual_risk": 0.32421165704727173,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-670",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7965276910420704,
+        "RETRIEVE_MORE": 0.09412292826911106,
+        "ABSTAIN": 0.05027095778057038,
+        "ESCALATE": 0.059078422908248086
+      },
+      "evidence_sufficiency": 0.844754695892334,
+      "estimated_factual_risk": 0.15524530410766602,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1276",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5827502959119346,
+        "RETRIEVE_MORE": 8.640793245543824e-06,
+        "ABSTAIN": 0.22691492643185182,
+        "ESCALATE": 0.19032613686296806
+      },
+      "evidence_sufficiency": 0.5153377056121826,
+      "estimated_factual_risk": 0.4846622943878174,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-606",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6484584097631654,
+        "RETRIEVE_MORE": 0.19121344583186803,
+        "ABSTAIN": 0.07707604551716021,
+        "ESCALATE": 0.0832520988878063
+      },
+      "evidence_sufficiency": 0.722827672958374,
+      "estimated_factual_risk": 0.277172327041626,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-696",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ESCALATE",
+      "probabilities": {
+        "ANSWER": 0.21731951522843715,
+        "RETRIEVE_MORE": 7.9731394625568e-06,
+        "ABSTAIN": 0.30528762953593824,
+        "ESCALATE": 0.47738488209616203
+      },
+      "evidence_sufficiency": 0.3140101432800293,
+      "estimated_factual_risk": 0.6859898567199707,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-381",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8427117970289274,
+        "RETRIEVE_MORE": 0.06699083157371152,
+        "ABSTAIN": 0.04102401634809317,
+        "ESCALATE": 0.04927335504926797
+      },
+      "evidence_sufficiency": 0.8976092338562012,
+      "estimated_factual_risk": 0.10239076614379883,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-612",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7950988785899603,
+        "RETRIEVE_MORE": 0.0949902932480862,
+        "ABSTAIN": 0.050548998648499266,
+        "ESCALATE": 0.05936182951345425
+      },
+      "evidence_sufficiency": 0.843292236328125,
+      "estimated_factual_risk": 0.156707763671875,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-267",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ESCALATE",
+      "probabilities": {
+        "ANSWER": 0.14319333289534442,
+        "RETRIEVE_MORE": 7.973477027217667e-06,
+        "ABSTAIN": 0.3793936001371234,
+        "ESCALATE": 0.4774050934905048
+      },
+      "evidence_sufficiency": 0.22129562497138977,
+      "estimated_factual_risk": 0.7787043750286102,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-498",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8754998243219362,
+        "RETRIEVE_MORE": 0.0489516164726356,
+        "ABSTAIN": 0.034101479932134963,
+        "ESCALATE": 0.04144707927329324
+      },
+      "evidence_sufficiency": 0.944528341293335,
+      "estimated_factual_risk": 0.05547165870666504,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-733",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7920807149004542,
+        "RETRIEVE_MORE": 0.09682760508747981,
+        "ABSTAIN": 0.051134862328231896,
+        "ESCALATE": 0.059956817683834124
+      },
+      "evidence_sufficiency": 0.8402308225631714,
+      "estimated_factual_risk": 0.1597691774368286,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-173",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7257891876322949,
+        "RETRIEVE_MORE": 0.13880259824369806,
+        "ABSTAIN": 0.06354708464463035,
+        "ESCALATE": 0.07186112947937656
+      },
+      "evidence_sufficiency": 0.7805609107017517,
+      "estimated_factual_risk": 0.2194390892982483,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1102",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7605243702022366,
+        "RETRIEVE_MORE": 0.11643650031808522,
+        "ABSTAIN": 0.05714753392129496,
+        "ESCALATE": 0.06589159555838323
+      },
+      "evidence_sufficiency": 0.8102216124534607,
+      "estimated_factual_risk": 0.1897783875465393,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-774",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8143079054799858,
+        "RETRIEVE_MORE": 0.0834638433546548,
+        "ABSTAIN": 0.046772604763872315,
+        "ESCALATE": 0.05545564640148712
+      },
+      "evidence_sufficiency": 0.8637233376502991,
+      "estimated_factual_risk": 0.13627666234970093,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-899",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8338147616249193,
+        "RETRIEVE_MORE": 0.07207282056033613,
+        "ABSTAIN": 0.042847292094846105,
+        "ESCALATE": 0.051265125719898504
+      },
+      "evidence_sufficiency": 0.8864445686340332,
+      "estimated_factual_risk": 0.1135554313659668,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1136",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7488796349624054,
+        "RETRIEVE_MORE": 0.1238471338826879,
+        "ABSTAIN": 0.05931725295367407,
+        "ESCALATE": 0.06795597820123256
+      },
+      "evidence_sufficiency": 0.79993736743927,
+      "estimated_factual_risk": 0.20006263256072998,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-779",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8830814683384138,
+        "RETRIEVE_MORE": 0.044952290854849926,
+        "ABSTAIN": 0.03244935701813107,
+        "ESCALATE": 0.03951688378860525
+      },
+      "evidence_sufficiency": 0.9570420980453491,
+      "estimated_factual_risk": 0.04295790195465088,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1371",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5671200040278265,
+        "RETRIEVE_MORE": 0.2498729667871595,
+        "ABSTAIN": 0.09035971486123498,
+        "ESCALATE": 0.09264731432377897
+      },
+      "evidence_sufficiency": 0.6692824363708496,
+      "estimated_factual_risk": 0.3307175636291504,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-954",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8365965745543404,
+        "RETRIEVE_MORE": 0.07047591429165881,
+        "ABSTAIN": 0.04227952894766363,
+        "ESCALATE": 0.050647982206337074
+      },
+      "evidence_sufficiency": 0.889876127243042,
+      "estimated_factual_risk": 0.11012387275695801,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-17",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8298631859304916,
+        "RETRIEVE_MORE": 0.07435335884068105,
+        "ABSTAIN": 0.04365027257523358,
+        "ESCALATE": 0.05213318265359388
+      },
+      "evidence_sufficiency": 0.881657600402832,
+      "estimated_factual_risk": 0.11834239959716797,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1260",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7936251326553458,
+        "RETRIEVE_MORE": 0.09588657232119847,
+        "ABSTAIN": 0.05083531757541256,
+        "ESCALATE": 0.05965297744804316
+      },
+      "evidence_sufficiency": 0.8417927026748657,
+      "estimated_factual_risk": 0.15820729732513428,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-654",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.847986675371268,
+        "RETRIEVE_MORE": 0.06401343356170139,
+        "ABSTAIN": 0.03993260869492877,
+        "ESCALATE": 0.048067282372101845
+      },
+      "evidence_sufficiency": 0.9045029282569885,
+      "estimated_factual_risk": 0.09549707174301147,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-166",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6500847093985495,
+        "RETRIEVE_MORE": 0.19007647694895305,
+        "ABSTAIN": 0.07680092682237852,
+        "ESCALATE": 0.08303788683011895
+      },
+      "evidence_sufficiency": 0.723956823348999,
+      "estimated_factual_risk": 0.276043176651001,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1038",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7877564326153702,
+        "RETRIEVE_MORE": 0.09947200983976338,
+        "ABSTAIN": 0.05197085423917589,
+        "ESCALATE": 0.06080070330569051
+      },
+      "evidence_sufficiency": 0.8359083533287048,
+      "estimated_factual_risk": 0.16409164667129517,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1234",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6327384163602121,
+        "RETRIEVE_MORE": 7.84992188458832e-06,
+        "ABSTAIN": 0.1943476978351138,
+        "ESCALATE": 0.17290603588278938
+      },
+      "evidence_sufficiency": 0.5549575090408325,
+      "estimated_factual_risk": 0.4450424909591675,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-940",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8314826441714778,
+        "RETRIEVE_MORE": 0.07341702911474665,
+        "ABSTAIN": 0.043321686248350325,
+        "ESCALATE": 0.05177864046542531
+      },
+      "evidence_sufficiency": 0.8836072683334351,
+      "estimated_factual_risk": 0.11639273166656494,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-568",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8582270732283293,
+        "RETRIEVE_MORE": 0.05831263021845944,
+        "ABSTAIN": 0.03779042957745462,
+        "ESCALATE": 0.045669866975756715
+      },
+      "evidence_sufficiency": 0.9185400009155273,
+      "estimated_factual_risk": 0.08145999908447266,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-749",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7711857399866082,
+        "RETRIEVE_MORE": 0.1097323963179408,
+        "ABSTAIN": 0.05513845291754572,
+        "ESCALATE": 0.06394341077790537
+      },
+      "evidence_sufficiency": 0.8199846148490906,
+      "estimated_factual_risk": 0.18001538515090942,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-253",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8354923836283754,
+        "RETRIEVE_MORE": 0.07110892500675227,
+        "ABSTAIN": 0.04250514084467714,
+        "ESCALATE": 0.050893550520195174
+      },
+      "evidence_sufficiency": 0.8885077834129333,
+      "estimated_factual_risk": 0.11149221658706665,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-394",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6890685340290879,
+        "RETRIEVE_MORE": 0.16326066260148245,
+        "ABSTAIN": 0.07008805075903538,
+        "ESCALATE": 0.07758275261039428
+      },
+      "evidence_sufficiency": 0.751999020576477,
+      "estimated_factual_risk": 0.24800097942352295,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1168",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ESCALATE",
+      "probabilities": {
+        "ANSWER": 0.24857155282308085,
+        "RETRIEVE_MORE": 7.86371540122517e-06,
+        "ABSTAIN": 0.28058737312057846,
+        "ESCALATE": 0.4708332103409395
+      },
+      "evidence_sufficiency": 0.3469392955303192,
+      "estimated_factual_risk": 0.6530607044696808,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-425",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8663988361814181,
+        "RETRIEVE_MORE": 0.053842406460597715,
+        "ABSTAIN": 0.03605758323794256,
+        "ESCALATE": 0.0437011741200416
+      },
+      "evidence_sufficiency": 0.9304378628730774,
+      "estimated_factual_risk": 0.06956213712692261,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-308",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5624129813410816,
+        "RETRIEVE_MORE": 0.25337342560592424,
+        "ABSTAIN": 0.09110064945991493,
+        "ESCALATE": 0.09311294359307914
+      },
+      "evidence_sufficiency": 0.6663162708282471,
+      "estimated_factual_risk": 0.33368372917175293,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-25",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8852818920830915,
+        "RETRIEVE_MORE": 0.04380495905393766,
+        "ABSTAIN": 0.03196580153715695,
+        "ESCALATE": 0.03894734732581384
+      },
+      "evidence_sufficiency": 0.9608212113380432,
+      "estimated_factual_risk": 0.03917878866195679,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-316",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.44042191932663205,
+        "RETRIEVE_MORE": 0.34813540272512994,
+        "ABSTAIN": 0.10927164880135445,
+        "ESCALATE": 0.10217102914688352
+      },
+      "evidence_sufficiency": 0.5913522243499756,
+      "estimated_factual_risk": 0.4086477756500244,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1294",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7047552073042974,
+        "RETRIEVE_MORE": 0.15271430901460553,
+        "ABSTAIN": 0.06732068257954518,
+        "ESCALATE": 0.07520980110155191
+      },
+      "evidence_sufficiency": 0.7639042139053345,
+      "estimated_factual_risk": 0.23609578609466553,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1248",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8911468659753248,
+        "RETRIEVE_MORE": 0.040777600504538006,
+        "ABSTAIN": 0.030667575888102466,
+        "ESCALATE": 0.03740795763203485
+      },
+      "evidence_sufficiency": 0.9712501764297485,
+      "estimated_factual_risk": 0.028749823570251465,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-479",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8189572115775388,
+        "RETRIEVE_MORE": 0.0807190949693389,
+        "ABSTAIN": 0.045845645345474174,
+        "ESCALATE": 0.05447804810764805
+      },
+      "evidence_sufficiency": 0.8689408898353577,
+      "estimated_factual_risk": 0.13105911016464233,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-923",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.616428723566392,
+        "RETRIEVE_MORE": 8.115779975596178e-06,
+        "ABSTAIN": 0.2048012106229858,
+        "ESCALATE": 0.17876195003064663
+      },
+      "evidence_sufficiency": 0.541752815246582,
+      "estimated_factual_risk": 0.45824718475341797,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-705",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8844220509940585,
+        "RETRIEVE_MORE": 0.04425255765306598,
+        "ABSTAIN": 0.03215497979091539,
+        "ESCALATE": 0.03917041156196004
+      },
+      "evidence_sufficiency": 0.9593361616134644,
+      "estimated_factual_risk": 0.040663838386535645,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1072",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8489604690274729,
+        "RETRIEVE_MORE": 0.06346676053534213,
+        "ABSTAIN": 0.039730247894100366,
+        "ESCALATE": 0.0478425225430846
+      },
+      "evidence_sufficiency": 0.9057995080947876,
+      "estimated_factual_risk": 0.0942004919052124,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-245",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7037593857650627,
+        "RETRIEVE_MORE": 0.15337952458735324,
+        "ABSTAIN": 0.06749753122653651,
+        "ESCALATE": 0.07536355842104757
+      },
+      "evidence_sufficiency": 0.7631361484527588,
+      "estimated_factual_risk": 0.2368638515472412,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1053",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7390230626507295,
+        "RETRIEVE_MORE": 0.13018952455096383,
+        "ABSTAIN": 0.061134368115082396,
+        "ESCALATE": 0.06965304468322424
+      },
+      "evidence_sufficiency": 0.7915117144584656,
+      "estimated_factual_risk": 0.20848828554153442,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-259",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4109828189275014,
+        "RETRIEVE_MORE": 0.372210448379714,
+        "ABSTAIN": 0.11335592479919782,
+        "ESCALATE": 0.10345080789358675
+      },
+      "evidence_sufficiency": 0.5732122659683228,
+      "estimated_factual_risk": 0.42678773403167725,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-621",
+      "label": "supported",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8872798199483816,
+        "RETRIEVE_MORE": 0.04276859963255226,
+        "ABSTAIN": 0.031525105690903915,
+        "ESCALATE": 0.038426474728162296
+      },
+      "evidence_sufficiency": 0.9643141627311707,
+      "estimated_factual_risk": 0.035685837268829346,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-325",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6583190274406964,
+        "RETRIEVE_MORE": 0.18434193340717306,
+        "ABSTAIN": 0.07540198802688079,
+        "ESCALATE": 0.08193705112524975
+      },
+      "evidence_sufficiency": 0.7297196388244629,
+      "estimated_factual_risk": 0.2702803611755371,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-620",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8162674852895003,
+        "RETRIEVE_MORE": 0.0823047827353879,
+        "ABSTAIN": 0.04638254813151201,
+        "ESCALATE": 0.05504518384359976
+      },
+      "evidence_sufficiency": 0.8659083843231201,
+      "estimated_factual_risk": 0.13409161567687988,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1253",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8437148947974573,
+        "RETRIEVE_MORE": 0.06642255474304999,
+        "ABSTAIN": 0.04081707877932212,
+        "ESCALATE": 0.049045471680170524
+      },
+      "evidence_sufficiency": 0.8989037275314331,
+      "estimated_factual_risk": 0.1010962724685669,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-246",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8057649831209461,
+        "RETRIEVE_MORE": 0.08855372545964385,
+        "ABSTAIN": 0.04846249189475186,
+        "ESCALATE": 0.05721879952465809
+      },
+      "evidence_sufficiency": 0.8544243574142456,
+      "estimated_factual_risk": 0.1455756425857544,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-573",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8603581439739802,
+        "RETRIEVE_MORE": 0.05713992560304496,
+        "ABSTAIN": 0.037340592890046494,
+        "ESCALATE": 0.04516133753292835
+      },
+      "evidence_sufficiency": 0.9215794205665588,
+      "estimated_factual_risk": 0.07842057943344116,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-946",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7135130865213186,
+        "RETRIEVE_MORE": 0.14688941736776925,
+        "ABSTAIN": 0.06575840097346315,
+        "ESCALATE": 0.07383909513744903
+      },
+      "evidence_sufficiency": 0.7707360982894897,
+      "estimated_factual_risk": 0.22926390171051025,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-998",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6968428801097368,
+        "RETRIEVE_MORE": 0.1580159150609733,
+        "ABSTAIN": 0.06872143434879302,
+        "ESCALATE": 0.07641977048049683
+      },
+      "evidence_sufficiency": 0.7578485608100891,
+      "estimated_factual_risk": 0.2421514391899109,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-358",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.825871574727267,
+        "RETRIEVE_MORE": 0.07667118748545369,
+        "ABSTAIN": 0.0444572700623306,
+        "ESCALATE": 0.05299996772494863
+      },
+      "evidence_sufficiency": 0.8769217729568481,
+      "estimated_factual_risk": 0.12307822704315186,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-753",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7015095758094042,
+        "RETRIEVE_MORE": 0.15488456987147536,
+        "ABSTAIN": 0.06789648685520519,
+        "ESCALATE": 0.07570936746391532
+      },
+      "evidence_sufficiency": 0.7614072561264038,
+      "estimated_factual_risk": 0.2385927438735962,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-645",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ESCALATE",
+      "probabilities": {
+        "ANSWER": 0.190905350851211,
+        "RETRIEVE_MORE": 8.02297764739386e-06,
+        "ABSTAIN": 0.32871772553321726,
+        "ESCALATE": 0.4803689006379243
+      },
+      "evidence_sufficiency": 0.28382742404937744,
+      "estimated_factual_risk": 0.7161725759506226,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-61",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8761816727896724,
+        "RETRIEVE_MORE": 0.048589082649469616,
+        "ABSTAIN": 0.033953761026477,
+        "ESCALATE": 0.04127548353438083
+      },
+      "evidence_sufficiency": 0.9456232786178589,
+      "estimated_factual_risk": 0.05437672138214111,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-547",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6802041242778575,
+        "RETRIEVE_MORE": 0.16928322832944065,
+        "ABSTAIN": 0.07163474591044346,
+        "ESCALATE": 0.07887790148225846
+      },
+      "evidence_sufficiency": 0.7454426288604736,
+      "estimated_factual_risk": 0.25455737113952637,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1219",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7873362617655579,
+        "RETRIEVE_MORE": 0.09972970014458567,
+        "ABSTAIN": 0.05205187230047557,
+        "ESCALATE": 0.06088216578938079
+      },
+      "evidence_sufficiency": 0.8354922533035278,
+      "estimated_factual_risk": 0.16450774669647217,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-877",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7558878470165459,
+        "RETRIEVE_MORE": 0.11937629177062992,
+        "ABSTAIN": 0.05801447210591355,
+        "ESCALATE": 0.06672138910691061
+      },
+      "evidence_sufficiency": 0.8060816526412964,
+      "estimated_factual_risk": 0.1939183473587036,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1169",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8788393062520077,
+        "RETRIEVE_MORE": 0.047181370554507766,
+        "ABSTAIN": 0.03337639039145244,
+        "ESCALATE": 0.04060293280203207
+      },
+      "evidence_sufficiency": 0.9499470591545105,
+      "estimated_factual_risk": 0.0500529408454895,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1004",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7831746604184785,
+        "RETRIEVE_MORE": 0.10228905833442471,
+        "ABSTAIN": 0.05285232176922163,
+        "ESCALATE": 0.061683959477875125
+      },
+      "evidence_sufficiency": 0.8314070701599121,
+      "estimated_factual_risk": 0.1685929298400879,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-326",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6740035742841988,
+        "RETRIEVE_MORE": 0.1735224865699782,
+        "ABSTAIN": 0.0727094439138213,
+        "ESCALATE": 0.07976449523200173
+      },
+      "evidence_sufficiency": 0.7409237623214722,
+      "estimated_factual_risk": 0.25907623767852783,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-363",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8505299925544946,
+        "RETRIEVE_MORE": 0.06258764135858477,
+        "ABSTAIN": 0.039403505482751865,
+        "ESCALATE": 0.047478860604168824
+      },
+      "evidence_sufficiency": 0.9079055786132812,
+      "estimated_factual_risk": 0.09209442138671875,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1263",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7594510456351982,
+        "RETRIEVE_MORE": 0.11711575103741007,
+        "ABSTAIN": 0.05734858557098668,
+        "ESCALATE": 0.06608461775640513
+      },
+      "evidence_sufficiency": 0.8092577457427979,
+      "estimated_factual_risk": 0.19074225425720215,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-317",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8383241943798481,
+        "RETRIEVE_MORE": 0.06948777446062876,
+        "ABSTAIN": 0.04192587380795815,
+        "ESCALATE": 0.050262157351565036
+      },
+      "evidence_sufficiency": 0.8920338749885559,
+      "estimated_factual_risk": 0.10796612501144409,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1360",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8764140951148328,
+        "RETRIEVE_MORE": 0.048465632282155044,
+        "ABSTAIN": 0.033903369709051175,
+        "ESCALATE": 0.0412169028939609
+      },
+      "evidence_sufficiency": 0.9459978342056274,
+      "estimated_factual_risk": 0.05400216579437256,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1236",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8208872337265757,
+        "RETRIEVE_MORE": 0.07958505595066115,
+        "ABSTAIN": 0.04545930010751382,
+        "ESCALATE": 0.05406841021524944
+      },
+      "evidence_sufficiency": 0.871141254901886,
+      "estimated_factual_risk": 0.128858745098114,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-455",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8664379571702713,
+        "RETRIEVE_MORE": 0.05382118151544669,
+        "ABSTAIN": 0.036049235233806556,
+        "ESCALATE": 0.04369162608047559
+      },
+      "evidence_sufficiency": 0.9304964542388916,
+      "estimated_factual_risk": 0.0695035457611084,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-214",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8864863115471993,
+        "RETRIEVE_MORE": 0.04317958628582651,
+        "ABSTAIN": 0.031700323836488936,
+        "ESCALATE": 0.038633778330485334
+      },
+      "evidence_sufficiency": 0.9629197120666504,
+      "estimated_factual_risk": 0.03708028793334961,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1405",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8680304464237217,
+        "RETRIEVE_MORE": 0.05295863439517073,
+        "ABSTAIN": 0.03570898117507015,
+        "ESCALATE": 0.04330193800603742
+      },
+      "evidence_sufficiency": 0.9328954219818115,
+      "estimated_factual_risk": 0.06710457801818848,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1383",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7440744221945934,
+        "RETRIEVE_MORE": 0.12693126891399234,
+        "ABSTAIN": 0.06020530712941434,
+        "ESCALATE": 0.06878900176199977
+      },
+      "evidence_sufficiency": 0.7957993745803833,
+      "estimated_factual_risk": 0.2042006254196167,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-710",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.795932692093446,
+        "RETRIEVE_MORE": 0.09448393376241525,
+        "ABSTAIN": 0.0503867962717853,
+        "ESCALATE": 0.05919657787235347
+      },
+      "evidence_sufficiency": 0.8441446423530579,
+      "estimated_factual_risk": 0.15585535764694214,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1402",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7832055049469878,
+        "RETRIEVE_MORE": 0.1022700422789764,
+        "ABSTAIN": 0.05284640234496573,
+        "ESCALATE": 0.06167805042907007
+      },
+      "evidence_sufficiency": 0.8314371109008789,
+      "estimated_factual_risk": 0.1685628890991211,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-247",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8513079113194987,
+        "RETRIEVE_MORE": 0.06215283000304344,
+        "ABSTAIN": 0.039241289217742475,
+        "ESCALATE": 0.04729796945971535
+      },
+      "evidence_sufficiency": 0.9089570045471191,
+      "estimated_factual_risk": 0.09104299545288086,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-838",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8109604972304443,
+        "RETRIEVE_MORE": 0.08545114059189395,
+        "ABSTAIN": 0.04743679495195915,
+        "ESCALATE": 0.05615156722570258
+      },
+      "evidence_sufficiency": 0.8600366115570068,
+      "estimated_factual_risk": 0.13996338844299316,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-422",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.814511228019728,
+        "RETRIEVE_MORE": 0.0833434325774288,
+        "ABSTAIN": 0.04673217595369734,
+        "ESCALATE": 0.05541316344914592
+      },
+      "evidence_sufficiency": 0.8639491200447083,
+      "estimated_factual_risk": 0.13605087995529175,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-490",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7600653241134686,
+        "RETRIEVE_MORE": 0.1167269108363309,
+        "ABSTAIN": 0.05723354769124329,
+        "ESCALATE": 0.0659742173589573
+      },
+      "evidence_sufficiency": 0.8098089694976807,
+      "estimated_factual_risk": 0.19019103050231934,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-764",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8497014057187265,
+        "RETRIEVE_MORE": 0.0630514414440533,
+        "ABSTAIN": 0.03957609048148485,
+        "ESCALATE": 0.047671062355735365
+      },
+      "evidence_sufficiency": 0.9067912101745605,
+      "estimated_factual_risk": 0.09320878982543945,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1397",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8302499225402796,
+        "RETRIEVE_MORE": 0.07412954351171666,
+        "ABSTAIN": 0.043571866299185476,
+        "ESCALATE": 0.05204866764881822
+      },
+      "evidence_sufficiency": 0.8821216821670532,
+      "estimated_factual_risk": 0.11787831783294678,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-356",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7322663241245202,
+        "RETRIEVE_MORE": 0.13457327949048425,
+        "ABSTAIN": 0.06237002180579977,
+        "ESCALATE": 0.07079037457919578
+      },
+      "evidence_sufficiency": 0.7858713865280151,
+      "estimated_factual_risk": 0.21412861347198486,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1268",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7794371264411909,
+        "RETRIEVE_MORE": 0.10459842914278883,
+        "ABSTAIN": 0.05356814740620643,
+        "ESCALATE": 0.06239629700981386
+      },
+      "evidence_sufficiency": 0.8277924656867981,
+      "estimated_factual_risk": 0.1722075343132019,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-296",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6778243332367758,
+        "RETRIEVE_MORE": 0.17090770052047183,
+        "ABSTAIN": 0.07204791395836185,
+        "ESCALATE": 0.07922005228439044
+      },
+      "evidence_sufficiency": 0.7437019348144531,
+      "estimated_factual_risk": 0.2562980651855469,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1162",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8114536153065067,
+        "RETRIEVE_MORE": 0.08515780631355663,
+        "ABSTAIN": 0.047339117074307276,
+        "ESCALATE": 0.056049461305629385
+      },
+      "evidence_sufficiency": 0.8605761528015137,
+      "estimated_factual_risk": 0.13942384719848633,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-292",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5806078565393107,
+        "RETRIEVE_MORE": 0.23990606762481198,
+        "ABSTAIN": 0.08822004016490619,
+        "ESCALATE": 0.09126603567097108
+      },
+      "evidence_sufficiency": 0.6778437495231628,
+      "estimated_factual_risk": 0.32215625047683716,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-926",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8720084593896897,
+        "RETRIEVE_MORE": 0.05081655342494306,
+        "ABSTAIN": 0.03485527681209161,
+        "ESCALATE": 0.042319710373275685
+      },
+      "evidence_sufficiency": 0.9390102624893188,
+      "estimated_factual_risk": 0.06098973751068115,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-428",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6884482034462298,
+        "RETRIEVE_MORE": 0.16368065671698637,
+        "ABSTAIN": 0.07019668611631025,
+        "ESCALATE": 0.0776744537204736
+      },
+      "evidence_sufficiency": 0.7515363693237305,
+      "estimated_factual_risk": 0.24846363067626953,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-336",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ESCALATE",
+      "probabilities": {
+        "ANSWER": 0.17861428960313933,
+        "RETRIEVE_MORE": 8.029735455688484e-06,
+        "ABSTAIN": 0.3406041620519643,
+        "ESCALATE": 0.48077351860944073
+      },
+      "evidence_sufficiency": 0.268851637840271,
+      "estimated_factual_risk": 0.731148362159729,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-160",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8506921032267731,
+        "RETRIEVE_MORE": 0.062496980704637536,
+        "ABSTAIN": 0.0393697159957495,
+        "ESCALATE": 0.04744120007283992
+      },
+      "evidence_sufficiency": 0.9081242680549622,
+      "estimated_factual_risk": 0.09187573194503784,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1105",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.880678614102483,
+        "RETRIEVE_MORE": 0.04621215055929948,
+        "ABSTAIN": 0.03297527919328674,
+        "ESCALATE": 0.04013395614493077
+      },
+      "evidence_sufficiency": 0.9529933333396912,
+      "estimated_factual_risk": 0.04700666666030884,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1398",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8002183444991485,
+        "RETRIEVE_MORE": 0.09188979995334053,
+        "ABSTAIN": 0.04955069436728169,
+        "ESCALATE": 0.05834116118022917
+      },
+      "evidence_sufficiency": 0.8485726118087769,
+      "estimated_factual_risk": 0.15142738819122314,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-758",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7958562569600567,
+        "RETRIEVE_MORE": 0.09453032919971678,
+        "ABSTAIN": 0.050401671575721764,
+        "ESCALATE": 0.05921174226450482
+      },
+      "evidence_sufficiency": 0.8440663814544678,
+      "estimated_factual_risk": 0.15593361854553223,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-601",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8612417366752732,
+        "RETRIEVE_MORE": 0.056655113629652844,
+        "ABSTAIN": 0.0371536585059638,
+        "ESCALATE": 0.04494949118911014
+      },
+      "evidence_sufficiency": 0.9228523969650269,
+      "estimated_factual_risk": 0.07714760303497314,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1027",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ABSTAIN",
+      "probabilities": {
+        "ANSWER": 0.04252611003723547,
+        "RETRIEVE_MORE": 6.415113242112282e-06,
+        "ABSTAIN": 0.5733680754722493,
+        "ESCALATE": 0.384099399377273
+      },
+      "evidence_sufficiency": 0.0,
+      "estimated_factual_risk": 1.0001957826316357,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-35",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5389157673608748,
+        "RETRIEVE_MORE": 9.273702437147964e-06,
+        "ABSTAIN": 0.25680806941363254,
+        "ESCALATE": 0.20426688952305544
+      },
+      "evidence_sufficiency": 0.48225152492523193,
+      "estimated_factual_risk": 0.5177484750747681,
+      "n_retrievals": 3,
+      "correct": false
+    },
+    {
+      "id": "scifact-1269",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8740837825945267,
+        "RETRIEVE_MORE": 0.04970627878273892,
+        "ABSTAIN": 0.034407726984808915,
+        "ESCALATE": 0.041802211637925454
+      },
+      "evidence_sufficiency": 0.9422726631164551,
+      "estimated_factual_risk": 0.05772733688354492,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1346",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8471306369096959,
+        "RETRIEVE_MORE": 0.0644947752822384,
+        "ABSTAIN": 0.04011027137916835,
+        "ESCALATE": 0.048264316428897405
+      },
+      "evidence_sufficiency": 0.9033694267272949,
+      "estimated_factual_risk": 0.09663057327270508,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-186",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8773500176327449,
+        "RETRIEVE_MORE": 0.04796917602985343,
+        "ABSTAIN": 0.03370025520994712,
+        "ESCALATE": 0.0409805511274545
+      },
+      "evidence_sufficiency": 0.9475129842758179,
+      "estimated_factual_risk": 0.05248701572418213,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-863",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7328969136671697,
+        "RETRIEVE_MORE": 0.13416293213460365,
+        "ABSTAIN": 0.06225503971179791,
+        "ESCALATE": 0.07068511448642872
+      },
+      "evidence_sufficiency": 0.7863933444023132,
+      "estimated_factual_risk": 0.21360665559768677,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1188",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8574741929380346,
+        "RETRIEVE_MORE": 0.058728079331214954,
+        "ABSTAIN": 0.037949010878600004,
+        "ESCALATE": 0.04584871685215032
+      },
+      "evidence_sufficiency": 0.9174764156341553,
+      "estimated_factual_risk": 0.08252358436584473,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-293",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8774433807794525,
+        "RETRIEVE_MORE": 0.047919709766796895,
+        "ABSTAIN": 0.033679976032893556,
+        "ESCALATE": 0.04095693342085696
+      },
+      "evidence_sufficiency": 0.947664737701416,
+      "estimated_factual_risk": 0.052335262298583984,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1206",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4642107585149582,
+        "RETRIEVE_MORE": 0.32903461427129643,
+        "ABSTAIN": 0.10588455837829984,
+        "ESCALATE": 0.10087006883544551
+      },
+      "evidence_sufficiency": 0.6058900952339172,
+      "estimated_factual_risk": 0.39410990476608276,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-638",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8791555216867009,
+        "RETRIEVE_MORE": 0.04701444586907127,
+        "ABSTAIN": 0.033307520386788685,
+        "ESCALATE": 0.04052251205743932
+      },
+      "evidence_sufficiency": 0.950467586517334,
+      "estimated_factual_risk": 0.049532413482666016,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1159",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6459533525173581,
+        "RETRIEVE_MORE": 0.19296758076732579,
+        "ABSTAIN": 0.07749906844891852,
+        "ESCALATE": 0.08357999826639759
+      },
+      "evidence_sufficiency": 0.721094012260437,
+      "estimated_factual_risk": 0.278905987739563,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-44",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8014674799245655,
+        "RETRIEVE_MORE": 0.09113637978088916,
+        "ABSTAIN": 0.04930622946283086,
+        "ESCALATE": 0.05808991083171455
+      },
+      "evidence_sufficiency": 0.8498783111572266,
+      "estimated_factual_risk": 0.15012168884277344,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1120",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.811223646387881,
+        "RETRIEVE_MORE": 0.08529457994884669,
+        "ABSTAIN": 0.04738467691736829,
+        "ESCALATE": 0.056097096745904
+      },
+      "evidence_sufficiency": 0.8603243827819824,
+      "estimated_factual_risk": 0.13967561721801758,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1322",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8240848461353617,
+        "RETRIEVE_MORE": 0.07771323968656836,
+        "ABSTAIN": 0.04481718257933133,
+        "ESCALATE": 0.05338473159873865
+      },
+      "evidence_sufficiency": 0.8748330473899841,
+      "estimated_factual_risk": 0.12516695261001587,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1183",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7327099452678852,
+        "RETRIEVE_MORE": 0.13428457310405845,
+        "ABSTAIN": 0.062289138868672746,
+        "ESCALATE": 0.07071634275938349
+      },
+      "evidence_sufficiency": 0.7862384915351868,
+      "estimated_factual_risk": 0.21376150846481323,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-168",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.42412516353521623,
+        "RETRIEVE_MORE": 0.36140187511441724,
+        "ABSTAIN": 0.11154742451379583,
+        "ESCALATE": 0.10292553683657066
+      },
+      "evidence_sufficiency": 0.5813384056091309,
+      "estimated_factual_risk": 0.41866159439086914,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1000",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7481370321581982,
+        "RETRIEVE_MORE": 0.12432277371856719,
+        "ABSTAIN": 0.05945476807145995,
+        "ESCALATE": 0.06808542605177463
+      },
+      "evidence_sufficiency": 0.7992939949035645,
+      "estimated_factual_risk": 0.20070600509643555,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-762",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7091800420110909,
+        "RETRIEVE_MORE": 0.14976560953540055,
+        "ABSTAIN": 0.0665329244756648,
+        "ESCALATE": 0.07452142397784375
+      },
+      "evidence_sufficiency": 0.7673383951187134,
+      "estimated_factual_risk": 0.23266160488128662,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1211",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8224796800158776,
+        "RETRIEVE_MORE": 0.07865176843817727,
+        "ABSTAIN": 0.04513983704065375,
+        "ESCALATE": 0.05372871450529141
+      },
+      "evidence_sufficiency": 0.8729724884033203,
+      "estimated_factual_risk": 0.1270275115966797,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-494",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7583647128393884,
+        "RETRIEVE_MORE": 0.11780402827673737,
+        "ABSTAIN": 0.05755185169407706,
+        "ESCALATE": 0.066279407189797
+      },
+      "evidence_sufficiency": 0.8082855939865112,
+      "estimated_factual_risk": 0.19171440601348877,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-80",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5036342485351678,
+        "RETRIEVE_MORE": 0.2980525048369043,
+        "ABSTAIN": 0.10010384798867085,
+        "ESCALATE": 0.0982093986392571
+      },
+      "evidence_sufficiency": 0.6299440860748291,
+      "estimated_factual_risk": 0.3700559139251709,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-27",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5811247104832074,
+        "RETRIEVE_MORE": 0.23952601390273057,
+        "ABSTAIN": 0.08813755814713668,
+        "ESCALATE": 0.09121171746692548
+      },
+      "evidence_sufficiency": 0.6781737804412842,
+      "estimated_factual_risk": 0.3218262195587158,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-210",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5513222140822263,
+        "RETRIEVE_MORE": 0.2616666073413439,
+        "ABSTAIN": 0.09283469668616598,
+        "ESCALATE": 0.09417648189026376
+      },
+      "evidence_sufficiency": 0.6593664288520813,
+      "estimated_factual_risk": 0.3406335711479187,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1364",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4778001094824,
+        "RETRIEVE_MORE": 0.3182614122381566,
+        "ABSTAIN": 0.1039154098880202,
+        "ESCALATE": 0.10002306839142323
+      },
+      "evidence_sufficiency": 0.6141759157180786,
+      "estimated_factual_risk": 0.3858240842819214,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1133",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6546682246488084,
+        "RETRIEVE_MORE": 0.18687984248088696,
+        "ABSTAIN": 0.07602345799695819,
+        "ESCALATE": 0.08242847487334641
+      },
+      "evidence_sufficiency": 0.7271550297737122,
+      "estimated_factual_risk": 0.27284497022628784,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-139",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6628620203904386,
+        "RETRIEVE_MORE": 0.18119405322047386,
+        "ABSTAIN": 0.07462588637642963,
+        "ESCALATE": 0.081318040012658
+      },
+      "evidence_sufficiency": 0.7329331040382385,
+      "estimated_factual_risk": 0.2670668959617615,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-144",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7872708362297224,
+        "RETRIEVE_MORE": 0.09976983736180038,
+        "ABSTAIN": 0.05206448441669268,
+        "ESCALATE": 0.06089484199178452
+      },
+      "evidence_sufficiency": 0.8354275226593018,
+      "estimated_factual_risk": 0.16457247734069824,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-935",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.46419805507874123,
+        "RETRIEVE_MORE": 0.3290447317440526,
+        "ABSTAIN": 0.10588638754332473,
+        "ESCALATE": 0.10087082563388139
+      },
+      "evidence_sufficiency": 0.6058823466300964,
+      "estimated_factual_risk": 0.39411765336990356,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-798",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8234111784184718,
+        "RETRIEVE_MORE": 0.07810685649138155,
+        "ABSTAIN": 0.0449526750983591,
+        "ESCALATE": 0.05352928999178755
+      },
+      "evidence_sufficiency": 0.8740503787994385,
+      "estimated_factual_risk": 0.12594962120056152,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1315",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7890872703710553,
+        "RETRIEVE_MORE": 0.09865667678181145,
+        "ABSTAIN": 0.05171399367415192,
+        "ESCALATE": 0.06054205917298136
+      },
+      "evidence_sufficiency": 0.8372308015823364,
+      "estimated_factual_risk": 0.16276919841766357,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-299",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4115279378624854,
+        "RETRIEVE_MORE": 0.37176014959243703,
+        "ABSTAIN": 0.11328139113956913,
+        "ESCALATE": 0.10343052140550844
+      },
+      "evidence_sufficiency": 0.5735504031181335,
+      "estimated_factual_risk": 0.42644959688186646,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1006",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5029950150415557,
+        "RETRIEVE_MORE": 0.29854829603980176,
+        "ABSTAIN": 0.1001992331896491,
+        "ESCALATE": 0.0982574557289934
+      },
+      "evidence_sufficiency": 0.6295531392097473,
+      "estimated_factual_risk": 0.3704468607902527,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-254",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8595052992823978,
+        "RETRIEVE_MORE": 0.057608657949001774,
+        "ABSTAIN": 0.03752078716655398,
+        "ESCALATE": 0.04536525560204629
+      },
+      "evidence_sufficiency": 0.920357882976532,
+      "estimated_factual_risk": 0.07964211702346802,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-196",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8175375467418461,
+        "RETRIEVE_MORE": 0.08155527734655266,
+        "ABSTAIN": 0.04612924697603787,
+        "ESCALATE": 0.05477792893556341
+      },
+      "evidence_sufficiency": 0.8673354387283325,
+      "estimated_factual_risk": 0.13266456127166748,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-661",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8551861702066889,
+        "RETRIEVE_MORE": 0.059994276102763394,
+        "ABSTAIN": 0.038429866723031454,
+        "ESCALATE": 0.046389686967516316
+      },
+      "evidence_sufficiency": 0.9142760038375854,
+      "estimated_factual_risk": 0.08572399616241455,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-456",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7076074928757774,
+        "RETRIEVE_MORE": 0.1508122177186866,
+        "ABSTAIN": 0.0668132525922657,
+        "ESCALATE": 0.0747670368132703
+      },
+      "evidence_sufficiency": 0.7661138772964478,
+      "estimated_factual_risk": 0.23388612270355225,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-255",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8811705782620596,
+        "RETRIEVE_MORE": 0.04595361840896646,
+        "ABSTAIN": 0.03286777885438221,
+        "ESCALATE": 0.04000802447459186
+      },
+      "evidence_sufficiency": 0.9538158178329468,
+      "estimated_factual_risk": 0.04618418216705322,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1164",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7743780087803329,
+        "RETRIEVE_MORE": 0.10774043879320591,
+        "ABSTAIN": 0.05453255700222448,
+        "ESCALATE": 0.06334899542423658
+      },
+      "evidence_sufficiency": 0.8229780197143555,
+      "estimated_factual_risk": 0.17702198028564453,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-667",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8055722041987285,
+        "RETRIEVE_MORE": 0.08866926473674186,
+        "ABSTAIN": 0.04850043045613568,
+        "ESCALATE": 0.05725810060839389
+      },
+      "evidence_sufficiency": 0.854218602180481,
+      "estimated_factual_risk": 0.14578139781951904,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-90",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7998934877579444,
+        "RETRIEVE_MORE": 0.09208593836803727,
+        "ABSTAIN": 0.04961421412946349,
+        "ESCALATE": 0.0584063597445547
+      },
+      "evidence_sufficiency": 0.8482341766357422,
+      "estimated_factual_risk": 0.1517658233642578,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1173",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7108532103446729,
+        "RETRIEVE_MORE": 0.14865365714344717,
+        "ABSTAIN": 0.06623421495685776,
+        "ESCALATE": 0.07425891755502222
+      },
+      "evidence_sufficiency": 0.768646240234375,
+      "estimated_factual_risk": 0.231353759765625,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1300",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7952526668576665,
+        "RETRIEVE_MORE": 0.09489686040621084,
+        "ABSTAIN": 0.05051909350492704,
+        "ESCALATE": 0.05933137923119555
+      },
+      "evidence_sufficiency": 0.8434492349624634,
+      "estimated_factual_risk": 0.15655076503753662,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-884",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4183185322886596,
+        "RETRIEVE_MORE": 0.3661651458593514,
+        "ABSTAIN": 0.11234943451615817,
+        "ESCALATE": 0.10316688733583085
+      },
+      "evidence_sufficiency": 0.5777544975280762,
+      "estimated_factual_risk": 0.42224550247192383,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-159",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8506324296854727,
+        "RETRIEVE_MORE": 0.06253035015794058,
+        "ABSTAIN": 0.03938215493629726,
+        "ESCALATE": 0.047455065220289604
+      },
+      "evidence_sufficiency": 0.9080437421798706,
+      "estimated_factual_risk": 0.0919562578201294,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-277",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6513613275299457,
+        "RETRIEVE_MORE": 0.18918498509331916,
+        "ABSTAIN": 0.07658469255275388,
+        "ESCALATE": 0.08286899482398133
+      },
+      "evidence_sufficiency": 0.7248452305793762,
+      "estimated_factual_risk": 0.2751547694206238,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1208",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8409828911004152,
+        "RETRIEVE_MORE": 0.06797255644730928,
+        "ABSTAIN": 0.04138002466156405,
+        "ESCALATE": 0.04966452779071139
+      },
+      "evidence_sufficiency": 0.8953956365585327,
+      "estimated_factual_risk": 0.10460436344146729,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-149",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8634996082401608,
+        "RETRIEVE_MORE": 0.05542008233657017,
+        "ABSTAIN": 0.03667484241702047,
+        "ESCALATE": 0.04440546700624854
+      },
+      "evidence_sufficiency": 0.9261401891708374,
+      "estimated_factual_risk": 0.0738598108291626,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-989",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.767540419048257,
+        "RETRIEVE_MORE": 0.11201580687028803,
+        "ABSTAIN": 0.055827877799340675,
+        "ESCALATE": 0.06461589628211427
+      },
+      "evidence_sufficiency": 0.8166068196296692,
+      "estimated_factual_risk": 0.1833931803703308,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-795",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8885798982887132,
+        "RETRIEVE_MORE": 0.04209702362878333,
+        "ABSTAIN": 0.03123748593673677,
+        "ESCALATE": 0.03808559214576669
+      },
+      "evidence_sufficiency": 0.9666196703910828,
+      "estimated_factual_risk": 0.033380329608917236,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-562",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7348584736474191,
+        "RETRIEVE_MORE": 0.13288807777919495,
+        "ABSTAIN": 0.06189692403600151,
+        "ESCALATE": 0.0703565245373845
+      },
+      "evidence_sufficiency": 0.7880227565765381,
+      "estimated_factual_risk": 0.21197724342346191,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-108",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.872770285353979,
+        "RETRIEVE_MORE": 0.05040840124738199,
+        "ABSTAIN": 0.03469116210666507,
+        "ESCALATE": 0.042130151291973915
+      },
+      "evidence_sufficiency": 0.9402019381523132,
+      "estimated_factual_risk": 0.05979806184768677,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1001",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8353877117987163,
+        "RETRIEVE_MORE": 0.0711689896951648,
+        "ABSTAIN": 0.042526510709265566,
+        "ESCALATE": 0.05091678779685325
+      },
+      "evidence_sufficiency": 0.8883785009384155,
+      "estimated_factual_risk": 0.11162149906158447,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-807",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5202973795261739,
+        "RETRIEVE_MORE": 0.285204030582943,
+        "ABSTAIN": 0.09759824236991202,
+        "ESCALATE": 0.096900347520971
+      },
+      "evidence_sufficiency": 0.6401594281196594,
+      "estimated_factual_risk": 0.3598405718803406,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-994",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ESCALATE",
+      "probabilities": {
+        "ANSWER": 0.1772061310583138,
+        "RETRIEVE_MORE": 8.029750754317368e-06,
+        "ABSTAIN": 0.3420114045892172,
+        "ESCALATE": 0.4807744346017147
+      },
+      "evidence_sufficiency": 0.2670923173427582,
+      "estimated_factual_risk": 0.7329076826572418,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-223",
+      "label": "supported",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8573580019388445,
+        "RETRIEVE_MORE": 0.058792248049702386,
+        "ABSTAIN": 0.037973468806282516,
+        "ESCALATE": 0.04587628120517067
+      },
+      "evidence_sufficiency": 0.917312741279602,
+      "estimated_factual_risk": 0.08268725872039795,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-524",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7886531560359149,
+        "RETRIEVE_MORE": 0.09892249012324603,
+        "ABSTAIN": 0.05179782183356216,
+        "ESCALATE": 0.06062653200727687
+      },
+      "evidence_sufficiency": 0.8367986679077148,
+      "estimated_factual_risk": 0.16320133209228516,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-855",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8114179163073679,
+        "RETRIEVE_MORE": 0.08517903539376828,
+        "ABSTAIN": 0.04734619032726534,
+        "ESCALATE": 0.05605685797159858
+      },
+      "evidence_sufficiency": 0.860537052154541,
+      "estimated_factual_risk": 0.13946294784545898,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1115",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8821688135052709,
+        "RETRIEVE_MORE": 0.04542996144726196,
+        "ABSTAIN": 0.03264937137903044,
+        "ESCALATE": 0.03975185366843678
+      },
+      "evidence_sufficiency": 0.9554948806762695,
+      "estimated_factual_risk": 0.04450511932373047,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-199",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5013269025104785,
+        "RETRIEVE_MORE": 9.768123781947208e-06,
+        "ABSTAIN": 0.28350608500324126,
+        "ESCALATE": 0.21515724436249836
+      },
+      "evidence_sufficiency": 0.45464205741882324,
+      "estimated_factual_risk": 0.5453579425811768,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-714",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7754679196908644,
+        "RETRIEVE_MORE": 0.10706199356365098,
+        "ABSTAIN": 0.054325225400735803,
+        "ESCALATE": 0.06314486134474878
+      },
+      "evidence_sufficiency": 0.8240078091621399,
+      "estimated_factual_risk": 0.1759921908378601,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-858",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.5225561728891382,
+        "RETRIEVE_MORE": 0.28347349542589506,
+        "ABSTAIN": 0.09725575123561607,
+        "ESCALATE": 0.09671458044935055
+      },
+      "evidence_sufficiency": 0.6415485143661499,
+      "estimated_factual_risk": 0.3584514856338501,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1378",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6815847810204785,
+        "RETRIEVE_MORE": 0.1683422489247649,
+        "ABSTAIN": 0.0713946437865241,
+        "ESCALATE": 0.07867832626823248
+      },
+      "evidence_sufficiency": 0.7464562058448792,
+      "estimated_factual_risk": 0.25354379415512085,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-60",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7604784500012312,
+        "RETRIEVE_MORE": 0.1164655447937718,
+        "ABSTAIN": 0.057156140022121646,
+        "ESCALATE": 0.06589986518287544
+      },
+      "evidence_sufficiency": 0.8101803064346313,
+      "estimated_factual_risk": 0.18981969356536865,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-651",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7495790223959007,
+        "RETRIEVE_MORE": 0.12339950483324047,
+        "ABSTAIN": 0.05918764823878695,
+        "ESCALATE": 0.06783382453207201
+      },
+      "evidence_sufficiency": 0.8005446195602417,
+      "estimated_factual_risk": 0.1994553804397583,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-871",
+      "label": "notEnoughInfo",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7708800312818684,
+        "RETRIEVE_MORE": 0.10992353361974275,
+        "ABSTAIN": 0.055196370731350225,
+        "ESCALATE": 0.06400006436703856
+      },
+      "evidence_sufficiency": 0.8196997046470642,
+      "estimated_factual_risk": 0.1803002953529358,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1005",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8041733209854505,
+        "RETRIEVE_MORE": 0.08950855314041432,
+        "ABSTAIN": 0.04877547428245128,
+        "ESCALATE": 0.05754265159168391
+      },
+      "evidence_sufficiency": 0.8527307510375977,
+      "estimated_factual_risk": 0.14726924896240234,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1387",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.7968366189349119,
+        "RETRIEVE_MORE": 0.09393559896297173,
+        "ABSTAIN": 0.05021078298016391,
+        "ESCALATE": 0.05901699912195251
+      },
+      "evidence_sufficiency": 0.8450720310211182,
+      "estimated_factual_risk": 0.15492796897888184,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1156",
+      "label": "refuted",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8323852942757222,
+        "RETRIEVE_MORE": 0.0728961654745159,
+        "ABSTAIN": 0.04313824142903593,
+        "ESCALATE": 0.0515802988207261
+      },
+      "evidence_sufficiency": 0.8847012519836426,
+      "estimated_factual_risk": 0.11529874801635742,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-1177",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.832413551775859,
+        "RETRIEVE_MORE": 0.07287987172093068,
+        "ABSTAIN": 0.0431324952196354,
+        "ESCALATE": 0.05157408128357499
+      },
+      "evidence_sufficiency": 0.8847355842590332,
+      "estimated_factual_risk": 0.1152644157409668,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-713",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8444192910744235,
+        "RETRIEVE_MORE": 0.06602407856229085,
+        "ABSTAIN": 0.04067159296610933,
+        "ESCALATE": 0.04888503739717641
+      },
+      "evidence_sufficiency": 0.8998172879219055,
+      "estimated_factual_risk": 0.10018271207809448,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-672",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8105529414780569,
+        "RETRIEVE_MORE": 0.08569372770720901,
+        "ABSTAIN": 0.04751748138093462,
+        "ESCALATE": 0.056235849433799445
+      },
+      "evidence_sufficiency": 0.8595916032791138,
+      "estimated_factual_risk": 0.14040839672088623,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-566",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.831994944114835,
+        "RETRIEVE_MORE": 0.07312132201201149,
+        "ABSTAIN": 0.043217598256222435,
+        "ESCALATE": 0.05166613561693113
+      },
+      "evidence_sufficiency": 0.8842275142669678,
+      "estimated_factual_risk": 0.11577248573303223,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-283",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8242577824043416,
+        "RETRIEVE_MORE": 0.07761225846382076,
+        "ABSTAIN": 0.04478238210042977,
+        "ESCALATE": 0.05334757703140784
+      },
+      "evidence_sufficiency": 0.8750343918800354,
+      "estimated_factual_risk": 0.1249656081199646,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-633",
+      "label": "refuted",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6978118857749249,
+        "RETRIEVE_MORE": 0.1573646646199755,
+        "ABSTAIN": 0.06855042631474237,
+        "ESCALATE": 0.07627302329035716
+      },
+      "evidence_sufficiency": 0.7585844993591309,
+      "estimated_factual_risk": 0.24141550064086914,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-812",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8631492208383366,
+        "RETRIEVE_MORE": 0.05561137790670455,
+        "ABSTAIN": 0.03674925529339057,
+        "ESCALATE": 0.04449014596156834
+      },
+      "evidence_sufficiency": 0.9256266355514526,
+      "estimated_factual_risk": 0.07437336444854736,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-582",
+      "label": "notEnoughInfo",
+      "answer": "refuted",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8219074400243588,
+        "RETRIEVE_MORE": 0.07898689114912823,
+        "ABSTAIN": 0.04525470744144193,
+        "ESCALATE": 0.053850961385070936
+      },
+      "evidence_sufficiency": 0.8723127841949463,
+      "estimated_factual_risk": 0.1276872158050537,
+      "n_retrievals": 1,
+      "correct": false
+    },
+    {
+      "id": "scifact-153",
+      "label": "notEnoughInfo",
+      "answer": "notEnoughInfo",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.4197904420771125,
+        "RETRIEVE_MORE": 0.36495589015003804,
+        "ABSTAIN": 0.11214657805008431,
+        "ESCALATE": 0.10310708972276504
+      },
+      "evidence_sufficiency": 0.5786638855934143,
+      "estimated_factual_risk": 0.4213361144065857,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-172",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.8518549620192314,
+        "RETRIEVE_MORE": 0.061847425925190457,
+        "ABSTAIN": 0.03912710720844257,
+        "ESCALATE": 0.04717050484713561
+      },
+      "evidence_sufficiency": 0.9096994400024414,
+      "estimated_factual_risk": 0.0903005599975586,
+      "n_retrievals": 1,
+      "correct": true
+    },
+    {
+      "id": "scifact-1009",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.42291356691086057,
+        "RETRIEVE_MORE": 1.0639429086455865e-05,
+        "ABSTAIN": 0.3427267728109611,
+        "ESCALATE": 0.23434902084909193
+      },
+      "evidence_sufficiency": 0.3978569507598877,
+      "estimated_factual_risk": 0.6021430492401123,
+      "n_retrievals": 3,
+      "correct": true
+    },
+    {
+      "id": "scifact-901",
+      "label": "supported",
+      "answer": "supported",
+      "action": "ANSWER",
+      "probabilities": {
+        "ANSWER": 0.6277175103610392,
+        "RETRIEVE_MORE": 0.20583905860337315,
+        "ABSTAIN": 0.08055124550779817,
+        "ESCALATE": 0.08589218552778956
+      },
+      "evidence_sufficiency": 0.7086660861968994,
+      "estimated_factual_risk": 0.2913339138031006,
+      "n_retrievals": 1,
+      "correct": true
+    }
+  ],
+  "risk_coverage_curve": [
+    {
+      "coverage": 0.0033333333333333335,
+      "risk": 0.0,
+      "accuracy": 1.0,
+      "k": 1
+    },
+    {
+      "coverage": 0.05333333333333334,
+      "risk": 0.3125,
+      "accuracy": 0.6875,
+      "k": 16
+    },
+    {
+      "coverage": 0.10333333333333333,
+      "risk": 0.29032258064516125,
+      "accuracy": 0.7096774193548387,
+      "k": 31
+    },
+    {
+      "coverage": 0.15333333333333332,
+      "risk": 0.26086956521739135,
+      "accuracy": 0.7391304347826086,
+      "k": 46
+    },
+    {
+      "coverage": 0.20333333333333334,
+      "risk": 0.24590163934426235,
+      "accuracy": 0.7540983606557377,
+      "k": 61
+    },
+    {
+      "coverage": 0.25333333333333335,
+      "risk": 0.26315789473684215,
+      "accuracy": 0.7368421052631579,
+      "k": 76
+    },
+    {
+      "coverage": 0.30333333333333334,
+      "risk": 0.29670329670329665,
+      "accuracy": 0.7032967032967034,
+      "k": 91
+    },
+    {
+      "coverage": 0.35333333333333333,
+      "risk": 0.2735849056603774,
+      "accuracy": 0.7264150943396226,
+      "k": 106
+    },
+    {
+      "coverage": 0.4033333333333333,
+      "risk": 0.2644628099173554,
+      "accuracy": 0.7355371900826446,
+      "k": 121
+    },
+    {
+      "coverage": 0.4533333333333333,
+      "risk": 0.25,
+      "accuracy": 0.75,
+      "k": 136
+    },
+    {
+      "coverage": 0.5033333333333333,
+      "risk": 0.2516556291390728,
+      "accuracy": 0.7483443708609272,
+      "k": 151
+    },
+    {
+      "coverage": 0.5533333333333333,
+      "risk": 0.24096385542168675,
+      "accuracy": 0.7590361445783133,
+      "k": 166
+    },
+    {
+      "coverage": 0.6033333333333334,
+      "risk": 0.2320441988950276,
+      "accuracy": 0.7679558011049724,
+      "k": 181
+    },
+    {
+      "coverage": 0.6533333333333333,
+      "risk": 0.23469387755102045,
+      "accuracy": 0.7653061224489796,
+      "k": 196
+    },
+    {
+      "coverage": 0.7033333333333334,
+      "risk": 0.23696682464454977,
+      "accuracy": 0.7630331753554502,
+      "k": 211
+    },
+    {
+      "coverage": 0.7533333333333333,
+      "risk": 0.23893805309734517,
+      "accuracy": 0.7610619469026548,
+      "k": 226
+    },
+    {
+      "coverage": 0.8033333333333333,
+      "risk": 0.2365145228215768,
+      "accuracy": 0.7634854771784232,
+      "k": 241
+    },
+    {
+      "coverage": 0.8533333333333334,
+      "risk": 0.24609375,
+      "accuracy": 0.75390625,
+      "k": 256
+    },
+    {
+      "coverage": 0.9033333333333333,
+      "risk": 0.24723247232472323,
+      "accuracy": 0.7527675276752768,
+      "k": 271
+    },
+    {
+      "coverage": 0.9533333333333334,
+      "risk": 0.24125874125874125,
+      "accuracy": 0.7587412587412588,
+      "k": 286
+    },
+    {
+      "coverage": 1.0,
+      "risk": 0.2366666666666667,
+      "accuracy": 0.7633333333333333,
+      "k": 300
+    }
+  ]
+}

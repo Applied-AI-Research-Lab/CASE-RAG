@@ -1,0 +1,11232 @@
+{
+ "alphas": [
+  0.05,
+  0.1,
+  0.15,
+  0.2,
+  0.25,
+  0.3,
+  0.4,
+  0.5
+ ],
+ "delta": 0.1,
+ "rule": "SGR on raw ANSWER score",
+ "sweep": {
+  "hosted|scifact|feature": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 1,
+    "n_seeds": 3,
+    "coverage": 0.9933333333333333,
+    "risk": 0.24161073825503357,
+    "n_answered": 298,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.24161073825503357,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.24075580563276314,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.24496644295302014,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.2356902356902357,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.24161073825503357,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.24075580563276314,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.24496644295302014,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.2356902356902357,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.24161073825503357,
+      "n": 298
+     }
+    ]
+   }
+  ],
+  "hosted|scifact|selfrag": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 1,
+    "n_seeds": 3,
+    "coverage": 0.5333333333333333,
+    "risk": 0.19375,
+    "n_answered": 160,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.5333333333333333,
+      "risk": 0.19375,
+      "n": 160
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.23111111111111113,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23333333333333334,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.23111111111111113,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23333333333333334,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.23111111111111113,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23333333333333334,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "hosted|scifact|case": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.22999999999999998,
+    "risk": 0.06868457820838773,
+    "n_answered": 207,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.32666666666666666,
+      "risk": 0.1326530612244898,
+      "n": 98
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.18333333333333332,
+      "risk": 0.03636363636363636,
+      "n": 55
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.18,
+      "risk": 0.037037037037037035,
+      "n": 54
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.47444444444444445,
+    "risk": 0.19125989973836788,
+    "n_answered": 427,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.47333333333333333,
+      "risk": 0.19718309859154928,
+      "n": 142
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.4066666666666667,
+      "risk": 0.1557377049180328,
+      "n": 122
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.5433333333333333,
+      "risk": 0.22085889570552147,
+      "n": 163
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.6166666666666667,
+    "risk": 0.22123296237475606,
+    "n_answered": 555,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.6033333333333334,
+      "risk": 0.22099447513812154,
+      "n": 181
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.48333333333333334,
+      "risk": 0.20689655172413793,
+      "n": 145
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.7633333333333333,
+      "risk": 0.23580786026200873,
+      "n": 229
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.21444444444444444,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21666666666666667,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.21444444444444444,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21666666666666667,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.21444444444444444,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21666666666666667,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "hosted|scifact|fixed": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.9933333333333333,
+    "risk": 0.21476510067114093,
+    "n_answered": 596,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21140939597315436,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2181208053691275,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.2138838044878313,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21140939597315436,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.21212121212121213,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2181208053691275,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.2138838044878313,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21140939597315436,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.21212121212121213,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2181208053691275,
+      "n": 298
+     }
+    ]
+   }
+  ],
+  "hosted|fever|feature": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.9983333333333333,
+    "risk": 0.24867335562987736,
+    "n_answered": 599,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.2040133779264214,
+      "n": 299
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.29333333333333333,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9955555555555556,
+    "risk": 0.24546798343899792,
+    "n_answered": 896,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.23905723905723905,
+      "n": 297
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.2040133779264214,
+      "n": 299
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.29333333333333333,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "hosted|fever|selfrag": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.7216666666666667,
+    "risk": 0.18705197132616486,
+    "n_answered": 433,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.72,
+      "risk": 0.18055555555555555,
+      "n": 216
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.7233333333333334,
+      "risk": 0.1935483870967742,
+      "n": 217
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24111111111111114,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.2,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.29333333333333333,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24111111111111114,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.2,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.29333333333333333,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "hosted|fever|case": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.5399999999999999,
+    "risk": 0.17430595953719863,
+    "n_answered": 486,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.5333333333333333,
+      "risk": 0.1375,
+      "n": 160
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.6366666666666667,
+      "risk": 0.17801047120418848,
+      "n": 191
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.45,
+      "risk": 0.2074074074074074,
+      "n": 135
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.8555555555555556,
+    "risk": 0.223012456519433,
+    "n_answered": 770,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.8766666666666667,
+      "risk": 0.20912547528517111,
+      "n": 263
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9333333333333333,
+      "risk": 0.2,
+      "n": 280
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.7566666666666667,
+      "risk": 0.2599118942731278,
+      "n": 227
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24444444444444446,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.20333333333333334,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.29333333333333333,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24444444444444446,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.20333333333333334,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.29333333333333333,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "hosted|fever|fixed": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24444444444444446,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.20333333333333334,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.30333333333333334,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24444444444444446,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.20333333333333334,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.30333333333333334,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "hosted|hotpotqa|feature": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   }
+  ],
+  "hosted|hotpotqa|selfrag": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.5455555555555556,
+    "risk": 0.33611150132463213,
+    "n_answered": 491,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.5633333333333334,
+      "risk": 0.33136094674556216,
+      "n": 169
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.55,
+      "risk": 0.3393939393939394,
+      "n": 165
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.5233333333333333,
+      "risk": 0.3375796178343949,
+      "n": 157
+     }
+    ]
+   }
+  ],
+  "hosted|hotpotqa|case": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.5577777777777778,
+    "risk": 0.33218268951242996,
+    "n_answered": 502,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.58,
+      "risk": 0.3103448275862069,
+      "n": 174
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.62,
+      "risk": 0.3763440860215054,
+      "n": 186
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.47333333333333333,
+      "risk": 0.30985915492957744,
+      "n": 142
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.748888888888889,
+    "risk": 0.43107710999971743,
+    "n_answered": 674,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.7833333333333333,
+      "risk": 0.44680851063829785,
+      "n": 235
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.8366666666666667,
+      "risk": 0.4900398406374502,
+      "n": 251
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.6266666666666667,
+      "risk": 0.35638297872340424,
+      "n": 188
+     }
+    ]
+   }
+  ],
+  "hosted|hotpotqa|fixed": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   }
+  ],
+  "open_gemma|scifact|feature": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.9933333333333333,
+    "risk": 0.23154362416107382,
+    "n_answered": 596,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.23154362416107382,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.23154362416107382,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.2306811590927922,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.23154362416107382,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.22895622895622897,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.23154362416107382,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.2306811590927922,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.23154362416107382,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.22895622895622897,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.23154362416107382,
+      "n": 298
+     }
+    ]
+   }
+  ],
+  "open_gemma|scifact|selfrag": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 1,
+    "n_seeds": 3,
+    "coverage": 0.5733333333333334,
+    "risk": 0.22674418604651161,
+    "n_answered": 172,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.5733333333333334,
+      "risk": 0.22674418604651161,
+      "n": 172
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9277777777777777,
+    "risk": 0.23418439716312056,
+    "n_answered": 835,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.7833333333333333,
+      "risk": 0.2425531914893617,
+      "n": 235
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.23,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.23,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "open_gemma|scifact|case": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.32222222222222224,
+    "risk": 0.1262708265211394,
+    "n_answered": 290,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.37,
+      "risk": 0.14414414414414414,
+      "n": 111
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.31333333333333335,
+      "risk": 0.11702127659574468,
+      "n": 94
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.2833333333333333,
+      "risk": 0.11764705882352941,
+      "n": 85
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.41,
+    "risk": 0.15688509021842356,
+    "n_answered": 369,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.39,
+      "risk": 0.15384615384615385,
+      "n": 117
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.39,
+      "risk": 0.15384615384615385,
+      "n": 117
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.45,
+      "risk": 0.16296296296296298,
+      "n": 135
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.61,
+    "risk": 0.20017077099221828,
+    "n_answered": 549,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.6433333333333333,
+      "risk": 0.20725388601036268,
+      "n": 193
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.5933333333333334,
+      "risk": 0.19662921348314608,
+      "n": 178
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.5933333333333334,
+      "risk": 0.19662921348314608,
+      "n": 178
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9944444444444445,
+    "risk": 0.21452567469491893,
+    "n_answered": 895,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.2140468227424749,
+      "n": 299
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9944444444444445,
+    "risk": 0.21452567469491893,
+    "n_answered": 895,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.2140468227424749,
+      "n": 299
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9944444444444445,
+    "risk": 0.21452567469491893,
+    "n_answered": 895,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.2140468227424749,
+      "n": 299
+     }
+    ]
+   }
+  ],
+  "open_gemma|scifact|fixed": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.9933333333333333,
+    "risk": 0.2080536912751678,
+    "n_answered": 596,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2080536912751678,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2080536912751678,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.207164862645847,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2080536912751678,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.2053872053872054,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2080536912751678,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.207164862645847,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2080536912751678,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.2053872053872054,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2080536912751678,
+      "n": 298
+     }
+    ]
+   }
+  ],
+  "open_gemma|fever|feature": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.9983333333333333,
+    "risk": 0.2553511705685619,
+    "n_answered": 599,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.21070234113712374,
+      "n": 299
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.3,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9955555555555556,
+    "risk": 0.2499198600647876,
+    "n_answered": 896,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.23905723905723905,
+      "n": 297
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.21070234113712374,
+      "n": 299
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.3,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "open_gemma|fever|selfrag": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 1,
+    "n_seeds": 3,
+    "coverage": 0.71,
+    "risk": 0.18779342723004694,
+    "n_answered": 213,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.71,
+      "risk": 0.18779342723004694,
+      "n": 213
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24666666666666667,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23333333333333334,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.2966666666666667,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24666666666666667,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.23333333333333334,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.2966666666666667,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "open_gemma|fever|case": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 1,
+    "n_seeds": 3,
+    "coverage": 0.30666666666666664,
+    "risk": 0.16304347826086957,
+    "n_answered": 92,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.30666666666666664,
+      "risk": 0.16304347826086957,
+      "n": 92
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.30333333333333334,
+    "risk": 0.1394392523364486,
+    "n_answered": 182,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.3566666666666667,
+      "risk": 0.1588785046728972,
+      "n": 107
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.25,
+      "risk": 0.12,
+      "n": 75
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.46,
+    "risk": 0.1544373897707231,
+    "n_answered": 414,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.3333333333333333,
+      "risk": 0.11,
+      "n": 100
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.63,
+      "risk": 0.1693121693121693,
+      "n": 189
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.4166666666666667,
+      "risk": 0.184,
+      "n": 125
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.6944444444444445,
+    "risk": 0.18992337164750958,
+    "n_answered": 625,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.6,
+      "risk": 0.16666666666666666,
+      "n": 180
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.48333333333333334,
+      "risk": 0.19310344827586207,
+      "n": 145
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9966666666666666,
+    "risk": 0.24193029711267236,
+    "n_answered": 897,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2214765100671141,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.29431438127090304,
+      "n": 299
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9966666666666666,
+    "risk": 0.24193029711267236,
+    "n_answered": 897,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2214765100671141,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.29431438127090304,
+      "n": 299
+     }
+    ]
+   }
+  ],
+  "open_gemma|fever|fixed": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24555555555555555,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.20666666666666667,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.30333333333333334,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24555555555555555,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.20666666666666667,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.30333333333333334,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "open_gemma|hotpotqa|feature": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   }
+  ],
+  "open_gemma|hotpotqa|selfrag": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.5566666666666666,
+    "risk": 0.3513943092295011,
+    "n_answered": 501,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.57,
+      "risk": 0.34502923976608185,
+      "n": 171
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.5533333333333333,
+      "risk": 0.3493975903614458,
+      "n": 166
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.5466666666666666,
+      "risk": 0.3597560975609756,
+      "n": 164
+     }
+    ]
+   }
+  ],
+  "open_gemma|hotpotqa|case": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.49444444444444446,
+    "risk": 0.31477557818396473,
+    "n_answered": 445,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.6466666666666666,
+      "risk": 0.38144329896907214,
+      "n": 194
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.5433333333333333,
+      "risk": 0.3128834355828221,
+      "n": 163
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.29333333333333333,
+      "risk": 0.25,
+      "n": 88
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.7177777777777777,
+    "risk": 0.43444562403322534,
+    "n_answered": 646,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.74,
+      "risk": 0.44144144144144143,
+      "n": 222
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.7266666666666667,
+      "risk": 0.4541284403669725,
+      "n": 218
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.6866666666666666,
+      "risk": 0.4077669902912621,
+      "n": 206
+     }
+    ]
+   }
+  ],
+  "open_gemma|hotpotqa|fixed": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   }
+  ],
+  "open_qwen|scifact|feature": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.9933333333333333,
+    "risk": 0.2348993288590604,
+    "n_answered": 596,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2348993288590604,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2348993288590604,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.23404063001378436,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2348993288590604,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.23232323232323232,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2348993288590604,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.23404063001378436,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2348993288590604,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.23232323232323232,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.2348993288590604,
+      "n": 298
+     }
+    ]
+   }
+  ],
+  "open_qwen|scifact|selfrag": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 1,
+    "n_seeds": 3,
+    "coverage": 0.12333333333333334,
+    "risk": 0.08108108108108109,
+    "n_answered": 37,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.12333333333333334,
+      "risk": 0.08108108108108109,
+      "n": 37
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.12333333333333334,
+    "risk": 0.08108108108108109,
+    "n_answered": 74,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.12333333333333334,
+      "risk": 0.08108108108108109,
+      "n": 37
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.12333333333333334,
+      "risk": 0.08108108108108109,
+      "n": 37
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.5766666666666667,
+    "risk": 0.16927460306518693,
+    "n_answered": 519,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.5933333333333334,
+      "risk": 0.17415730337078653,
+      "n": 178
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.5433333333333333,
+      "risk": 0.15950920245398773,
+      "n": 163
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.5933333333333334,
+      "risk": 0.17415730337078653,
+      "n": 178
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.22666666666666666,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.22666666666666666,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.22666666666666666,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "open_qwen|scifact|case": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.395,
+    "risk": 0.1469323394495413,
+    "n_answered": 237,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.36333333333333334,
+      "risk": 0.13761467889908258,
+      "n": 109
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.4266666666666667,
+      "risk": 0.15625,
+      "n": 128
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.4388888888888889,
+    "risk": 0.15568693693693691,
+    "n_answered": 395,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.4266666666666667,
+      "risk": 0.15625,
+      "n": 128
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.37,
+      "risk": 0.14414414414414414,
+      "n": 111
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.52,
+      "risk": 0.16666666666666666,
+      "n": 156
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.6122222222222221,
+    "risk": 0.1940117819675972,
+    "n_answered": 551,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.6466666666666666,
+      "risk": 0.20618556701030927,
+      "n": 194
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.4633333333333333,
+      "risk": 0.1510791366906475,
+      "n": 139
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.7266666666666667,
+      "risk": 0.22477064220183487,
+      "n": 218
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.22173346182189216,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9833333333333333,
+      "risk": 0.22372881355932203,
+      "n": 295
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.22073578595317725,
+      "n": 299
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.22073578595317725,
+      "n": 299
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.22173346182189216,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9833333333333333,
+      "risk": 0.22372881355932203,
+      "n": 295
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.22073578595317725,
+      "n": 299
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.22073578595317725,
+      "n": 299
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.22173346182189216,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9833333333333333,
+      "risk": 0.22372881355932203,
+      "n": 295
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.22073578595317725,
+      "n": 299
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.22073578595317725,
+      "n": 299
+     }
+    ]
+   }
+  ],
+  "open_qwen|scifact|fixed": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 1,
+    "n_seeds": 3,
+    "coverage": 0.9933333333333333,
+    "risk": 0.21476510067114093,
+    "n_answered": 298,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.2138838044878313,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.21212121212121213,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9922222222222222,
+    "risk": 0.2138838044878313,
+    "n_answered": 893,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.21212121212121213,
+      "n": 297
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9933333333333333,
+      "risk": 0.21476510067114093,
+      "n": 298
+     }
+    ]
+   }
+  ],
+  "open_qwen|fever|feature": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.9933333333333334,
+    "risk": 0.22820174994088038,
+    "n_answered": 596,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.23232323232323232,
+      "n": 297
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.22408026755852842,
+      "n": 299
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9955555555555556,
+    "risk": 0.25213449996058696,
+    "n_answered": 896,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.99,
+      "risk": 0.23232323232323232,
+      "n": 297
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.22408026755852842,
+      "n": 299
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.3,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "open_qwen|fever|selfrag": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.2477777777777778,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.30333333333333334,
+      "n": 300
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.2477777777777778,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22666666666666666,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.30333333333333334,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "open_qwen|fever|case": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.2833333333333333,
+    "risk": 0.14421052631578946,
+    "n_answered": 170,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.31666666666666665,
+      "risk": 0.16842105263157894,
+      "n": 95
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.25,
+      "risk": 0.12,
+      "n": 75
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.3622222222222222,
+    "risk": 0.1436807327569791,
+    "n_answered": 326,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.31,
+      "risk": 0.0967741935483871,
+      "n": 93
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.37333333333333335,
+      "risk": 0.16071428571428573,
+      "n": 112
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.4033333333333333,
+      "risk": 0.17355371900826447,
+      "n": 121
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.5777777777777778,
+    "risk": 0.17584674714956405,
+    "n_answered": 520,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.5133333333333333,
+      "risk": 0.14285714285714285,
+      "n": 154
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.7466666666666667,
+      "risk": 0.1875,
+      "n": 224
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.47333333333333333,
+      "risk": 0.19718309859154928,
+      "n": 142
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9977777777777778,
+    "risk": 0.2472426607209216,
+    "n_answered": 898,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.21739130434782608,
+      "n": 299
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22333333333333333,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.3010033444816054,
+      "n": 299
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.9977777777777778,
+    "risk": 0.2472426607209216,
+    "n_answered": 898,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.21739130434782608,
+      "n": 299
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22333333333333333,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.9966666666666667,
+      "risk": 0.3010033444816054,
+      "n": 299
+     }
+    ]
+   }
+  ],
+  "open_qwen|fever|fixed": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.21666666666666667,
+    "n_answered": 600,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 1.0,
+    "risk": 0.24555555555555555,
+    "n_answered": 900,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.21333333333333335,
+      "n": 300
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.22,
+      "n": 300
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 1.0,
+      "risk": 0.30333333333333334,
+      "n": 300
+     }
+    ]
+   }
+  ],
+  "open_qwen|hotpotqa|feature": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   }
+  ],
+  "open_qwen|hotpotqa|selfrag": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.5766666666666667,
+    "risk": 0.3293905372894948,
+    "n_answered": 346,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.58,
+      "risk": 0.3448275862068966,
+      "n": 174
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.5733333333333334,
+      "risk": 0.313953488372093,
+      "n": 172
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.5655555555555556,
+    "risk": 0.3279781496040395,
+    "n_answered": 509,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.58,
+      "risk": 0.3448275862068966,
+      "n": 174
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.5733333333333334,
+      "risk": 0.313953488372093,
+      "n": 172
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.5433333333333333,
+      "risk": 0.32515337423312884,
+      "n": 163
+     }
+    ]
+   }
+  ],
+  "open_qwen|hotpotqa|case": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 2,
+    "n_seeds": 3,
+    "coverage": 0.6016666666666667,
+    "risk": 0.3763296227581942,
+    "n_answered": 361,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.6533333333333333,
+      "risk": 0.413265306122449,
+      "n": 196
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.55,
+      "risk": 0.3393939393939394,
+      "n": 165
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 3,
+    "n_seeds": 3,
+    "coverage": 0.7044444444444444,
+    "risk": 0.45359503239534366,
+    "n_answered": 634,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": true,
+      "coverage": 0.74,
+      "risk": 0.47297297297297297,
+      "n": 222
+     },
+     {
+      "seed": 2,
+      "cert": true,
+      "coverage": 0.7033333333333334,
+      "risk": 0.4549763033175355,
+      "n": 211
+     },
+     {
+      "seed": 3,
+      "cert": true,
+      "coverage": 0.67,
+      "risk": 0.43283582089552236,
+      "n": 201
+     }
+    ]
+   }
+  ],
+  "open_qwen|hotpotqa|fixed": [
+   {
+    "alpha": 0.05,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.1,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.15,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.2,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.25,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.3,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.4,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   },
+   {
+    "alpha": 0.5,
+    "n_certifying": 0,
+    "n_seeds": 3,
+    "coverage": null,
+    "risk": null,
+    "n_answered": 0,
+    "per_seed": [
+     {
+      "seed": 1,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 2,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     },
+     {
+      "seed": 3,
+      "cert": false,
+      "coverage": 0.0,
+      "risk": null,
+      "n": 0
+     }
+    ]
+   }
+  ]
+ },
+ "invalid_vs_valid": {
+  "hosted|scifact|feature": {
+   "crc": {
+    "n_cert": 3,
+    "n": 5,
+    "err": 3,
+    "risks": [
+     1.0,
+     0.3333333333333333,
+     1.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|scifact|selfrag": {
+   "crc": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|scifact|case": {
+   "crc": {
+    "n_cert": 3,
+    "n": 463,
+    "err": 98,
+    "risks": [
+     0.2077922077922078,
+     0.19852941176470587,
+     0.2254335260115607
+    ]
+   },
+   "sgr": {
+    "n_cert": 3,
+    "n": 207,
+    "err": 17,
+    "risks": [
+     0.1326530612244898,
+     0.03636363636363636,
+     0.037037037037037035
+    ]
+   }
+  },
+  "hosted|scifact|fixed": {
+   "crc": {
+    "n_cert": 3,
+    "n": 5,
+    "err": 0,
+    "risks": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|fever|feature": {
+   "crc": {
+    "n_cert": 3,
+    "n": 7,
+    "err": 1,
+    "risks": [
+     0.0,
+     0.25
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|fever|selfrag": {
+   "crc": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|fever|case": {
+   "crc": {
+    "n_cert": 2,
+    "n": 248,
+    "err": 39,
+    "risks": [
+     0.12403100775193798,
+     0.19327731092436976
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|fever|fixed": {
+   "crc": {
+    "n_cert": 3,
+    "n": 7,
+    "err": 1,
+    "risks": [
+     0.0,
+     0.25
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|hotpotqa|feature": {
+   "crc": {
+    "n_cert": 1,
+    "n": 1,
+    "err": 1,
+    "risks": [
+     1.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|hotpotqa|selfrag": {
+   "crc": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|hotpotqa|case": {
+   "crc": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "hosted|hotpotqa|fixed": {
+   "crc": {
+    "n_cert": 1,
+    "n": 1,
+    "err": 1,
+    "risks": [
+     1.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|scifact|feature": {
+   "crc": {
+    "n_cert": 3,
+    "n": 5,
+    "err": 3,
+    "risks": [
+     1.0,
+     0.3333333333333333,
+     1.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|scifact|selfrag": {
+   "crc": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|scifact|case": {
+   "crc": {
+    "n_cert": 3,
+    "n": 448,
+    "err": 79,
+    "risks": [
+     0.176056338028169,
+     0.176056338028169,
+     0.17682926829268292
+    ]
+   },
+   "sgr": {
+    "n_cert": 3,
+    "n": 290,
+    "err": 37,
+    "risks": [
+     0.14414414414414414,
+     0.11702127659574468,
+     0.11764705882352941
+    ]
+   }
+  },
+  "open_gemma|scifact|fixed": {
+   "crc": {
+    "n_cert": 3,
+    "n": 5,
+    "err": 0,
+    "risks": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|fever|feature": {
+   "crc": {
+    "n_cert": 3,
+    "n": 7,
+    "err": 1,
+    "risks": [
+     0.0,
+     0.25
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|fever|selfrag": {
+   "crc": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|fever|case": {
+   "crc": {
+    "n_cert": 3,
+    "n": 229,
+    "err": 30,
+    "risks": [
+     0.1111111111111111,
+     0.15789473684210525,
+     0.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 1,
+    "n": 92,
+    "err": 15,
+    "risks": [
+     0.16304347826086957
+    ]
+   }
+  },
+  "open_gemma|fever|fixed": {
+   "crc": {
+    "n_cert": 3,
+    "n": 7,
+    "err": 1,
+    "risks": [
+     0.0,
+     0.25
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|hotpotqa|feature": {
+   "crc": {
+    "n_cert": 1,
+    "n": 1,
+    "err": 1,
+    "risks": [
+     1.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|hotpotqa|selfrag": {
+   "crc": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|hotpotqa|case": {
+   "crc": {
+    "n_cert": 2,
+    "n": 4,
+    "err": 1,
+    "risks": [
+     0.0,
+     0.5
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_gemma|hotpotqa|fixed": {
+   "crc": {
+    "n_cert": 1,
+    "n": 1,
+    "err": 1,
+    "risks": [
+     1.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|scifact|feature": {
+   "crc": {
+    "n_cert": 3,
+    "n": 5,
+    "err": 3,
+    "risks": [
+     1.0,
+     0.3333333333333333,
+     1.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|scifact|selfrag": {
+   "crc": {
+    "n_cert": 3,
+    "n": 363,
+    "err": 55,
+    "risks": [
+     0.15950920245398773,
+     0.08108108108108109,
+     0.15950920245398773
+    ]
+   },
+   "sgr": {
+    "n_cert": 1,
+    "n": 37,
+    "err": 3,
+    "risks": [
+     0.08108108108108109
+    ]
+   }
+  },
+  "open_qwen|scifact|case": {
+   "crc": {
+    "n_cert": 3,
+    "n": 445,
+    "err": 77,
+    "risks": [
+     0.1590909090909091,
+     0.16030534351145037,
+     0.19230769230769232
+    ]
+   },
+   "sgr": {
+    "n_cert": 2,
+    "n": 237,
+    "err": 35,
+    "risks": [
+     0.13761467889908258,
+     0.15625
+    ]
+   }
+  },
+  "open_qwen|scifact|fixed": {
+   "crc": {
+    "n_cert": 3,
+    "n": 5,
+    "err": 0,
+    "risks": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|fever|feature": {
+   "crc": {
+    "n_cert": 3,
+    "n": 7,
+    "err": 1,
+    "risks": [
+     0.0,
+     0.25
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|fever|selfrag": {
+   "crc": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|fever|case": {
+   "crc": {
+    "n_cert": 3,
+    "n": 217,
+    "err": 29,
+    "risks": [
+     0.1111111111111111,
+     0.16216216216216217,
+     0.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|fever|fixed": {
+   "crc": {
+    "n_cert": 3,
+    "n": 7,
+    "err": 1,
+    "risks": [
+     0.0,
+     0.25
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|hotpotqa|feature": {
+   "crc": {
+    "n_cert": 1,
+    "n": 1,
+    "err": 1,
+    "risks": [
+     1.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|hotpotqa|selfrag": {
+   "crc": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|hotpotqa|case": {
+   "crc": {
+    "n_cert": 2,
+    "n": 5,
+    "err": 0,
+    "risks": [
+     0.0,
+     0.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  },
+  "open_qwen|hotpotqa|fixed": {
+   "crc": {
+    "n_cert": 3,
+    "n": 1,
+    "err": 1,
+    "risks": [
+     1.0
+    ]
+   },
+   "sgr": {
+    "n_cert": 0,
+    "n": 0,
+    "err": 0,
+    "risks": []
+   }
+  }
+ },
+ "certificate_counts": {
+  "crc_certs": 640,
+  "crc_viol": 183,
+  "valid_certs": 256,
+  "valid_viol": 4
+ },
+ "monotonicity": {
+  "pairs": 108,
+  "monotone": 108,
+  "exceptions": []
+ },
+ "transfer_scifact_to_fever": {
+  "hosted": [
+   {
+    "seed": 1,
+    "cert": true,
+    "coverage": 0.5466666666666666,
+    "risk": 0.14634146341463414
+   },
+   {
+    "seed": 2,
+    "cert": true,
+    "coverage": 0.42333333333333334,
+    "risk": 0.14960629921259844
+   },
+   {
+    "seed": 3,
+    "cert": true,
+    "coverage": 0.4166666666666667,
+    "risk": 0.192
+   }
+  ],
+  "open_gemma": [
+   {
+    "seed": 1,
+    "cert": true,
+    "coverage": 0.49,
+    "risk": 0.1360544217687075
+   },
+   {
+    "seed": 2,
+    "cert": true,
+    "coverage": 0.44333333333333336,
+    "risk": 0.16541353383458646
+   },
+   {
+    "seed": 3,
+    "cert": true,
+    "coverage": 0.42333333333333334,
+    "risk": 0.1889763779527559
+   }
+  ],
+  "open_qwen": [
+   {
+    "seed": 1,
+    "cert": true,
+    "coverage": 0.49333333333333335,
+    "risk": 0.14189189189189189
+   },
+   {
+    "seed": 2,
+    "cert": false,
+    "coverage": 0.0,
+    "risk": null
+   },
+   {
+    "seed": 3,
+    "cert": true,
+    "coverage": 0.55,
+    "risk": 0.22424242424242424
+   }
+  ]
+ },
+ "accuracy_cluster_bootstrap": {
+  "hosted|scifact|fixed": {
+   "delta_base_minus_case_pts": 0.1111111111111111,
+   "ci": [
+    -1.0,
+    1.2222222222222223
+   ],
+   "n_ids": 300,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     0.33333333333333337,
+     -1.0,
+     1.6666666666666667
+    ],
+    [
+     2,
+     0.0,
+     -1.3333333333333335,
+     1.3333333333333335
+    ],
+    [
+     3,
+     0.0,
+     -1.3333333333333335,
+     1.3333333333333335
+    ]
+   ]
+  },
+  "hosted|scifact|feature": {
+   "delta_base_minus_case_pts": -2.555555555555556,
+   "ci": [
+    -5.333333333333334,
+    0.1111111111111111
+   ],
+   "n_ids": 300,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -3.0,
+     -6.0,
+     -0.33333333333333337
+    ],
+    [
+     2,
+     -2.3333333333333335,
+     -5.333333333333334,
+     0.33333333333333337
+    ],
+    [
+     3,
+     -2.3333333333333335,
+     -5.0,
+     0.33333333333333337
+    ]
+   ]
+  },
+  "hosted|scifact|selfrag": {
+   "delta_base_minus_case_pts": -1.6666666666666667,
+   "ci": [
+    -4.777777777777778,
+    1.4444444444444444
+   ],
+   "n_ids": 300,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -2.0,
+     -5.333333333333334,
+     1.3333333333333335
+    ],
+    [
+     2,
+     -1.6666666666666667,
+     -4.666666666666667,
+     1.3333333333333335
+    ],
+    [
+     3,
+     -1.3333333333333335,
+     -4.666666666666667,
+     2.0
+    ]
+   ]
+  },
+  "hosted|fever|fixed": {
+   "delta_base_minus_case_pts": 0.0,
+   "ci": [
+    -0.7803790412486065,
+    0.78125
+   ],
+   "n_ids": 891,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     1.0,
+     -0.33333333333333337,
+     2.666666666666667
+    ],
+    [
+     2,
+     0.0,
+     -1.3333333333333335,
+     1.3333333333333335
+    ],
+    [
+     3,
+     -1.0,
+     -2.666666666666667,
+     0.33333333333333337
+    ]
+   ]
+  },
+  "hosted|fever|feature": {
+   "delta_base_minus_case_pts": -0.1111111111111111,
+   "ci": [
+    -0.8898776418242491,
+    0.6674082313681869
+   ],
+   "n_ids": 891,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -0.33333333333333337,
+     -1.6666666666666667,
+     1.0
+    ],
+    [
+     2,
+     0.0,
+     -1.0,
+     1.0
+    ],
+    [
+     3,
+     0.0,
+     -1.6666666666666667,
+     1.6666666666666667
+    ]
+   ]
+  },
+  "hosted|fever|selfrag": {
+   "delta_base_minus_case_pts": 0.33333333333333337,
+   "ci": [
+    -0.5567928730512249,
+    1.2263099219620959
+   ],
+   "n_ids": 891,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     0.6666666666666667,
+     -1.0,
+     2.666666666666667
+    ],
+    [
+     2,
+     0.33333333333333337,
+     -0.6666666666666667,
+     1.6666666666666667
+    ],
+    [
+     3,
+     0.0,
+     -1.6666666666666667,
+     1.6666666666666667
+    ]
+   ]
+  },
+  "hosted|hotpotqa|fixed": {
+   "delta_base_minus_case_pts": 1.6666666666666667,
+   "ci": [
+    0.4459308807134894,
+    2.9116975402902963
+   ],
+   "n_ids": 869,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     2.0,
+     0.0,
+     4.0
+    ],
+    [
+     2,
+     0.6666666666666667,
+     -1.0,
+     2.3333333333333335
+    ],
+    [
+     3,
+     2.3333333333333335,
+     0.0,
+     5.0
+    ]
+   ]
+  },
+  "hosted|hotpotqa|feature": {
+   "delta_base_minus_case_pts": -6.888888888888889,
+   "ci": [
+    -8.773903262092238,
+    -5.094130675526024
+   ],
+   "n_ids": 869,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -5.333333333333334,
+     -8.333333333333332,
+     -2.666666666666667
+    ],
+    [
+     2,
+     -6.666666666666667,
+     -9.666666666666666,
+     -4.0
+    ],
+    [
+     3,
+     -8.666666666666668,
+     -12.333333333333334,
+     -5.333333333333334
+    ]
+   ]
+  },
+  "hosted|hotpotqa|selfrag": {
+   "delta_base_minus_case_pts": -9.666666666666666,
+   "ci": [
+    -11.712707182320441,
+    -7.675188383380581
+   ],
+   "n_ids": 869,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -9.0,
+     -12.333333333333334,
+     -6.0
+    ],
+    [
+     2,
+     -9.333333333333334,
+     -12.666666666666668,
+     -6.333333333333334
+    ],
+    [
+     3,
+     -10.666666666666668,
+     -14.666666666666666,
+     -7.000000000000001
+    ]
+   ]
+  },
+  "open_gemma|scifact|fixed": {
+   "delta_base_minus_case_pts": 0.6666666666666667,
+   "ci": [
+    -1.0,
+    2.666666666666667
+   ],
+   "n_ids": 300,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     0.6666666666666667,
+     -1.3333333333333335,
+     2.666666666666667
+    ],
+    [
+     2,
+     0.6666666666666667,
+     -1.3333333333333335,
+     2.666666666666667
+    ],
+    [
+     3,
+     0.6666666666666667,
+     -1.0,
+     2.666666666666667
+    ]
+   ]
+  },
+  "open_gemma|scifact|feature": {
+   "delta_base_minus_case_pts": -1.6666666666666667,
+   "ci": [
+    -4.333333333333334,
+    0.6666666666666667
+   ],
+   "n_ids": 300,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -1.6666666666666667,
+     -4.333333333333334,
+     0.6666666666666667
+    ],
+    [
+     2,
+     -1.6666666666666667,
+     -4.333333333333334,
+     0.6666666666666667
+    ],
+    [
+     3,
+     -1.6666666666666667,
+     -4.333333333333334,
+     1.0
+    ]
+   ]
+  },
+  "open_gemma|scifact|selfrag": {
+   "delta_base_minus_case_pts": -1.6666666666666667,
+   "ci": [
+    -4.333333333333334,
+    0.6666666666666667
+   ],
+   "n_ids": 300,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -1.6666666666666667,
+     -4.333333333333334,
+     0.6666666666666667
+    ],
+    [
+     2,
+     -1.6666666666666667,
+     -4.333333333333334,
+     0.6666666666666667
+    ],
+    [
+     3,
+     -1.6666666666666667,
+     -4.333333333333334,
+     1.0
+    ]
+   ]
+  },
+  "open_gemma|fever|fixed": {
+   "delta_base_minus_case_pts": -0.1111111111111111,
+   "ci": [
+    -0.9912167478592835,
+    0.6696428571428571
+   ],
+   "n_ids": 891,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     0.0,
+     -1.6666666666666667,
+     1.6666666666666667
+    ],
+    [
+     2,
+     0.33333333333333337,
+     -0.6666666666666667,
+     1.3333333333333335
+    ],
+    [
+     3,
+     -0.6666666666666667,
+     -2.3333333333333335,
+     1.0
+    ]
+   ]
+  },
+  "open_gemma|fever|feature": {
+   "delta_base_minus_case_pts": -0.5555555555555556,
+   "ci": [
+    -1.3318534961154271,
+    0.11135857461024498
+   ],
+   "n_ids": 891,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -1.3333333333333335,
+     -2.666666666666667,
+     -0.33333333333333337
+    ],
+    [
+     2,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     3,
+     -0.33333333333333337,
+     -2.0,
+     1.3333333333333335
+    ]
+   ]
+  },
+  "open_gemma|fever|selfrag": {
+   "delta_base_minus_case_pts": -0.2222222222222222,
+   "ci": [
+    -0.778642936596218,
+    0.33222591362126247
+   ],
+   "n_ids": 891,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -0.6666666666666667,
+     -1.6666666666666667,
+     0.0
+    ],
+    [
+     2,
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     3,
+     0.0,
+     -1.3333333333333335,
+     1.3333333333333335
+    ]
+   ]
+  },
+  "open_gemma|hotpotqa|fixed": {
+   "delta_base_minus_case_pts": 2.555555555555556,
+   "ci": [
+    1.1185682326621924,
+    4.022346368715084
+   ],
+   "n_ids": 869,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     2.666666666666667,
+     0.33333333333333337,
+     5.0
+    ],
+    [
+     2,
+     2.3333333333333335,
+     0.0,
+     4.666666666666667
+    ],
+    [
+     3,
+     2.666666666666667,
+     0.33333333333333337,
+     5.333333333333334
+    ]
+   ]
+  },
+  "open_gemma|hotpotqa|feature": {
+   "delta_base_minus_case_pts": -6.0,
+   "ci": [
+    -7.82805374060563,
+    -4.241071428571429
+   ],
+   "n_ids": 869,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -4.333333333333334,
+     -7.000000000000001,
+     -2.0
+    ],
+    [
+     2,
+     -6.333333333333334,
+     -9.333333333333334,
+     -3.6666666666666665
+    ],
+    [
+     3,
+     -7.333333333333333,
+     -10.666666666666668,
+     -4.0
+    ]
+   ]
+  },
+  "open_gemma|hotpotqa|selfrag": {
+   "delta_base_minus_case_pts": -8.0,
+   "ci": [
+    -9.966414675977425,
+    -6.117908787541713
+   ],
+   "n_ids": 869,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -6.666666666666667,
+     -9.666666666666666,
+     -3.6666666666666665
+    ],
+    [
+     2,
+     -8.0,
+     -11.333333333333332,
+     -5.0
+    ],
+    [
+     3,
+     -9.333333333333334,
+     -12.666666666666668,
+     -6.0
+    ]
+   ]
+  },
+  "open_qwen|scifact|fixed": {
+   "delta_base_minus_case_pts": 0.6666666666666667,
+   "ci": [
+    -2.0,
+    3.3333333333333335
+   ],
+   "n_ids": 300,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     0.6666666666666667,
+     -2.0,
+     3.3333333333333335
+    ],
+    [
+     2,
+     0.6666666666666667,
+     -2.0,
+     3.3333333333333335
+    ],
+    [
+     3,
+     0.6666666666666667,
+     -2.0,
+     3.3333333333333335
+    ]
+   ]
+  },
+  "open_qwen|scifact|feature": {
+   "delta_base_minus_case_pts": -1.3333333333333335,
+   "ci": [
+    -3.3333333333333335,
+    0.33333333333333337
+   ],
+   "n_ids": 300,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -1.3333333333333335,
+     -3.3333333333333335,
+     0.33333333333333337
+    ],
+    [
+     2,
+     -1.3333333333333335,
+     -3.3333333333333335,
+     0.33333333333333337
+    ],
+    [
+     3,
+     -1.3333333333333335,
+     -3.3333333333333335,
+     0.33333333333333337
+    ]
+   ]
+  },
+  "open_qwen|scifact|selfrag": {
+   "delta_base_minus_case_pts": -0.6666666666666667,
+   "ci": [
+    -2.666666666666667,
+    1.3333333333333335
+   ],
+   "n_ids": 300,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -0.6666666666666667,
+     -2.666666666666667,
+     1.3333333333333335
+    ],
+    [
+     2,
+     -0.6666666666666667,
+     -2.666666666666667,
+     1.3333333333333335
+    ],
+    [
+     3,
+     -0.6666666666666667,
+     -2.666666666666667,
+     1.3333333333333335
+    ]
+   ]
+  },
+  "open_qwen|fever|fixed": {
+   "delta_base_minus_case_pts": 0.33333333333333337,
+   "ci": [
+    -0.4444444444444444,
+    1.1135857461024499
+   ],
+   "n_ids": 891,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     0.6666666666666667,
+     -0.6666666666666667,
+     2.0
+    ],
+    [
+     2,
+     0.33333333333333337,
+     -1.0,
+     2.0
+    ],
+    [
+     3,
+     0.0,
+     -1.3333333333333335,
+     1.3333333333333335
+    ]
+   ]
+  },
+  "open_qwen|fever|feature": {
+   "delta_base_minus_case_pts": -0.33333333333333337,
+   "ci": [
+    -1.3274336283185841,
+    0.5574136008918618
+   ],
+   "n_ids": 891,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -1.3333333333333335,
+     -3.0,
+     0.0
+    ],
+    [
+     2,
+     0.0,
+     -1.3333333333333335,
+     1.3333333333333335
+    ],
+    [
+     3,
+     0.33333333333333337,
+     -1.6666666666666667,
+     2.3333333333333335
+    ]
+   ]
+  },
+  "open_qwen|fever|selfrag": {
+   "delta_base_minus_case_pts": 0.1111111111111111,
+   "ci": [
+    -0.4454342984409799,
+    0.6688963210702341
+   ],
+   "n_ids": 891,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     0.6666666666666667,
+     0.0,
+     1.6666666666666667
+    ],
+    [
+     2,
+     -0.33333333333333337,
+     -1.0,
+     0.0
+    ],
+    [
+     3,
+     0.0,
+     -1.3333333333333335,
+     1.3333333333333335
+    ]
+   ]
+  },
+  "open_qwen|hotpotqa|fixed": {
+   "delta_base_minus_case_pts": 0.7777777777777778,
+   "ci": [
+    -0.5561735261401557,
+    2.134831460674157
+   ],
+   "n_ids": 869,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     0.33333333333333337,
+     -2.3333333333333335,
+     3.0
+    ],
+    [
+     2,
+     0.0,
+     -2.3333333333333335,
+     2.3333333333333335
+    ],
+    [
+     3,
+     2.0,
+     0.0,
+     4.333333333333334
+    ]
+   ]
+  },
+  "open_qwen|hotpotqa|feature": {
+   "delta_base_minus_case_pts": -5.222222222222222,
+   "ci": [
+    -6.89287331170301,
+    -3.642384105960265
+   ],
+   "n_ids": 869,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -3.3333333333333335,
+     -5.666666666666666,
+     -1.3333333333333335
+    ],
+    [
+     2,
+     -5.666666666666666,
+     -8.666666666666668,
+     -3.0
+    ],
+    [
+     3,
+     -6.666666666666667,
+     -10.0,
+     -3.6666666666666665
+    ]
+   ]
+  },
+  "open_qwen|hotpotqa|selfrag": {
+   "delta_base_minus_case_pts": 0.33333333333333337,
+   "ci": [
+    -0.4454342984409799,
+    1.1135857461024499
+   ],
+   "n_ids": 869,
+   "n_obs": 900,
+   "per_seed": [
+    [
+     1,
+     -0.33333333333333337,
+     -1.6666666666666667,
+     0.6666666666666667
+    ],
+    [
+     2,
+     1.0,
+     0.0,
+     2.3333333333333335
+    ],
+    [
+     3,
+     0.33333333333333337,
+     -1.0,
+     1.6666666666666667
+    ]
+   ]
+  }
+ },
+ "actions": {
+  "hosted|scifact|s1|calib": {
+   "terminal": {
+    "ANSWER": 133,
+    "RETRIEVE_MORE": 167
+   },
+   "n": 300,
+   "second_round": 176,
+   "third_round": 174
+  },
+  "hosted|scifact|s1|test": {
+   "terminal": {
+    "RETRIEVE_MORE": 158,
+    "ANSWER": 142
+   },
+   "n": 300,
+   "second_round": 172,
+   "third_round": 171
+  },
+  "hosted|scifact|s2|calib": {
+   "terminal": {
+    "ANSWER": 136,
+    "RETRIEVE_MORE": 164
+   },
+   "n": 300,
+   "second_round": 168,
+   "third_round": 167
+  },
+  "hosted|scifact|s2|test": {
+   "terminal": {
+    "ANSWER": 142,
+    "RETRIEVE_MORE": 158
+   },
+   "n": 300,
+   "second_round": 173,
+   "third_round": 167
+  },
+  "hosted|scifact|s3|calib": {
+   "terminal": {
+    "RETRIEVE_MORE": 174,
+    "ANSWER": 126
+   },
+   "n": 300,
+   "second_round": 184,
+   "third_round": 180
+  },
+  "hosted|scifact|s3|test": {
+   "terminal": {
+    "ANSWER": 143,
+    "RETRIEVE_MORE": 157
+   },
+   "n": 300,
+   "second_round": 170,
+   "third_round": 169
+  },
+  "hosted|fever|s1|calib": {
+   "terminal": {
+    "ANSWER": 174,
+    "RETRIEVE_MORE": 126
+   },
+   "n": 300,
+   "second_round": 129,
+   "third_round": 128
+  },
+  "hosted|fever|s1|test": {
+   "terminal": {
+    "ANSWER": 189,
+    "RETRIEVE_MORE": 110,
+    "ABSTAIN": 1
+   },
+   "n": 300,
+   "second_round": 116,
+   "third_round": 116
+  },
+  "hosted|fever|s2|calib": {
+   "terminal": {
+    "ANSWER": 177,
+    "RETRIEVE_MORE": 123
+   },
+   "n": 300,
+   "second_round": 128,
+   "third_round": 127
+  },
+  "hosted|fever|s2|test": {
+   "terminal": {
+    "ANSWER": 183,
+    "RETRIEVE_MORE": 117
+   },
+   "n": 300,
+   "second_round": 120,
+   "third_round": 120
+  },
+  "hosted|fever|s3|calib": {
+   "terminal": {
+    "ANSWER": 184,
+    "RETRIEVE_MORE": 115,
+    "ESCALATE": 1
+   },
+   "n": 300,
+   "second_round": 126,
+   "third_round": 123
+  },
+  "hosted|fever|s3|test": {
+   "terminal": {
+    "RETRIEVE_MORE": 109,
+    "ANSWER": 190,
+    "ABSTAIN": 1
+   },
+   "n": 300,
+   "second_round": 117,
+   "third_round": 114
+  },
+  "hosted|hotpotqa|s1|calib": {
+   "terminal": {
+    "ANSWER": 165,
+    "RETRIEVE_MORE": 135
+   },
+   "n": 300,
+   "second_round": 152,
+   "third_round": 143
+  },
+  "hosted|hotpotqa|s1|test": {
+   "terminal": {
+    "ANSWER": 178,
+    "RETRIEVE_MORE": 121,
+    "ABSTAIN": 1
+   },
+   "n": 300,
+   "second_round": 130,
+   "third_round": 127
+  },
+  "hosted|hotpotqa|s2|calib": {
+   "terminal": {
+    "RETRIEVE_MORE": 114,
+    "ANSWER": 184,
+    "ABSTAIN": 1,
+    "ESCALATE": 1
+   },
+   "n": 300,
+   "second_round": 130,
+   "third_round": 120
+  },
+  "hosted|hotpotqa|s2|test": {
+   "terminal": {
+    "ANSWER": 168,
+    "RETRIEVE_MORE": 132
+   },
+   "n": 300,
+   "second_round": 141,
+   "third_round": 139
+  },
+  "hosted|hotpotqa|s3|calib": {
+   "terminal": {
+    "RETRIEVE_MORE": 134,
+    "ANSWER": 165,
+    "ESCALATE": 1
+   },
+   "n": 300,
+   "second_round": 144,
+   "third_round": 141
+  },
+  "hosted|hotpotqa|s3|test": {
+   "terminal": {
+    "RETRIEVE_MORE": 131,
+    "ANSWER": 167,
+    "ESCALATE": 2
+   },
+   "n": 300,
+   "second_round": 143,
+   "third_round": 138
+  },
+  "open_gemma|scifact|s1|calib": {
+   "terminal": {
+    "ANSWER": 163,
+    "ABSTAIN": 134,
+    "ESCALATE": 3
+   },
+   "n": 300,
+   "second_round": 113,
+   "third_round": 109
+  },
+  "open_gemma|scifact|s1|test": {
+   "terminal": {
+    "ABSTAIN": 118,
+    "ANSWER": 182
+   },
+   "n": 300,
+   "second_round": 111,
+   "third_round": 101
+  },
+  "open_gemma|scifact|s2|calib": {
+   "terminal": {
+    "ANSWER": 173,
+    "ABSTAIN": 125,
+    "ESCALATE": 2
+   },
+   "n": 300,
+   "second_round": 115,
+   "third_round": 111
+  },
+  "open_gemma|scifact|s2|test": {
+   "terminal": {
+    "ANSWER": 182,
+    "ABSTAIN": 118
+   },
+   "n": 300,
+   "second_round": 111,
+   "third_round": 101
+  },
+  "open_gemma|scifact|s3|calib": {
+   "terminal": {
+    "ABSTAIN": 133,
+    "ANSWER": 165,
+    "ESCALATE": 2
+   },
+   "n": 300,
+   "second_round": 113,
+   "third_round": 109
+  },
+  "open_gemma|scifact|s3|test": {
+   "terminal": {
+    "ANSWER": 182,
+    "ABSTAIN": 118
+   },
+   "n": 300,
+   "second_round": 111,
+   "third_round": 101
+  },
+  "open_gemma|fever|s1|calib": {
+   "terminal": {
+    "ANSWER": 188,
+    "ABSTAIN": 109,
+    "ESCALATE": 1,
+    "RETRIEVE_MORE": 2
+   },
+   "n": 300,
+   "second_round": 92,
+   "third_round": 90
+  },
+  "open_gemma|fever|s1|test": {
+   "terminal": {
+    "ANSWER": 189,
+    "ABSTAIN": 109,
+    "RETRIEVE_MORE": 2
+   },
+   "n": 300,
+   "second_round": 86,
+   "third_round": 85
+  },
+  "open_gemma|fever|s2|calib": {
+   "terminal": {
+    "ANSWER": 171,
+    "ABSTAIN": 128,
+    "RETRIEVE_MORE": 1
+   },
+   "n": 300,
+   "second_round": 101,
+   "third_round": 98
+  },
+  "open_gemma|fever|s2|test": {
+   "terminal": {
+    "ANSWER": 186,
+    "ABSTAIN": 114
+   },
+   "n": 300,
+   "second_round": 89,
+   "third_round": 88
+  },
+  "open_gemma|fever|s3|calib": {
+   "terminal": {
+    "ANSWER": 192,
+    "ABSTAIN": 107,
+    "RETRIEVE_MORE": 1
+   },
+   "n": 300,
+   "second_round": 86,
+   "third_round": 82
+  },
+  "open_gemma|fever|s3|test": {
+   "terminal": {
+    "ABSTAIN": 101,
+    "ANSWER": 198,
+    "ESCALATE": 1
+   },
+   "n": 300,
+   "second_round": 86,
+   "third_round": 83
+  },
+  "open_gemma|hotpotqa|s1|calib": {
+   "terminal": {
+    "ANSWER": 171,
+    "ABSTAIN": 83,
+    "RETRIEVE_MORE": 46
+   },
+   "n": 300,
+   "second_round": 131,
+   "third_round": 126
+  },
+  "open_gemma|hotpotqa|s1|test": {
+   "terminal": {
+    "ANSWER": 176,
+    "RETRIEVE_MORE": 52,
+    "ESCALATE": 2,
+    "ABSTAIN": 70
+   },
+   "n": 300,
+   "second_round": 117,
+   "third_round": 114
+  },
+  "open_gemma|hotpotqa|s2|calib": {
+   "terminal": {
+    "ABSTAIN": 64,
+    "ANSWER": 193,
+    "RETRIEVE_MORE": 43
+   },
+   "n": 300,
+   "second_round": 109,
+   "third_round": 106
+  },
+  "open_gemma|hotpotqa|s2|test": {
+   "terminal": {
+    "ANSWER": 168,
+    "ABSTAIN": 77,
+    "RETRIEVE_MORE": 54,
+    "ESCALATE": 1
+   },
+   "n": 300,
+   "second_round": 122,
+   "third_round": 117
+  },
+  "open_gemma|hotpotqa|s3|calib": {
+   "terminal": {
+    "ABSTAIN": 76,
+    "ANSWER": 165,
+    "RETRIEVE_MORE": 56,
+    "ESCALATE": 3
+   },
+   "n": 300,
+   "second_round": 139,
+   "third_round": 131
+  },
+  "open_gemma|hotpotqa|s3|test": {
+   "terminal": {
+    "ANSWER": 175,
+    "RETRIEVE_MORE": 35,
+    "ABSTAIN": 90
+   },
+   "n": 300,
+   "second_round": 128,
+   "third_round": 118
+  },
+  "open_qwen|scifact|s1|calib": {
+   "terminal": {
+    "ANSWER": 147,
+    "ABSTAIN": 150,
+    "ESCALATE": 3
+   },
+   "n": 300,
+   "second_round": 114,
+   "third_round": 111
+  },
+  "open_qwen|scifact|s1|test": {
+   "terminal": {
+    "ABSTAIN": 135,
+    "ANSWER": 165
+   },
+   "n": 300,
+   "second_round": 114,
+   "third_round": 109
+  },
+  "open_qwen|scifact|s2|calib": {
+   "terminal": {
+    "ANSWER": 163,
+    "ABSTAIN": 135,
+    "ESCALATE": 2
+   },
+   "n": 300,
+   "second_round": 115,
+   "third_round": 112
+  },
+  "open_qwen|scifact|s2|test": {
+   "terminal": {
+    "ANSWER": 165,
+    "ABSTAIN": 135
+   },
+   "n": 300,
+   "second_round": 114,
+   "third_round": 109
+  },
+  "open_qwen|scifact|s3|calib": {
+   "terminal": {
+    "ABSTAIN": 148,
+    "ANSWER": 150,
+    "ESCALATE": 2
+   },
+   "n": 300,
+   "second_round": 118,
+   "third_round": 115
+  },
+  "open_qwen|scifact|s3|test": {
+   "terminal": {
+    "ANSWER": 165,
+    "ABSTAIN": 135
+   },
+   "n": 300,
+   "second_round": 114,
+   "third_round": 109
+  },
+  "open_qwen|fever|s1|calib": {
+   "terminal": {
+    "ANSWER": 191,
+    "ABSTAIN": 106,
+    "ESCALATE": 1,
+    "RETRIEVE_MORE": 2
+   },
+   "n": 300,
+   "second_round": 94,
+   "third_round": 92
+  },
+  "open_qwen|fever|s1|test": {
+   "terminal": {
+    "ANSWER": 187,
+    "ABSTAIN": 111,
+    "RETRIEVE_MORE": 2
+   },
+   "n": 300,
+   "second_round": 88,
+   "third_round": 86
+  },
+  "open_qwen|fever|s2|calib": {
+   "terminal": {
+    "ANSWER": 170,
+    "ABSTAIN": 129,
+    "RETRIEVE_MORE": 1
+   },
+   "n": 300,
+   "second_round": 106,
+   "third_round": 103
+  },
+  "open_qwen|fever|s2|test": {
+   "terminal": {
+    "ANSWER": 185,
+    "ABSTAIN": 115
+   },
+   "n": 300,
+   "second_round": 92,
+   "third_round": 91
+  },
+  "open_qwen|fever|s3|calib": {
+   "terminal": {
+    "ANSWER": 187,
+    "ABSTAIN": 112,
+    "RETRIEVE_MORE": 1
+   },
+   "n": 300,
+   "second_round": 89,
+   "third_round": 85
+  },
+  "open_qwen|fever|s3|test": {
+   "terminal": {
+    "ABSTAIN": 103,
+    "ANSWER": 195,
+    "ESCALATE": 2
+   },
+   "n": 300,
+   "second_round": 88,
+   "third_round": 84
+  },
+  "open_qwen|hotpotqa|s1|calib": {
+   "terminal": {
+    "ABSTAIN": 82,
+    "ANSWER": 175,
+    "RETRIEVE_MORE": 43
+   },
+   "n": 300,
+   "second_round": 134,
+   "third_round": 125
+  },
+  "open_qwen|hotpotqa|s1|test": {
+   "terminal": {
+    "ANSWER": 178,
+    "RETRIEVE_MORE": 48,
+    "ESCALATE": 2,
+    "ABSTAIN": 72
+   },
+   "n": 300,
+   "second_round": 124,
+   "third_round": 116
+  },
+  "open_qwen|hotpotqa|s2|calib": {
+   "terminal": {
+    "ABSTAIN": 72,
+    "ANSWER": 182,
+    "ESCALATE": 1,
+    "RETRIEVE_MORE": 45
+   },
+   "n": 300,
+   "second_round": 122,
+   "third_round": 116
+  },
+  "open_qwen|hotpotqa|s2|test": {
+   "terminal": {
+    "ANSWER": 171,
+    "ABSTAIN": 75,
+    "RETRIEVE_MORE": 53,
+    "ESCALATE": 1
+   },
+   "n": 300,
+   "second_round": 120,
+   "third_round": 116
+  },
+  "open_qwen|hotpotqa|s3|calib": {
+   "terminal": {
+    "ABSTAIN": 78,
+    "ANSWER": 163,
+    "RETRIEVE_MORE": 56,
+    "ESCALATE": 3
+   },
+   "n": 300,
+   "second_round": 138,
+   "third_round": 133
+  },
+  "open_qwen|hotpotqa|s3|test": {
+   "terminal": {
+    "ABSTAIN": 93,
+    "ANSWER": 172,
+    "RETRIEVE_MORE": 34,
+    "ESCALATE": 1
+   },
+   "n": 300,
+   "second_round": 131,
+   "third_round": 122
+  }
+ },
+ "simulation": {
+  "reps": 2000,
+  "delta": 0.1,
+  "rows": {
+   "hosted|scifact|0.15": {
+    "sgr_cert": 0.684,
+    "sgr_viol": 0.006,
+    "crc_cert": 0.9435,
+    "crc_viol": 0.368,
+    "old_cert": 0.6045,
+    "old_viol": 0.036
+   },
+   "hosted|scifact|0.2": {
+    "sgr_cert": 0.9595,
+    "sgr_viol": 0.0105,
+    "crc_cert": 0.978,
+    "crc_viol": 0.4085,
+    "old_cert": 0.688,
+    "old_viol": 0.0465
+   },
+   "hosted|scifact|0.3": {
+    "sgr_cert": 1.0,
+    "sgr_viol": 0.0,
+    "crc_cert": 1.0,
+    "crc_viol": 0.0,
+    "old_cert": 0.8695,
+    "old_viol": 0.0
+   },
+   "hosted|fever|0.15": {
+    "crc_cert": 0.773,
+    "crc_viol": 0.3395,
+    "old_cert": 0.194,
+    "old_viol": 0.029,
+    "sgr_cert": 0.0615,
+    "sgr_viol": 0.0065
+   },
+   "hosted|fever|0.2": {
+    "crc_cert": 0.937,
+    "crc_viol": 0.4145,
+    "old_cert": 0.484,
+    "old_viol": 0.051,
+    "sgr_cert": 0.4005,
+    "sgr_viol": 0.009
+   },
+   "hosted|fever|0.3": {
+    "sgr_cert": 0.9905,
+    "sgr_viol": 0.0,
+    "crc_cert": 0.998,
+    "crc_viol": 0.0,
+    "old_cert": 0.916,
+    "old_viol": 0.0
+   },
+   "hosted|hotpotqa|0.15": {
+    "crc_cert": 0.084,
+    "crc_viol": 0.084,
+    "old_cert": 0.0015,
+    "old_viol": 0.0015
+   },
+   "hosted|hotpotqa|0.2": {
+    "crc_cert": 0.2235,
+    "crc_viol": 0.2235,
+    "old_cert": 0.014,
+    "old_viol": 0.014,
+    "sgr_cert": 0.001,
+    "sgr_viol": 0.001
+   },
+   "hosted|hotpotqa|0.3": {
+    "crc_cert": 0.6645,
+    "crc_viol": 0.3175,
+    "old_cert": 0.199,
+    "old_viol": 0.0275,
+    "sgr_cert": 0.142,
+    "sgr_viol": 0.0055
+   },
+   "open_gemma|scifact|0.15": {
+    "sgr_cert": 0.4325,
+    "sgr_viol": 0.007,
+    "crc_cert": 1.0,
+    "crc_viol": 0.416,
+    "old_cert": 0.956,
+    "old_viol": 0.0435
+   },
+   "open_gemma|scifact|0.2": {
+    "crc_cert": 1.0,
+    "crc_viol": 0.4115,
+    "old_cert": 0.9955,
+    "old_viol": 0.051,
+    "sgr_cert": 0.822,
+    "sgr_viol": 0.0025
+   },
+   "open_gemma|scifact|0.3": {
+    "sgr_cert": 0.999,
+    "sgr_viol": 0.0,
+    "crc_cert": 1.0,
+    "crc_viol": 0.0,
+    "old_cert": 1.0,
+    "old_viol": 0.0
+   },
+   "open_gemma|fever|0.15": {
+    "crc_cert": 1.0,
+    "crc_viol": 0.3085,
+    "old_cert": 0.365,
+    "old_viol": 0.0205,
+    "sgr_cert": 0.1545,
+    "sgr_viol": 0.003
+   },
+   "open_gemma|fever|0.2": {
+    "crc_cert": 1.0,
+    "crc_viol": 0.3415,
+    "sgr_cert": 0.5635,
+    "sgr_viol": 0.0095,
+    "old_cert": 0.4815,
+    "old_viol": 0.026
+   },
+   "open_gemma|fever|0.3": {
+    "sgr_cert": 0.9925,
+    "sgr_viol": 0.0,
+    "crc_cert": 0.998,
+    "crc_viol": 0.0,
+    "old_cert": 0.725,
+    "old_viol": 0.0
+   },
+   "open_gemma|hotpotqa|0.15": {
+    "crc_cert": 0.5795,
+    "crc_viol": 0.4165,
+    "old_cert": 0.008,
+    "old_viol": 0.008
+   },
+   "open_gemma|hotpotqa|0.2": {
+    "crc_cert": 0.611,
+    "crc_viol": 0.2885,
+    "old_cert": 0.0285,
+    "old_viol": 0.0285,
+    "sgr_cert": 0.002,
+    "sgr_viol": 0.002
+   },
+   "open_gemma|hotpotqa|0.3": {
+    "sgr_cert": 0.1215,
+    "sgr_viol": 0.008,
+    "old_cert": 0.222,
+    "old_viol": 0.0215,
+    "crc_cert": 0.5855,
+    "crc_viol": 0.2265
+   },
+   "open_qwen|scifact|0.15": {
+    "crc_cert": 1.0,
+    "crc_viol": 0.398,
+    "sgr_cert": 0.4305,
+    "sgr_viol": 0.0065,
+    "old_cert": 0.957,
+    "old_viol": 0.039
+   },
+   "open_qwen|scifact|0.2": {
+    "sgr_cert": 0.848,
+    "sgr_viol": 0.008,
+    "crc_cert": 1.0,
+    "crc_viol": 0.432,
+    "old_cert": 0.9945,
+    "old_viol": 0.0535
+   },
+   "open_qwen|scifact|0.3": {
+    "sgr_cert": 1.0,
+    "sgr_viol": 0.0,
+    "crc_cert": 1.0,
+    "crc_viol": 0.0,
+    "old_cert": 0.9995,
+    "old_viol": 0.0
+   },
+   "open_qwen|fever|0.15": {
+    "crc_cert": 0.998,
+    "crc_viol": 0.2805,
+    "old_cert": 0.3755,
+    "old_viol": 0.0165,
+    "sgr_cert": 0.1295,
+    "sgr_viol": 0.0075
+   },
+   "open_qwen|fever|0.2": {
+    "sgr_cert": 0.522,
+    "sgr_viol": 0.008,
+    "crc_cert": 0.9995,
+    "crc_viol": 0.3225,
+    "old_cert": 0.4745,
+    "old_viol": 0.018
+   },
+   "open_qwen|fever|0.3": {
+    "sgr_cert": 0.986,
+    "sgr_viol": 0.0,
+    "crc_cert": 0.9995,
+    "crc_viol": 0.0,
+    "old_cert": 0.7225,
+    "old_viol": 0.0
+   },
+   "open_qwen|hotpotqa|0.15": {
+    "crc_cert": 0.956,
+    "crc_viol": 0.2255,
+    "old_cert": 0.0085,
+    "old_viol": 0.0085
+   },
+   "open_qwen|hotpotqa|0.2": {
+    "crc_cert": 0.958,
+    "crc_viol": 0.2495,
+    "old_cert": 0.042,
+    "old_viol": 0.0295,
+    "sgr_cert": 0.001,
+    "sgr_viol": 0.001
+   },
+   "open_qwen|hotpotqa|0.3": {
+    "crc_cert": 0.96,
+    "crc_viol": 0.1965,
+    "sgr_cert": 0.103,
+    "sgr_viol": 0.004,
+    "old_cert": 0.142,
+    "old_viol": 0.0145
+   }
+  }
+ }
+}

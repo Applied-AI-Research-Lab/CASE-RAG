@@ -1,0 +1,44 @@
+# CASE-RAG open-weight variant — server requirements (4×H100)
+#
+# The GPU stack (torch, vllm, flashinfer kernels) is pinned in
+# requirements-cuda.txt to CUDA 12.9 builds, which run on this server's driver
+# (570.211.01, CUDA 12.8 max). The default PyPI builds are CUDA 13 and fail at
+# vLLM worker start with:
+#
+#   RuntimeError: The NVIDIA driver on your system is too old (found version 12080)
+#
+# Install everything in ONE command, after `source env.csh` (which sets
+# UV_TORCH_BACKEND=cu129 via your site environment script):
+#
+#   uv pip install -r requirements-server.txt
+#
+# Then check:  bash scripts/check_cuda.sh   (must print PREFLIGHT OK)
+
+-r requirements-cuda.txt
+
+transformers>=4.45
+# Explicit: transformers pulls this in, but the CLI is what fetches the weights.
+# In huggingface_hub 1.x the command is `hf`; `huggingface-cli` was removed and
+# only prints a deprecation notice. Under tcsh, `rehash` after install or the
+# shell will not find it at all.
+huggingface_hub>=0.26
+accelerate
+sentence-transformers
+rank-bm25
+scikit-learn
+numpy
+scipy
+pandas
+matplotlib
+requests
+datasets
+# Clef decision server (src/clef_server.py). Clef cannot be served by vLLM: its
+# decision head runs via joint_schema_model.py, which ships in the model repo
+# and is loaded from the HF cache -- nothing to install for it.
+fastapi
+uvicorn
+# Fast Triton kernels for the Qwen3.8 linear-attention layers in Clef's backbone.
+# Without it transformers falls back to a reference torch path that is >10x
+# slower. Pure Triton, so no nvcc / CUDA 13 involved.
+# (Deliberately NOT causal-conv1d: it compiles with nvcc = CUDA 13 here.)
+flash-linear-attention

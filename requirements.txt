@@ -1,0 +1,22 @@
+# Core pilot (CPU-friendly parts)
+numpy>=1.26
+scipy>=1.11            # exact binomial tests (certification)
+scikit-learn>=1.4      # feature-regression baseline (logistic regression)
+pandas>=2.1
+pyarrow>=14.0          # parquet for FreshQA / HotpotQA
+rank-bm25>=0.2.2
+tqdm>=4.66
+
+# Dense retrieval + NLI verifier (GPU recommended, CPU works for pilot sizes)
+sentence-transformers>=2.7
+transformers>=4.44
+torch>=2.3
+
+# vLLM server (install on the server only; heavy)
+# On Apple Silicon dev machines keep this commented and use the HF backend.
+# vllm>=0.6.0
+
+# Utilities
+datasets>=2.20         # HF dataset loading fallback
+requests>=2.31
+matplotlib>=3.8        # risk-coverage plots

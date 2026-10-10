@@ -1,0 +1,560 @@
+{
+ "features": [
+  "verifier support",
+  "retrieval rounds",
+  "evidence passages",
+  "log evidence chars"
+ ],
+ "alphas": [
+  0.05,
+  0.1,
+  0.15,
+  0.2,
+  0.25,
+  0.3,
+  0.4,
+  0.5
+ ],
+ "rows": {
+  "gemma|scifact": {
+   "lr": {
+    "aurc": 0.2047422606733882,
+    "ece": 0.05408123690223612,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.2": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.25": {
+     "n_certifying": 3,
+     "coverage": 0.9833333333333334,
+     "risk": 0.21353595551496599
+    },
+    "0.3": {
+     "n_certifying": 3,
+     "coverage": 0.9977777777777778,
+     "risk": 0.2138089929394277
+    },
+    "0.4": {
+     "n_certifying": 3,
+     "coverage": 0.9977777777777778,
+     "risk": 0.2138089929394277
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.9977777777777778,
+     "risk": 0.2138089929394277
+    }
+   },
+   "case": {
+    "aurc": 0.15114863653600524,
+    "ece": 0.06775313423457963,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 3,
+     "coverage": 0.32222222222222224,
+     "risk": 0.1262708265211394
+    },
+    "0.2": {
+     "n_certifying": 3,
+     "coverage": 0.41,
+     "risk": 0.15688509021842356
+    },
+    "0.25": {
+     "n_certifying": 3,
+     "coverage": 0.61,
+     "risk": 0.20017077099221828
+    },
+    "0.3": {
+     "n_certifying": 3,
+     "coverage": 0.9944444444444445,
+     "risk": 0.21452567469491893
+    },
+    "0.4": {
+     "n_certifying": 3,
+     "coverage": 0.9944444444444445,
+     "risk": 0.21452567469491893
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.9944444444444445,
+     "risk": 0.21452567469491893
+    }
+   }
+  },
+  "gemma|fever": {
+   "lr": {
+    "aurc": 0.22025388466099605,
+    "ece": 0.041945659786875665,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.2": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.25": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.3": {
+     "n_certifying": 3,
+     "coverage": 0.7911111111111112,
+     "risk": 0.228003003003003
+    },
+    "0.4": {
+     "n_certifying": 3,
+     "coverage": 0.9944444444444445,
+     "risk": 0.2422760051020921
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.9944444444444445,
+     "risk": 0.2422760051020921
+    }
+   },
+   "case": {
+    "aurc": 0.1600639941946631,
+    "ece": 0.06563304937764498,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 1,
+     "coverage": 0.30666666666666664,
+     "risk": 0.16304347826086957
+    },
+    "0.2": {
+     "n_certifying": 2,
+     "coverage": 0.30333333333333334,
+     "risk": 0.1394392523364486
+    },
+    "0.25": {
+     "n_certifying": 3,
+     "coverage": 0.46,
+     "risk": 0.1544373897707231
+    },
+    "0.3": {
+     "n_certifying": 3,
+     "coverage": 0.6944444444444445,
+     "risk": 0.18992337164750958
+    },
+    "0.4": {
+     "n_certifying": 3,
+     "coverage": 0.9966666666666666,
+     "risk": 0.24193029711267236
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.9966666666666666,
+     "risk": 0.24193029711267236
+    }
+   }
+  },
+  "gemma|hotpotqa": {
+   "lr": {
+    "aurc": 0.3847802005923575,
+    "ece": 0.09590241345695309,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.2": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.25": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.3": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.4": {
+     "n_certifying": 1,
+     "coverage": 0.2966666666666667,
+     "risk": 0.34831460674157305
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.6999999999999998,
+     "risk": 0.4251586809779186
+    }
+   },
+   "case": {
+    "aurc": 0.3712551600964216,
+    "ece": 0.09712221280263673,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.2": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.25": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.3": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.4": {
+     "n_certifying": 3,
+     "coverage": 0.49444444444444446,
+     "risk": 0.31477557818396473
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.7177777777777777,
+     "risk": 0.43444562403322534
+    }
+   }
+  },
+  "qwen|scifact": {
+   "lr": {
+    "aurc": 0.2178315078566472,
+    "ece": 0.061870696918700015,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.2": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.25": {
+     "n_certifying": 3,
+     "coverage": 0.8377777777777777,
+     "risk": 0.21138446002369252
+    },
+    "0.3": {
+     "n_certifying": 3,
+     "coverage": 0.9955555555555556,
+     "risk": 0.22098600272513313
+    },
+    "0.4": {
+     "n_certifying": 3,
+     "coverage": 0.9955555555555556,
+     "risk": 0.22098600272513313
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.9955555555555556,
+     "risk": 0.22098600272513313
+    }
+   },
+   "case": {
+    "aurc": 0.15185263402151247,
+    "ece": 0.06723239074204251,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 2,
+     "coverage": 0.395,
+     "risk": 0.1469323394495413
+    },
+    "0.2": {
+     "n_certifying": 3,
+     "coverage": 0.4388888888888889,
+     "risk": 0.15568693693693691
+    },
+    "0.25": {
+     "n_certifying": 3,
+     "coverage": 0.6122222222222221,
+     "risk": 0.1940117819675972
+    },
+    "0.3": {
+     "n_certifying": 3,
+     "coverage": 0.9922222222222222,
+     "risk": 0.22173346182189216
+    },
+    "0.4": {
+     "n_certifying": 3,
+     "coverage": 0.9922222222222222,
+     "risk": 0.22173346182189216
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.9922222222222222,
+     "risk": 0.22173346182189216
+    }
+   }
+  },
+  "qwen|fever": {
+   "lr": {
+    "aurc": 0.23030440688572304,
+    "ece": 0.07135528008028454,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.2": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.25": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.3": {
+     "n_certifying": 1,
+     "coverage": 0.71,
+     "risk": 0.19248826291079812
+    },
+    "0.4": {
+     "n_certifying": 3,
+     "coverage": 0.9933333333333333,
+     "risk": 0.24720147587572935
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.9933333333333333,
+     "risk": 0.24720147587572935
+    }
+   },
+   "case": {
+    "aurc": 0.16387294523272658,
+    "ece": 0.058349821911239406,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.2": {
+     "n_certifying": 2,
+     "coverage": 0.2833333333333333,
+     "risk": 0.14421052631578946
+    },
+    "0.25": {
+     "n_certifying": 3,
+     "coverage": 0.3622222222222222,
+     "risk": 0.1436807327569791
+    },
+    "0.3": {
+     "n_certifying": 3,
+     "coverage": 0.5777777777777778,
+     "risk": 0.17584674714956405
+    },
+    "0.4": {
+     "n_certifying": 3,
+     "coverage": 0.9977777777777778,
+     "risk": 0.2472426607209216
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.9977777777777778,
+     "risk": 0.2472426607209216
+    }
+   }
+  },
+  "qwen|hotpotqa": {
+   "lr": {
+    "aurc": 0.41398093548115017,
+    "ece": 0.07726506038885665,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.2": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.25": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.3": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.4": {
+     "n_certifying": 1,
+     "coverage": 0.13666666666666666,
+     "risk": 0.4146341463414634
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.6833333333333332,
+     "risk": 0.4419915596386184
+    }
+   },
+   "case": {
+    "aurc": 0.3756625525869673,
+    "ece": 0.10867509987084163,
+    "0.05": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.1": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.15": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.2": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.25": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.3": {
+     "n_certifying": 0,
+     "coverage": null,
+     "risk": null
+    },
+    "0.4": {
+     "n_certifying": 2,
+     "coverage": 0.6016666666666667,
+     "risk": 0.3763296227581942
+    },
+    "0.5": {
+     "n_certifying": 3,
+     "coverage": 0.7044444444444444,
+     "risk": 0.45359503239534366
+    }
+   }
+  }
+ }
+}
