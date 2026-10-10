@@ -1,4 +1,4 @@
-# CASE-RAG: Decision Models as Risk-Controlled Routers for Retrieval-Augmented Generation
+# CASE-RAG: Certified Action Selection and Escalation for Retrieval-Augmented Generation
 
 ## Article
 * **Journal**: IEEE Transactions on Artificial Intelligence
