@@ -17,3 +17,9 @@ Retrieval-augmented generation (RAG) is deployed where wrong answers are costly,
 ## Keywords
 Abstention, calibration, CASE-RAG, conformal risk control, decision models, retrieval-augmented generation, selective prediction, trustworthy artificial intelligence.
 
+
+## License
+The code, run records and results are released under the [CASE-RAG Research Evaluation License](LICENSE.txt). Until the paper is published, they may be used only for peer review, for reproducing the reported results, and for personal study; redistribution and use in other publications or products require written permission. After publication (or on October 12, 2027 at the latest) they become available under the Apache License 2.0. Content derived from SciFact, FEVER and HotpotQA remains under the original dataset licenses.
+
+## Citation
+Please cite the paper as given in [CITATION.cff](CITATION.cff).
