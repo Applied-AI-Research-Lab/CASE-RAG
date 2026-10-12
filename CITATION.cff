@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the paper below."
+title: "CASE-RAG: Certified Action Selection and Escalation for Retrieval-Augmented Generation"
+type: software
+license-url: "https://github.com/Applied-AI-Research-Lab/CASE-RAG/blob/main/LICENSE.txt"
+repository-code: "https://github.com/Applied-AI-Research-Lab/CASE-RAG"
+date-released: "2026-10-12"
+version: "1.0"
+authors:
+  - family-names: Roumeliotis
+    given-names: Konstantinos I.
+    email: k.roumeliotis@uop.gr
+    affiliation: "University of the Peloponnese"
+  - family-names: Sapkota
+    given-names: Ranjan
+    affiliation: "Cornell University"
+  - family-names: Margaris
+    given-names: Dionisis
+    affiliation: "University of the Peloponnese"
+  - family-names: Spiliotopoulos
+    given-names: Dimitris
+    affiliation: "University of the Peloponnese"
+  - family-names: Vassilakis
+    given-names: Costas
+    affiliation: "University of the Peloponnese"
+keywords:
+  - retrieval-augmented generation
+  - selective prediction
+  - conformal risk control
+  - decision models
+  - calibration
+  - abstention
+preferred-citation:
+  type: article
+  title: "CASE-RAG: Decision Models as Risk-Controlled Routers for Retrieval-Augmented Generation"
+  authors:
+    - family-names: Roumeliotis
+      given-names: Konstantinos I.
+    - family-names: Sapkota
+      given-names: Ranjan
+    - family-names: Margaris
+      given-names: Dionisis
+    - family-names: Spiliotopoulos
+      given-names: Dimitris
+    - family-names: Vassilakis
+      given-names: Costas
+  year: 2026
+  notes: "Manuscript submitted to IEEE Transactions on Artificial Intelligence."
