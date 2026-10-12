@@ -3,7 +3,7 @@
 ## Article
 * **Journal**: IEEE Transactions on Artificial Intelligence
 * **Title**: CASE-RAG: Decision Models as Risk-Controlled Routers for Retrieval-Augmented Generation
-* **DOI**: 
+* **DOI**: Submitted 12/10/2026
 
 ## Authors
 * **Adj. Asst. Prof. Konstantinos I. Roumeliotis | University of Peloponnese**
