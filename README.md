@@ -1,5 +1,5 @@
 # CASE-RAG: Certified Action Selection and Escalation for Retrieval-Augmented Generation
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23325042.svg)](https://doi.org/10.5281/zenodo.23325042)
 ## Article
 * **Journal**: IEEE Transactions on Artificial Intelligence
 * **Title**: CASE-RAG: Decision Models as Risk-Controlled Routers for Retrieval-Augmented Generation
